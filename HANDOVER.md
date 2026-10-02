@@ -160,10 +160,10 @@ Opening hours (including public holidays), phone, WhatsApp number, enquiry email
 ## 10. Next steps, in order
 
 1. **Phase 6:** Add to list, the enquiry list drawer (saved in the browser), custom "not listed" items, the 3-step send, the WhatsApp fallback, success and error states. The WordPress endpoints come with phase 1.
-3. **Phase 7:** About, Contact (adaptive form, photo upload), privacy (POPIA), and the standard page template.
-4. **SEO:** `robots.txt`, split sitemaps, JSON-LD (`HardwareStore`, `BreadcrumbList`, `Product`), and `metadataBase` once the domain is known.
-5. **Phase 1 and the import:** local WordPress in Docker, WooCommerce import from `catalogue.json` via WP-CLI, then swap `site/src/lib/catalogue.ts` to the REST API with tagged caching and revalidation.
-6. **Phases 8 to 10:** motion, staff guide, QA on real phones, launch.
+2. **Phase 7:** About, Contact (adaptive form, photo upload), privacy (POPIA), and the standard page template.
+3. **SEO:** `robots.txt`, split sitemaps, JSON-LD (`HardwareStore`, `BreadcrumbList`, `Product`), and `metadataBase` once the domain is known.
+4. **Phase 1 and the import:** local WordPress in Docker, WooCommerce import from `catalogue.json` via WP-CLI, then swap `site/src/lib/catalogue.ts` to the REST API with tagged caching and revalidation.
+5. **Phases 8 to 10:** motion, staff guide, QA on real phones, launch.
 
 ---
 
