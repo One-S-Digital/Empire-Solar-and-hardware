@@ -117,6 +117,13 @@ export function SiteHeader({ departments }: { departments: MenuDepartment[] }) {
             </div>
           </div>
           <Link
+            href="/about"
+            className={styles.navLink}
+            aria-current={pathname === "/about" ? "page" : undefined}
+          >
+            About
+          </Link>
+          <Link
             href="/contact"
             className={styles.navLink}
             aria-current={pathname === "/contact" ? "page" : undefined}

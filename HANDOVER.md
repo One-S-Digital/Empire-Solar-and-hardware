@@ -11,7 +11,7 @@
 | Path | What it is |
 |---|---|
 | `site/` | Next.js 16.3.7 front end (App Router, TypeScript, CSS Modules, React 19.3) |
-| `site/src/app/` | Pages: `/`, `/catalogue`, `/catalogue/[department]`, `/[category]`, `/[sub]`, `/p/[slug]`, `/search`, `/search-index.json`, `/styleguide` |
+| `site/src/app/` | Pages: `/`, `/catalogue`, `/catalogue/[department]`, `/[category]`, `/[sub]`, `/p/[slug]`, `/search`, `/search-index.json`, `/styleguide`, `/contact`, `/about`, `/enquiry` |
 | `site/src/components/` | Brand components (`AisleSign`, `Button`, `Docket`, `Gear`), `site/` (header, footer, tab bar, search box), `catalogue/` (tiles, cards, listing, filters) |
 | `site/src/lib/` | `catalogue.ts` (data access: the one file to swap for WooCommerce), `search.ts` + `search-config.ts` + `synonyms.ts` (search), `filters.ts` + `list-page.ts` (listing filters), `store.ts` (store details), `seo.ts` (department titles and intros) |
 | `site/src/data/catalogue.json` | Built catalogue (do not edit by hand) |
@@ -52,7 +52,7 @@ Tools on this machine: Node 24, pnpm 10, Python 3.12 with openpyxl and Pillow, D
 | 4. Layout and navigation | Done: header, mega menu, mobile tab bar, footer. About, Contact and List links wait for their pages |
 | 5. Catalogue | **Done and verified in production:** department, listing, filters, sort, grid/list, product family pages, search with synonyms and typo tolerance |
 | 6. Enquiry list and forms | **Front end done 2 Oct; WordPress side not started.** Add to list, drawer, custom items, 3-step `/enquiry`, WhatsApp fallback, stamp. See section 12 |
-| 7. Home, About, Contact, standard page | **Home reworked by the overhaul (steps 3 and 4).** About, Contact, privacy and the standard page are not started |
+| 7. Home, About, Contact, standard page | **Home reworked by the overhaul (steps 3 and 4).** **About page built (2 Oct)**, Contact exists (details, hours; no form yet). Privacy and the standard page are not started |
 | 8. Motion and polish | Partly: hero entrance, `Reveal`, cover hover zoom exist. Overhaul step 6 covers the rest |
 | 9. Staff handover | Not started |
 | 10. QA and launch | Not started |
@@ -211,6 +211,16 @@ Opening hours (including public holidays), phone, WhatsApp number, enquiry email
 - **Sending:** `app/api/enquiry/route.ts` validates, then (1) forwards to `ENQUIRY_ENDPOINT` if set (the future WordPress endpoint, which must return `{ docket }`), (2) in development writes `data/out/dev-enquiries.jsonl` (git-ignored, contains personal data) and returns a sequential `ESH-000n`, (3) in production without the env var returns 503 so the form shows the failure state. It never pretends to have sent.
 - **Not done:** Cloudflare Turnstile (needs keys), the customer email copy and the store email (WordPress), the delivery question (client does not say whether it delivers), the Enquiry inbox and statuses in WordPress, an "Ask about a solar setup" shortcut. Cards in listings have no Add button (families have sizes; add from the product page).
 - **Checked:** typecheck; production build; `/enquiry` 200; API returns 503 in production and 400 for an empty list; dev flow end to end; no sideways scroll at 320 px for drawer, `/enquiry` and the product table; JS 184 to 187 KB gzip.
+
+---
+
+## 13. About page (Phase 7, 2 Oct 2026)
+
+`site/src/app/about/`. Written after reading the About pages of three independent South African hardware groups (Jabula Hardware, Essential Hardware Stores, EST Building & Hardware). What they share, and what we copied: a place-rooted opening, plain facts and scale, a clear promise, a real supplier list, and a short closing line. What we left out because we have no facts for it: a founding story, years in business, awards, staff numbers, a team section, the logo story (Website Plan 7.7 needs the owner's own words).
+
+Sections: hero ("Built in Brits."), nine departments with live counts, how we work (order-in promise and docket), suppliers (every brand with its main department(s), worked out from the catalogue), visit (directions, WhatsApp, link to Contact). Linked from the header and footer. Totals and counts come from the catalogue, never typed by hand.
+
+**To add when the client supplies it:** a founding line and owner quote, the logo story, store interior and team photos (a team section only with real photos), supplier logos instead of names.
 
 ---
 

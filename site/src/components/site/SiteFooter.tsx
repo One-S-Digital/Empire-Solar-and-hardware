@@ -27,6 +27,7 @@ export function SiteFooter() {
           <a href={store.mapsSearchUrl} target="_blank" rel="noopener noreferrer">
             Get directions
           </a>
+          <Link href="/about">About us</Link>
           <Link href="/contact">Contact and opening hours</Link>
         </div>
 
