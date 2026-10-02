@@ -60,3 +60,37 @@
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
+
+/* Two columns on desktop: form 7, store card 5. On phones the store card comes first (address and phone are what most visitors want). */
+.layout {
+  display: grid;
+  gap: 24px;
+  padding-bottom: var(--section-pad);
+}
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: 48px;
+    align-items: start;
+  }
+  .store {
+    order: 2;
+    position: sticky;
+    top: calc(var(--header-h-small) + 24px);
+  }
+  .formWrap {
+    order: 1;
+  }
+}
+.formWrap {
+  display: grid;
+  gap: 20px;
+}
+.store {
+  gap: 28px;
+}
+.block {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}

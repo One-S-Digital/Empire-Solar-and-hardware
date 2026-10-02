@@ -1,0 +1,208 @@
+.form {
+  display: grid;
+  gap: 18px;
+}
+.topics,
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.topics legend,
+.chips legend,
+.legend {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 0;
+  font-weight: 600;
+}
+.topics label,
+.chips label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--steel-500);
+  border-radius: 999px;
+  background: var(--paper);
+  cursor: pointer;
+}
+.topics label {
+  min-height: 52px;
+  padding: 0 20px;
+  font-weight: 600;
+}
+.topics input,
+.chips input {
+  position: absolute;
+  opacity: 0;
+}
+.topics label:has(input:focus-visible),
+.chips label:has(input:focus-visible) {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+.on {
+  background: var(--ink) !important;
+  border-color: var(--ink) !important;
+  color: #fff;
+}
+.extra {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  background: var(--paper);
+  border-left: 4px solid var(--red);
+  border-radius: var(--radius-card);
+  animation: open 200ms var(--ease);
+}
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+.row {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 600px) {
+  .row {
+    grid-template-columns: 120px 1fr;
+  }
+}
+.field {
+  display: grid;
+  gap: 6px;
+}
+.field label {
+  font-weight: 600;
+}
+.req {
+  color: var(--steel-700);
+  font-weight: 400;
+  font-size: var(--fs-small);
+}
+.field input,
+.field textarea {
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--steel-500);
+  border-radius: var(--radius-input);
+  background: #fff;
+  font: inherit;
+}
+.field input[aria-invalid="true"] {
+  border-color: var(--red-deep);
+}
+.error {
+  color: var(--red-deep);
+  font-size: var(--fs-small);
+}
+.hint {
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+}
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.thumbs li {
+  position: relative;
+}
+.thumbs img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+.thumbs button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+}
+.upload {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-self: start;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px dashed var(--steel-700);
+  border-radius: var(--radius-input);
+  background: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.check input {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  accent-color: var(--red-deep);
+}
+.check a {
+  color: var(--red-deep);
+}
+.honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.fail {
+  padding: 14px;
+  border-left: 4px solid var(--red-deep);
+  background: #fff;
+}
+.send {
+  justify-self: start;
+  min-height: 52px;
+  padding: 0 40px;
+  border: 0;
+  background: var(--red);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  clip-path: polygon(0 0, calc(100% - var(--chamfer)) 0, 100% var(--chamfer), 100% 100%, 0 100%);
+}
+.send:hover:not(:disabled) {
+  background: var(--red-deep);
+}
+.send:disabled {
+  background: var(--steel-500);
+  color: var(--ink);
+  cursor: default;
+}
+.done {
+  display: grid;
+  gap: 8px;
+  padding: 24px;
+  background: var(--paper);
+  border-left: 4px solid var(--red);
+  border-radius: var(--radius-card);
+}

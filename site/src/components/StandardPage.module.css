@@ -1,0 +1,93 @@
+.crumbs {
+  padding-block: 20px 8px;
+}
+.head {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+  padding-block: 16px 24px;
+}
+.intro {
+  font-size: 1.125rem;
+  max-width: 60ch;
+}
+.frame {
+  margin-bottom: 32px;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+}
+.frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* One readable column: the site's type and spacing */
+.body {
+  max-width: 720px;
+  padding-bottom: 48px;
+}
+.body :global(h2) {
+  margin-block: 40px 12px;
+  font-size: var(--fs-h2);
+}
+.body :global(h3) {
+  margin-block: 28px 8px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--fs-h3);
+}
+.body :global(p),
+.body :global(ul),
+.body :global(ol) {
+  margin-block: 0 14px;
+}
+.body :global(ul),
+.body :global(ol) {
+  padding-left: 22px;
+}
+.body :global(a) {
+  color: var(--red-deep);
+}
+.body :global(table) {
+  width: 100%;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+}
+.body :global(th),
+.body :global(td) {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: var(--border);
+}
+.help {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  margin-bottom: 32px;
+  padding: 32px 24px;
+  background: var(--ink-800);
+  color: var(--concrete);
+  border-radius: var(--radius-card);
+}
+.help h2 {
+  color: #fff;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.visit {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+  padding: 24px;
+  margin-bottom: var(--section-pad);
+  background: var(--paper);
+  border: var(--border);
+  border-radius: var(--radius-card);
+}
+.visit address {
+  display: grid;
+  font-style: normal;
+}

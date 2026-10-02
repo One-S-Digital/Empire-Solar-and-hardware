@@ -52,7 +52,7 @@ Tools on this machine: Node 24, pnpm 10, Python 3.12 with openpyxl and Pillow, D
 | 4. Layout and navigation | Done: header, mega menu, mobile tab bar, footer. About, Contact and List links wait for their pages |
 | 5. Catalogue | **Done and verified in production:** department, listing, filters, sort, grid/list, product family pages, search with synonyms and typo tolerance |
 | 6. Enquiry list and forms | **Front end done 2 Oct; WordPress side not started.** Add to list, drawer, custom items, 3-step `/enquiry`, WhatsApp fallback, stamp. See section 12 |
-| 7. Home, About, Contact, standard page | **Home reworked by the overhaul (steps 3 and 4).** **About page built (2 Oct)**, Contact exists (details, hours; no form yet). Privacy and the standard page are not started |
+| 7. Home, About, Contact, standard page | **Home reworked by the overhaul (steps 3 and 4).** **Done 2 Oct (front end):** About, Contact (adaptive form with photo upload), Privacy (draft), `StandardPage` template. WordPress side of the forms and the editor blocks wait for phase 1 |
 | 8. Motion and polish | Partly: hero entrance, `Reveal`, cover hover zoom exist. Overhaul step 6 covers the rest |
 | 9. Staff handover | Not started |
 | 10. QA and launch | Not started |
@@ -224,4 +224,11 @@ Sections: hero ("Built in Brits."), nine departments with live counts, how we wo
 
 ---
 
-**Sources for the Higgsfield API notes:** [Higgsfield API Docs](https://docs.higgsfield.ai/docs), [Higgsfield API FAQ](https://docs.higgsfield.ai/docs/help/faq), [higgsfield-js SDK](https://github.com/higgsfield-ai/higgsfield-js), [higgsfield-client Python SDK](https://github.com/higgsfield-ai/higgsfield-client)
+## 14. Contact form, privacy page, standard page (Phase 7, 2 Oct 2026)
+
+- **Contact** (`app/contact/`, `components/contact/ContactForm.tsx`, `lib/contact.ts`): two columns on desktop (form 7, store card 5); on phones the store card comes first. Topic chips (product question, solar quote, order in, match a part, something else) open topic fields. Match a part takes up to 3 photos, shrunk in the browser to 1600 px JPEG. Same detail rules and honeypot as the enquiry form.
+- **Sending:** `app/api/contact/route.ts`, same pattern as `/api/enquiry`: forwards to `CONTACT_ENDPOINT` when set (photos as JPEG data URLs; WordPress must store them privately, not in the public media library), writes `data/out/dev-contact.jsonl` in development (git-ignored, photos logged as a count only), and returns 503 in production until an endpoint exists. The success text promises a reply "during shop hours" and does not state a reply time (unknown, client item).
+- **Privacy** (`app/privacy/`): a DRAFT built from what the site actually does (enquiry data, contact data, localStorage, one cookie `empire_view`, no tracking). **Needs the client and a POPIA check before launch.** Open points: retention period (text says "only as long as we need it"), the Information Officer's name, the email and hosting providers once chosen, whether Turnstile or analytics get added (the page must then say so). Linked from the footer and from both consent lines.
+- **`StandardPage`** (`components/StandardPage.tsx`): the Website Plan 7.9 layout (breadcrumb, aisle-sign title, optional intro and photo, 720 px body, help band, visit card). Privacy uses it. When WordPress is connected its editor content renders into the body; the custom blocks (product grid, notice, enquiry prompt) are not built.
+- **Checked on a production build:** all new pages 200; both forms return 503 without an endpoint and 400 for bad input; JS 183 to 187 KB gzip; no sideways scroll at 320 px for Contact (including the solar and photo topics), Privacy and About. Not checked: real phone camera upload.
+ API notes:** [Higgsfield API Docs](https://docs.higgsfield.ai/docs), [Higgsfield API FAQ](https://docs.higgsfield.ai/docs/help/faq), [higgsfield-js SDK](https://github.com/higgsfield-ai/higgsfield-js), [higgsfield-client Python SDK](https://github.com/higgsfield-ai/higgsfield-client)
