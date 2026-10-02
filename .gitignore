@@ -4,3 +4,6 @@ node_modules/
 *.tsbuildinfo
 __pycache__/
 data/out/dev-enquiries.jsonl
+
+# Image originals: 200 MB. Rebuildable outputs live in site/public/images. Keep a copy outside git.
+art/originals/
