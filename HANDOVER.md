@@ -176,7 +176,7 @@ Opening hours (including public holidays), phone, WhatsApp number, enquiry email
 | 2. Tokens, base styles, `SectionHeading`, `Reveal` | **Done.** Shown on `/styleguide` with live contrast |
 | 3. Header, footer, `HeroBanner`, `FeatureTile` | **Done.** Dark header and footer; the hero fades into a dark band that carries the 4 feature tiles (they no longer overlap the hero) |
 | 4. `DepartmentCover`, order-in band, solar band, visit | **Done.** Home is complete |
-| 5. Catalogue, department, listing, product, search dropdown | **Partly.** Category tiles on department pages use the new art; `/catalogue` uses `DepartmentCover`. Still to do: department page header, listing header band, `ProductCard` v2 (department art fallback), product page, search dropdown, brand wall |
+| 5. Catalogue, department, listing, product, search dropdown | **Partly.** Category tiles on department pages use the new art; `/catalogue` uses `DepartmentCover`. Done 2 Oct (later session): department page header (full-bleed cover, scrim) and `ListingHeader` band for category and sub-category pages. Still to do: `ProductCard` v2 (department art fallback), product page, search dropdown, brand wall |
 | 6. Motion | Not started beyond what exists (hero entrance, `Reveal` is built but not yet used on pages, hover zoom) |
 | 7. QA | Not started. Needs a production build (stop the dev server first, gotcha 4) |
 | 8. Docs | Not started. Update Website Plan sections 2.4 and 7.1 and its change list |

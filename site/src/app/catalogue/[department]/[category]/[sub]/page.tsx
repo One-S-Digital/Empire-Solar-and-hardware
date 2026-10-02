@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Breadcrumb } from "@/components/catalogue/Breadcrumb";
+import { ListingHeader } from "@/components/catalogue/ListingHeader";
 import { Listing } from "@/components/catalogue/Listing";
 import { getDepartments, getSub } from "@/lib/catalogue";
 import { listMetadata, loadList } from "@/lib/list-page";
-import styles from "../../department.module.css";
 
 type Props = {
   params: Promise<{ department: string; category: string; sub: string }>;
@@ -13,10 +12,19 @@ type Props = {
 
 export const generateStaticParams = () =>
   getDepartments().flatMap((d) =>
-    d.categories.flatMap((c) => (c.subs ?? []).map((s) => ({ department: d.slug, category: c.slug, sub: s.slug }))),
+    d.categories.flatMap((c) =>
+      (c.subs ?? []).map((s) => ({
+        department: d.slug,
+        category: c.slug,
+        sub: s.slug,
+      })),
+    ),
   );
 
-export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+  searchParams,
+}: Props): Promise<Metadata> {
   const { department, category, sub } = await params;
   const found = getSub(department, category, sub);
   if (!found) return {};
@@ -32,32 +40,38 @@ export default async function SubCategoryPage({ params, searchParams }: Props) {
   const found = getSub(department, category, sub);
   if (!found) notFound();
   const { dept, cat, sub: subcat } = found;
-  const { state, all, families, facets } = await loadList(dept.slug, cat.slug, subcat.slug, searchParams);
+  const { state, all, families, facets } = await loadList(
+    dept.slug,
+    cat.slug,
+    subcat.slug,
+    searchParams,
+  );
   return (
-    <div className="container">
-      <div className={styles.head}>
-        <Breadcrumb
-          items={[
-            { label: "Catalogue", href: "/catalogue" },
-            { label: dept.name, href: `/catalogue/${dept.slug}` },
-            { label: cat.name, href: `/catalogue/${dept.slug}/${cat.slug}` },
-            { label: subcat.name },
-          ]}
-        />
-        <h1>{subcat.name}</h1>
-      </div>
-      <Listing
-        all={all}
-        families={families}
-        facets={facets}
-        state={state}
-        basePath={`/catalogue/${dept.slug}/${cat.slug}/${subcat.slug}`}
+    <>
+      <ListingHeader
         deptSlug={dept.slug}
-        deptName={dept.name}
-        rail={dept.categories}
-        activeCat={cat.slug}
-        activeSub={subcat.slug}
+        crumbs={[
+          { label: "Catalogue", href: "/catalogue" },
+          { label: dept.name, href: `/catalogue/${dept.slug}` },
+          { label: cat.name, href: `/catalogue/${dept.slug}/${cat.slug}` },
+          { label: subcat.name },
+        ]}
+        title={subcat.name}
       />
-    </div>
+      <div className="container">
+        <Listing
+          all={all}
+          families={families}
+          facets={facets}
+          state={state}
+          basePath={`/catalogue/${dept.slug}/${cat.slug}/${subcat.slug}`}
+          deptSlug={dept.slug}
+          deptName={dept.name}
+          rail={dept.categories}
+          activeCat={cat.slug}
+          activeSub={subcat.slug}
+        />
+      </div>
+    </>
   );
 }
