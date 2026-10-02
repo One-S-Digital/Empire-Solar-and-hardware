@@ -2,7 +2,7 @@
 
 **Date:** 2 Oct 2026 (updated; first written 1 Oct)
 **Build started:** 30 Sep 2026
-**Plans:** `Empire-Website-Plan.md` (design and build, 14 phases), `Empire-SEO-GEO-Plan.md` (URLs, indexing, schema), `Empire-Design-Overhaul-Plan.md` (in progress: steps 1 to 4 of 8 done, see section 11)
+**Plans:** `Empire-Website-Plan.md` (design and build, 14 phases), `Empire-SEO-GEO-Plan.md` (URLs, indexing, schema), `Empire-Design-Overhaul-Plan.md` (all 8 steps done 2 Oct, see section 11)
 
 ---
 
@@ -159,8 +159,7 @@ Opening hours (including public holidays), phone, WhatsApp number, enquiry email
 
 ## 10. Next steps, in order
 
-1. **Design overhaul steps 5 to 8** (section 11): restyle the catalogue, department, listing and product pages and the search dropdown; motion; QA; update the Website Plan.
-2. **Phase 6:** Add to list, the enquiry list drawer (saved in the browser), custom "not listed" items, the 3-step send, the WhatsApp fallback, success and error states. The WordPress endpoints come with phase 1.
+1. **Phase 6:** Add to list, the enquiry list drawer (saved in the browser), custom "not listed" items, the 3-step send, the WhatsApp fallback, success and error states. The WordPress endpoints come with phase 1.
 3. **Phase 7:** About, Contact (adaptive form, photo upload), privacy (POPIA), and the standard page template.
 4. **SEO:** `robots.txt`, split sitemaps, JSON-LD (`HardwareStore`, `BreadcrumbList`, `Product`), and `metadataBase` once the domain is known.
 5. **Phase 1 and the import:** local WordPress in Docker, WooCommerce import from `catalogue.json` via WP-CLI, then swap `site/src/lib/catalogue.ts` to the REST API with tagged caching and revalidation.
@@ -176,10 +175,10 @@ Opening hours (including public holidays), phone, WhatsApp number, enquiry email
 | 2. Tokens, base styles, `SectionHeading`, `Reveal` | **Done.** Shown on `/styleguide` with live contrast |
 | 3. Header, footer, `HeroBanner`, `FeatureTile` | **Done.** Dark header and footer; the hero fades into a dark band that carries the 4 feature tiles (they no longer overlap the hero) |
 | 4. `DepartmentCover`, order-in band, solar band, visit | **Done.** Home is complete |
-| 5. Catalogue, department, listing, product, search dropdown | **Partly.** Category tiles on department pages use the new art; `/catalogue` uses `DepartmentCover`. Done 2 Oct (later session): department page header (full-bleed cover, scrim) and `ListingHeader` band for category and sub-category pages. Still to do: `ProductCard` v2 (department art fallback), product page, search dropdown, brand wall |
-| 6. Motion | Not started beyond what exists (hero entrance, `Reveal` is built but not yet used on pages, hover zoom) |
-| 7. QA | Not started. Needs a production build (stop the dev server first, gotcha 4) |
-| 8. Docs | Not started. Update Website Plan sections 2.4 and 7.1 and its change list |
+| 5. Catalogue, department, listing, product, search dropdown | **Done.** Department cover header, `ListingHeader` band, `ProductTile` art fallback (cards and product page), product details panel, dark search dropdown, dark brand wall. The catalogue page header was left as is (no banner crop) |
+| 6. Motion | **Done.** `Reveal` now wraps the home sections; reduced motion is handled globally in `globals.css`; all animations are 450 ms or less |
+| 7. QA | **Done on a production build** (built in a scratch copy because another chat's dev server shares `.next`): all page types return 200; JS 180 to 183 KB gzip; no sideways scroll at 320 and 390 px on 8 page types; every image has an alt attribute; no em dashes on checked pages. **Not done:** Lighthouse/LCP and real phones, keyboard focus on covers |
+| 8. Docs | **Done.** Website Plan change list and section 2.4 updated. Section 7.1 table still describes the old hero; the change list overrides it |
 
 **What was added or changed**
 - Tokens (`site/src/styles/tokens.css`): `--ink-950`, `--ink-800`, `--steel-900`, `--scrim`, `--fs-display`, `--fs-eyebrow`, `--section-pad`, and `--red-on-ink` (`#FF5A5F`). `--red` fails AA as small text on the dark surfaces, so eyebrows on dark use `--red-on-ink`.

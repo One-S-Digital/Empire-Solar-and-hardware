@@ -5,6 +5,11 @@
 **Date:** 29 Sep 2026 (updated 30 Sep 2026)
 **Status:** Plan for review. Local build in progress (started 30 Sep 2026).
 
+**Changes on 2 Oct 2026 (design overhaul, see `Empire-Design-Overhaul-Plan.md`)**
+- **AI-generated imagery is now allowed** for the banner, the 4 feature tiles, the 9 department covers and 100 category images (section 2.4). It is decorative only (`alt=""`) and never stands in for a real product photo. Real supplier photos stay on product cards and pages; a product with no photo gets department cover art at low opacity with the brand name set large, not a grey box.
+- **Home (section 7.1)** is now: dark header; full-bleed hero with the search; 4 department feature tiles (replacing "On the counter" product tiles); department covers; red order-in band; solar band; visit us. The supplier logo marquee waits for the logo files.
+- **Department and listing pages** have a cover-art header band; the catalogue brand wall is a dark panel.
+
 **Changes on 1 Oct 2026**
 - **JavaScript budget raised from 150 KB to 250 KB** of compressed JavaScript per content page (sections 12.1 and 12.9). Measured on the local build: Next.js 16 with React ships about 160 KB compressed before any site code, so 150 KB could not be met. The site is at about 175 KB today, which leaves room for search, filters and the enquiry list. The MiniSearch index (section 6.5) is loaded only when someone uses search and is not counted.
 
@@ -119,7 +124,7 @@ The logo lettering is tall, condensed and square-shouldered, like shop signage. 
   - the 537 Geo catalogue photos in `geo-images/`,
   - the logo, and the black location tile (address image).
 - **Photos later:** the client takes real store photos (shot list in 13.1). Every place that will hold a store photo is an image field in WordPress, so staff can swap it in without a developer.
-- Never: stock photos of smiling builders, AI-generated images or people, or empty grey "image coming soon" boxes.
+- Never: stock photos of smiling builders, AI-generated people, AI images posing as real products, or empty grey "image coming soon" boxes. (Decision 1 Oct 2026: AI-generated scenes of tools, solar kit and plumbing are allowed as decorative cover art; see the change list.)
 - Product images: supplier photos, placed on a uniform `--paper` tile with padding. `mix-blend-mode: multiply` removes white backgrounds so mixed supplier photos look like one set.
 - **Small photos are never enlarged.** Most Geo photos are only 120 to 440px wide. They show at their real size, centred on the tile, never stretched to fill it. Because permission is confirmed, ask Geo for their original high-resolution files and replace these in WordPress when they arrive.
 - Products with no photo (about 1,400) get a designed fallback: the brand name in Archivo, the category's Lucide icon and a faint pegboard pattern. Never a broken image, never a grey box.

@@ -1,7 +1,7 @@
 # Empire Solar & Hardware: Design Overhaul Plan
 
 **Date:** 1 Oct 2026
-**Status:** In progress, 2 Oct 2026. Steps 1 to 4 of section 6 are done, step 5 is partly done. See `HANDOVER.md` section 11.
+**Status:** Complete, 2 Oct 2026. All 8 steps of section 6 are done (2 Oct 2026), apart from the QA items listed in `HANDOVER.md` section 11. See `HANDOVER.md` section 11.
 **Asked for by the client team:** "The design looks terrible. Use Higgsfield to make a stunning banner and matching category cover images and images for the 4 hero blocks. Overhaul the site so it looks award-winning."
 **Companion files:** `Empire-Website-Plan.md` (original design plan), `HANDOVER.md` (project state).
 
