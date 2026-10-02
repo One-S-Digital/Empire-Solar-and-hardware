@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   isolation: isolate;
+  overflow: hidden;
   background: var(--ink-950);
   color: var(--concrete);
 }
@@ -28,14 +29,14 @@
   display: grid;
   gap: 16px;
   justify-items: start;
-  padding-block: 20px 40px;
-  min-height: 280px;
+  padding-block: 16px 24px;
+  min-height: 200px;
   align-content: end;
 }
 @media (min-width: 900px) {
   .head {
-    min-height: 360px;
-    padding-block: 24px 56px;
+    min-height: 240px;
+    padding-block: 20px 28px;
   }
 }
 .head :global(nav) ol,
