@@ -23,11 +23,26 @@ export function CustomItemForm() {
         Can&apos;t find it? Add it yourself
       </label>
       <div className={styles.customRow}>
-        <input id="custom-item" type="text" value={text} maxLength={200} onChange={(e) => setText(e.target.value)} placeholder="What do you need? e.g. 3m garden hose" />
+        <input
+          id="custom-item"
+          type="text"
+          value={text}
+          maxLength={200}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="What do you need? e.g. 3m garden hose"
+        />
         <label className="visually-hidden" htmlFor="custom-qty">
           Quantity
         </label>
-        <input id="custom-qty" type="number" min={1} max={999} value={qty} onChange={(e) => setQty(Number(e.target.value))} className={styles.qtyInput} />
+        <input
+          id="custom-qty"
+          type="number"
+          min={1}
+          max={999}
+          value={qty}
+          onChange={(e) => setQty(Number(e.target.value))}
+          className={styles.qtyInput}
+        />
         <button type="submit" disabled={!text.trim()}>
           Add
         </button>

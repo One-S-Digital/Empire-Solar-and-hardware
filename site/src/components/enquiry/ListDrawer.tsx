@@ -45,7 +45,12 @@ export function ListDrawer() {
       <div className={styles.drawerInner}>
         <div className={styles.drawerHead}>
           <h2 id="list-title">Your list</h2>
-          <button type="button" className={styles.iconBtn} onClick={() => setDrawer(false)} aria-label="Close your list">
+          <button
+            type="button"
+            className={styles.iconBtn}
+            onClick={() => setDrawer(false)}
+            aria-label="Close your list"
+          >
             <X size={22} aria-hidden="true" />
           </button>
         </div>
@@ -77,7 +82,11 @@ export function ListDrawer() {
             {count} {count === 1 ? "item" : "items"}
           </p>
           <div className={styles.footActions}>
-            <button type="button" className={styles.keep} onClick={() => setDrawer(false)}>
+            <button
+              type="button"
+              className={styles.keep}
+              onClick={() => setDrawer(false)}
+            >
               Keep browsing
             </button>
             {list.length > 0 ? (
@@ -85,7 +94,10 @@ export function ListDrawer() {
                 Send enquiry
               </Link>
             ) : (
-              <span className={`${styles.send} ${styles.sendOff}`} aria-disabled="true">
+              <span
+                className={`${styles.send} ${styles.sendOff}`}
+                aria-disabled="true"
+              >
                 Send enquiry
               </span>
             )}

@@ -236,11 +236,62 @@
 .rowCount:empty {
   display: none;
 }
+.rowAdd {
+  position: relative;
+  z-index: 2; /* above the stretched link */
+  grid-column: 2;
+  justify-self: start;
+}
+.chooseLink {
+  display: inline-grid;
+  place-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--steel-500);
+  border-radius: var(--radius-input);
+  color: var(--ink);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  text-decoration: none;
+}
 @media (min-width: 768px) {
+  .rowAdd {
+    grid-column: auto;
+    justify-self: end;
+  }
   .row {
-    grid-template-columns: 56px minmax(0, 2fr) minmax(0, 1.4fr) 130px;
+    grid-template-columns: 56px minmax(0, 2fr) minmax(0, 1.4fr) 110px auto;
   }
   .rowThumb {
     grid-row: auto;
   }
+}
+
+/* Add to list on a card: above the stretched link so the control is clickable, the rest of the card still opens the product */
+.cardAdd {
+  position: relative;
+  z-index: 2;
+  margin-top: 8px;
+}
+.cardAdd form > button[type="submit"] {
+  flex: 1 1 100%;
+  justify-content: center;
+}
+.cardAdd form > span:first-child {
+  width: 100%;
+  justify-content: space-between;
+}
+.cardAdd form > span:first-child input {
+  flex: 1;
+  min-width: 0;
+}
+.chooseSize {
+  display: grid;
+  place-items: center;
+  min-height: 36px;
+  border: 1px solid var(--steel-500);
+  border-radius: var(--radius-input);
+  color: var(--ink);
+  font-size: var(--fs-small);
+  font-weight: 600;
 }

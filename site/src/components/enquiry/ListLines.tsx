@@ -1,8 +1,15 @@
 "use client";
 
-import { Minus, Plus, Trash2 } from "lucide-react";
+import { Trash2 } from "lucide-react";
 import { useState } from "react";
-import { removeItem, restoreItem, setNote, setQty, type ListItem } from "@/lib/enquiry";
+import {
+  removeItem,
+  restoreItem,
+  setNote,
+  setQty,
+  type ListItem,
+} from "@/lib/enquiry";
+import { QtyInput } from "./QtyInput";
 import styles from "./enquiry.module.css";
 
 type Undo = { item: ListItem; index: number };
@@ -28,13 +35,19 @@ export function ListLines({ list }: { list: ListItem[] }) {
           <li key={i.key} className={styles.line}>
             <div className={styles.lineMain}>
               <p className={styles.lineName}>
-                {i.brand && <span className={styles.lineBrand}>{i.brand} </span>}
+                {i.brand && (
+                  <span className={styles.lineBrand}>{i.brand} </span>
+                )}
                 {i.name}
                 {i.label ? ` ${i.label}` : ""}
               </p>
               {i.code && <p className="mono">{i.code}</p>}
-              {i.custom && <p className={styles.customTag}>Not in the catalogue</p>}
-              {i.note && noteOpen !== i.key && <p className={styles.noteText}>Note: {i.note}</p>}
+              {i.custom && (
+                <p className={styles.customTag}>Not in the catalogue</p>
+              )}
+              {i.note && noteOpen !== i.key && (
+                <p className={styles.noteText}>Note: {i.note}</p>
+              )}
               {noteOpen === i.key ? (
                 <label className={styles.noteEdit}>
                   <span className="visually-hidden">Note for {i.name}</span>
@@ -48,26 +61,33 @@ export function ListLines({ list }: { list: ListItem[] }) {
                       setNote(i.key, e.target.value.trim());
                       setNoteOpen(undefined);
                     }}
-                    onKeyDown={(e) => e.key === "Enter" && e.currentTarget.blur()}
+                    onKeyDown={(e) =>
+                      e.key === "Enter" && e.currentTarget.blur()
+                    }
                   />
                 </label>
               ) : (
-                <button type="button" className={styles.textBtn} onClick={() => setNoteOpen(i.key)}>
+                <button
+                  type="button"
+                  className={styles.textBtn}
+                  onClick={() => setNoteOpen(i.key)}
+                >
                   {i.note ? "Edit note" : "Add a note"}
                 </button>
               )}
             </div>
             <div className={styles.lineSide}>
-              <span className={styles.stepper} role="group" aria-label={`Quantity of ${i.name}`}>
-                <button type="button" onClick={() => setQty(i.key, i.qty - 1)} disabled={i.qty <= 1} aria-label="One fewer">
-                  <Minus size={16} aria-hidden="true" />
-                </button>
-                <output>{i.qty}</output>
-                <button type="button" onClick={() => setQty(i.key, i.qty + 1)} aria-label="One more">
-                  <Plus size={16} aria-hidden="true" />
-                </button>
-              </span>
-              <button type="button" className={styles.iconBtn} onClick={() => remove(i.key)} aria-label={`Remove ${i.name}`}>
+              <QtyInput
+                value={i.qty}
+                onChange={(n) => setQty(i.key, n)}
+                label={i.name}
+              />
+              <button
+                type="button"
+                className={styles.iconBtn}
+                onClick={() => remove(i.key)}
+                aria-label={`Remove ${i.name}`}
+              >
                 <Trash2 size={18} aria-hidden="true" />
               </button>
             </div>

@@ -1,30 +1,64 @@
 "use client";
 
-import { Minus, Plus } from "lucide-react";
-import { addItem, setQty, removeItem, useList, type ListItem } from "@/lib/enquiry";
+import { Check, Plus } from "lucide-react";
+import { useEffect, useState } from "react";
+import { addItem, useList, type ListItem } from "@/lib/enquiry";
+import { clampQty, QtyInput } from "./QtyInput";
 import styles from "./enquiry.module.css";
 
-/** "Add to list", which becomes a quantity stepper once the item is on the list. */
-export function AddToList({ item, compact = false }: { item: Omit<ListItem, "qty">; compact?: boolean }) {
-  const line = useList().find((i) => i.key === item.key);
+/** Quantity (minus, typed number, plus) and an Add to list button, like any shop. Adding again adds to the line already on the list. */
+export function AddToList({
+  item,
+  compact = false,
+}: {
+  item: Omit<ListItem, "qty">;
+  compact?: boolean;
+}) {
+  const [qty, setQty] = useState(1);
+  const [added, setAdded] = useState(false);
+  const [resetKey, setResetKey] = useState(0); // remounts the quantity box so it shows 1 again
+  const inList = useList().find((i) => i.key === item.key)?.qty;
   const what = [item.name, item.label].filter(Boolean).join(" ");
-  if (!line) {
-    return (
-      <button type="button" className={`${styles.add} ${compact ? styles.addCompact : ""}`} onClick={() => addItem(item)} aria-label={`Add ${what} to list`}>
-        <Plus size={16} aria-hidden="true" />
-        <span>Add to list</span>
-      </button>
-    );
-  }
+
+  useEffect(() => {
+    if (!added) return;
+    const t = setTimeout(() => setAdded(false), 1800);
+    return () => clearTimeout(t);
+  }, [added]);
+
   return (
-    <span className={styles.stepper} role="group" aria-label={`Quantity of ${what}`}>
-      <button type="button" onClick={() => (line.qty > 1 ? setQty(item.key, line.qty - 1) : removeItem(item.key))} aria-label={line.qty > 1 ? "One fewer" : "Remove from list"}>
-        <Minus size={16} aria-hidden="true" />
+    <form
+      className={`${styles.addForm} ${compact ? styles.addFormCompact : ""}`}
+      onSubmit={(e) => {
+        e.preventDefault();
+        // Read what is typed right now: Enter submits in the same moment the box commits, so state may be one step behind
+        const typed = clampQty(Number((e.currentTarget.elements.namedItem("qty") as HTMLInputElement).value));
+        addItem(item, typed);
+        setQty(1);
+        setResetKey((k) => k + 1);
+        setAdded(true);
+      }}
+    >
+      <QtyInput key={resetKey} value={qty} onChange={setQty} label={what} compact={compact} />
+      <button
+        type="submit"
+        className={`${styles.add} ${compact ? styles.addCompact : ""}`}
+        aria-label={`Add ${qty} of ${what} to list`}
+      >
+        {added ? (
+          <Check size={16} aria-hidden="true" />
+        ) : (
+          <Plus size={16} aria-hidden="true" />
+        )}
+        <span>{added ? "Added" : "Add to list"}</span>
       </button>
-      <output aria-live="polite">{line.qty}</output>
-      <button type="button" onClick={() => setQty(item.key, line.qty + 1)} aria-label="One more">
-        <Plus size={16} aria-hidden="true" />
-      </button>
-    </span>
+      <span className={styles.inList} aria-live="polite">
+        {added
+          ? `Added. ${inList ?? qty} on your list.`
+          : inList
+            ? `${inList} on your list`
+            : ""}
+      </span>
+    </form>
   );
 }

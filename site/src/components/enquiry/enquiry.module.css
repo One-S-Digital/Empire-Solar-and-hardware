@@ -22,35 +22,73 @@
   padding: 0 10px;
   font-size: var(--fs-small);
 }
-.stepper {
+.addForm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.addFormCompact {
+  gap: 6px;
+  justify-content: flex-end;
+}
+.inList {
+  flex-basis: 100%;
+  min-height: 1em;
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+  text-align: inherit;
+}
+.addFormCompact .inList {
+  display: none;
+}
+.qty {
   display: inline-flex;
   align-items: center;
   border: 1px solid var(--steel-500);
   border-radius: var(--radius-input);
-  background: var(--paper);
+  background: #fff;
 }
-.stepper button {
+.qty button {
   display: grid;
   place-items: center;
-  width: 44px;
+  width: 40px;
   height: 44px;
   border: 0;
   background: none;
   color: var(--ink);
   cursor: pointer;
 }
-.stepper button:disabled {
+.qty button:disabled {
   color: var(--steel-500);
   cursor: default;
 }
-.stepper button:hover:not(:disabled) {
+.qty button:hover:not(:disabled) {
   background: var(--concrete);
 }
-.stepper output {
-  min-width: 32px;
-  text-align: center;
+.qty input {
+  width: 52px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-inline: 1px solid var(--steel-200);
+  background: none;
+  color: var(--ink);
   font-family: var(--font-mono);
-  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}
+.qty input:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: -2px;
+}
+.qtyCompact button {
+  width: 32px;
+  height: 36px;
+}
+.qtyCompact input {
+  width: 44px;
+  height: 36px;
 }
 
 /* ---------- Header list button ---------- */
