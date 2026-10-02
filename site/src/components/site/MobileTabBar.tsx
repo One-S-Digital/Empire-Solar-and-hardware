@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, LayoutGrid, MapPin, Search } from "lucide-react";
+import { ClipboardList, Home, LayoutGrid, MapPin, Search } from "lucide-react";
+import { setDrawer, useListCount } from "@/lib/enquiry";
 import styles from "./MobileTabBar.module.css";
 
-// Plan 5.2 also has List. It is added with its page (phase 6).
 const TABS = [
   { href: "/", label: "Home", icon: Home, match: (p: string) => p === "/" },
   { href: "/catalogue", label: "Catalogue", icon: LayoutGrid, match: (p: string) => p.startsWith("/catalogue") || p.startsWith("/p/") },
@@ -15,6 +15,7 @@ const TABS = [
 
 export function MobileTabBar() {
   const pathname = usePathname();
+  const count = useListCount();
   return (
     <nav className={styles.bar} aria-label="Quick links">
       {TABS.map(({ href, label, icon: Icon, match }) => {
@@ -26,6 +27,13 @@ export function MobileTabBar() {
           </Link>
         );
       })}
+      <button type="button" className={styles.tab} onClick={() => setDrawer(true)} aria-haspopup="dialog">
+        <span className={styles.iconWrap}>
+          <ClipboardList size={22} aria-hidden="true" />
+          {count > 0 && <span className={styles.count}>{count}</span>}
+        </span>
+        <span>List</span>
+      </button>
     </nav>
   );
 }

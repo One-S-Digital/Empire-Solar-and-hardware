@@ -1,0 +1,233 @@
+.wrap {
+  display: grid;
+  gap: 20px;
+  max-width: 640px;
+  margin-inline: auto;
+  padding-block: 32px 64px;
+}
+.wrap h1 {
+  font-size: clamp(2rem, 1.4rem + 2vw, 3rem);
+}
+.wrap h1:focus {
+  outline: none;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-small);
+  color: var(--steel-700);
+}
+.steps li {
+  padding-top: 8px;
+  border-top: 4px solid var(--steel-200);
+}
+.steps li span {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+.steps li[aria-current="step"] {
+  border-top-color: var(--red);
+  color: var(--ink);
+  font-weight: 700;
+}
+.steps .done {
+  border-top-color: var(--ink);
+}
+.form {
+  display: grid;
+  gap: 16px;
+}
+.field {
+  display: grid;
+  gap: 6px;
+}
+.field label {
+  font-weight: 600;
+}
+.req {
+  color: var(--steel-700);
+  font-weight: 400;
+  font-size: var(--fs-small);
+}
+.field input,
+.field textarea {
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--steel-500);
+  border-radius: var(--radius-input);
+  background: var(--paper);
+  font: inherit;
+}
+.field input[aria-invalid="true"] {
+  border-color: var(--red-deep);
+}
+.error {
+  color: var(--red-deep);
+  font-size: var(--fs-small);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.chips legend {
+  padding: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.chips label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--steel-500);
+  border-radius: 999px;
+  background: var(--paper);
+  cursor: pointer;
+}
+.chips input {
+  position: absolute;
+  opacity: 0;
+}
+.chips label:has(input:focus-visible) {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+.chipOn {
+  background: var(--ink) !important;
+  border-color: var(--ink) !important;
+  color: #fff;
+}
+.check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.check input {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  accent-color: var(--red-deep);
+}
+.honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.summary {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+.summary li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.who {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 16px;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--steel-500);
+}
+.who dt {
+  color: var(--steel-700);
+}
+.who dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+.primary,
+.secondary {
+  display: inline-grid;
+  place-items: center;
+  min-height: 48px;
+  padding: 0 24px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+.primary {
+  border: 0;
+  background: var(--red);
+  color: #fff;
+  clip-path: polygon(0 0, calc(100% - var(--chamfer)) 0, 100% var(--chamfer), 100% 100%, 0 100%);
+}
+.primary:hover:not(:disabled) {
+  background: var(--red-deep);
+  color: #fff;
+}
+.primary:disabled {
+  background: var(--steel-500);
+  color: var(--ink);
+  cursor: default;
+}
+.secondary {
+  border: 1px solid var(--steel-500);
+  border-radius: var(--radius-input);
+  background: var(--paper);
+  color: var(--ink);
+}
+.link {
+  color: var(--red-deep);
+  font-weight: 600;
+}
+.fail {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  border-left: 4px solid var(--red-deep);
+  background: #fff;
+}
+.receipt {
+  position: relative;
+  display: grid;
+  gap: 14px;
+}
+.stamp {
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  padding: 4px 12px;
+  border: 3px solid var(--red-deep);
+  border-radius: 4px;
+  color: var(--red-deep);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+  animation: stamp 400ms var(--ease-overshoot) both;
+}
+@keyframes stamp {
+  from {
+    transform: rotate(-14deg) scale(1.4);
+    opacity: 0;
+  }
+}
+.pre {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: var(--fs-small);
+}

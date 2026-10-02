@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ChevronDown, Search } from "lucide-react";
 import { AisleSign } from "../AisleSign";
+import { ListButton } from "../enquiry/ListButton";
 import { SearchBox } from "./SearchBox";
 import styles from "./SiteHeader.module.css";
 
@@ -137,6 +138,7 @@ export function SiteHeader({ departments }: { departments: MenuDepartment[] }) {
         <Link href="/search" className={styles.searchLink} aria-label="Search">
           <Search size={22} aria-hidden="true" />
         </Link>
+        <ListButton className={styles.listBtn} />
       </div>
     </header>
   );

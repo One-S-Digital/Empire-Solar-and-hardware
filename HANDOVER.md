@@ -51,7 +51,7 @@ Tools on this machine: Node 24, pnpm 10, Python 3.12 with openpyxl and Pillow, D
 | 3. Design system and logo | Done (`/styleguide`). Overhaul tokens, `SectionHeading` and `Reveal` added (section 11) |
 | 4. Layout and navigation | Done: header, mega menu, mobile tab bar, footer. About, Contact and List links wait for their pages |
 | 5. Catalogue | **Done and verified in production:** department, listing, filters, sort, grid/list, product family pages, search with synonyms and typo tolerance |
-| 6. Enquiry list and forms | Not started |
+| 6. Enquiry list and forms | **Front end done 2 Oct; WordPress side not started.** Add to list, drawer, custom items, 3-step `/enquiry`, WhatsApp fallback, stamp. See section 12 |
 | 7. Home, About, Contact, standard page | **Home reworked by the overhaul (steps 3 and 4).** About, Contact, privacy and the standard page are not started |
 | 8. Motion and polish | Partly: hero entrance, `Reveal`, cover hover zoom exist. Overhaul step 6 covers the rest |
 | 9. Staff handover | Not started |
@@ -159,7 +159,7 @@ Opening hours (including public holidays), phone, WhatsApp number, enquiry email
 
 ## 10. Next steps, in order
 
-1. **Phase 6:** Add to list, the enquiry list drawer (saved in the browser), custom "not listed" items, the 3-step send, the WhatsApp fallback, success and error states. The WordPress endpoints come with phase 1.
+1. **Phase 6 remainder:** connect sending to WordPress (set `ENQUIRY_ENDPOINT`, section 12), Turnstile, customer email copy, delivery question.
 2. **Phase 7:** About, Contact (adaptive form, photo upload), privacy (POPIA), and the standard page template.
 3. **SEO:** `robots.txt`, split sitemaps, JSON-LD (`HardwareStore`, `BreadcrumbList`, `Product`), and `metadataBase` once the domain is known.
 4. **Phase 1 and the import:** local WordPress in Docker, WooCommerce import from `catalogue.json` via WP-CLI, then swap `site/src/lib/catalogue.ts` to the REST API with tagged caching and revalidation.
@@ -200,6 +200,17 @@ Opening hours (including public holidays), phone, WhatsApp number, enquiry email
 - `feature-taps` is a gooseneck tap where the plan asked for a kitchen mixer.
 - Dev console may show stale "Module not found `category-images.json`" entries from before the file existed. Restart the dev server to clear them.
 - `Reveal` and the display type scale are built but barely used yet.
+
+---
+
+## 12. Enquiry list (Phase 6, front end done 2 Oct 2026)
+
+- **State:** `site/src/lib/enquiry.ts` keeps the list in `localStorage` (`empire_list_v1`) with `useSyncExternalStore`; it also holds the drawer open state. `lib/enquiry-validate.ts` (phone, email, details) is shared by the form and the server.
+- **UI:** `components/enquiry/` has `AddToList` (button that becomes a stepper), `ListButton` (header), `ListDrawer` (a `<dialog>` mounted in `layout.tsx`), `ListLines` (qty, note, remove with 5 second Undo) and `CustomItemForm` ("not listed" lines). The mobile tab bar has a List tab. Product pages have an Add button on every variant row.
+- **`/enquiry`** (`app/enquiry/`): three steps (list, details, review and send), details saved in `empire_enquiry_details_v1` and cleared on success, honeypot field, "Received" stamp, "Send a copy on WhatsApp", and on failure a message plus a WhatsApp fallback with nothing lost.
+- **Sending:** `app/api/enquiry/route.ts` validates, then (1) forwards to `ENQUIRY_ENDPOINT` if set (the future WordPress endpoint, which must return `{ docket }`), (2) in development writes `data/out/dev-enquiries.jsonl` (git-ignored, contains personal data) and returns a sequential `ESH-000n`, (3) in production without the env var returns 503 so the form shows the failure state. It never pretends to have sent.
+- **Not done:** Cloudflare Turnstile (needs keys), the customer email copy and the store email (WordPress), the delivery question (client does not say whether it delivers), the Enquiry inbox and statuses in WordPress, an "Ask about a solar setup" shortcut. Cards in listings have no Add button (families have sizes; add from the product page).
+- **Checked:** typecheck; production build; `/enquiry` 200; API returns 503 in production and 400 for an empty list; dev flow end to end; no sideways scroll at 320 px for drawer, `/enquiry` and the product table; JS 184 to 187 KB gzip.
 
 ---
 

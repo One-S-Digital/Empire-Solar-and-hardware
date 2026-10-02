@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
+import { AddToList } from "@/components/enquiry/AddToList";
 import type { Variant } from "@/lib/catalogue";
 import { variantAnchor } from "@/lib/catalogue-display";
 import styles from "./product.module.css";
@@ -19,19 +20,21 @@ function packText(v: Variant): string {
  * The page itself is pre-built and cached, so it cannot read the URL on the server. The table is in the static HTML
  * (so every code is crawlable), and the browser then reads ?code= and highlights the row.
  */
-export function VariantTable({ variants }: { variants: Variant[] }) {
+export type Product = { slug: string; brand: string; name: string };
+
+export function VariantTable({ variants, product }: { variants: Variant[]; product: Product }) {
   return (
-    <Suspense fallback={<Table variants={variants} />}>
-      <TableWithSelection variants={variants} />
+    <Suspense fallback={<Table variants={variants} product={product} />}>
+      <TableWithSelection variants={variants} product={product} />
     </Suspense>
   );
 }
 
-function TableWithSelection({ variants }: { variants: Variant[] }) {
-  return <Table variants={variants} selected={useSearchParams().get("code") ?? undefined} />;
+function TableWithSelection({ variants, product }: { variants: Variant[]; product: Product }) {
+  return <Table variants={variants} product={product} selected={useSearchParams().get("code") ?? undefined} />;
 }
 
-function Table({ variants, selected }: { variants: Variant[]; selected?: string }) {
+function Table({ variants, product, selected }: { variants: Variant[]; product: Product; selected?: string }) {
   const [find, setFind] = useState("");
   const hasCodes = variants.some((v) => v.code);
   const hasLabels = variants.some((v) => v.label);
@@ -63,6 +66,9 @@ function Table({ variants, selected }: { variants: Variant[]; selected?: string 
               {hasCodes && <th scope="col">Code</th>}
               {hasPacks && <th scope="col">Pack</th>}
               {hasDetails && <th scope="col">Details</th>}
+              <th scope="col">
+                <span className="visually-hidden">Add to your list</span>
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -74,12 +80,18 @@ function Table({ variants, selected }: { variants: Variant[]; selected?: string 
                   {hasCodes && <td className="mono">{v.code ?? ""}</td>}
                   {hasPacks && <td>{packText(v)}</td>}
                   {hasDetails && <td>{v.details ?? ""}</td>}
+                  <td className={styles.addCell}>
+                    <AddToList
+                      compact
+                      item={{ key: v.code ?? `${product.slug}:${v.label ?? i}`, name: product.name, brand: product.brand, code: v.code, label: v.label, slug: product.slug }}
+                    />
+                  </td>
                 </tr>
               );
             })}
             {shown.length === 0 && (
               <tr>
-                <td colSpan={4}>Nothing matches &ldquo;{find}&rdquo;. Ask at the counter and we&apos;ll check.</td>
+                <td colSpan={5}>Nothing matches &ldquo;{find}&rdquo;. Ask at the counter and we&apos;ll check.</td>
               </tr>
             )}
           </tbody>

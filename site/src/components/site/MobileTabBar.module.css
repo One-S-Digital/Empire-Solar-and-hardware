@@ -27,6 +27,29 @@
   font-weight: 600;
   text-decoration: none;
 }
+button.tab {
+  border: 0;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+.iconWrap {
+  position: relative;
+  display: inline-flex;
+}
+.count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  min-width: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  background: var(--red-deep);
+  color: #fff;
+  font-size: 0.6875rem;
+  line-height: 18px;
+  text-align: center;
+}
 .tab[aria-current="page"] {
   color: var(--red);
 }

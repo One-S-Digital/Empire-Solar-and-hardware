@@ -6,6 +6,7 @@ import { ProductTile } from "@/components/catalogue/ProductTile";
 import { getCategory, getFamily, relatedFamilies } from "@/lib/catalogue";
 import { displayName } from "@/lib/catalogue-display";
 import styles from "./product.module.css";
+import { AddToList } from "@/components/enquiry/AddToList";
 import { VariantTable } from "./VariantTable";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -75,7 +76,13 @@ export default async function ProductPage({ params }: Props) {
             <p className={styles.range}>Also listed as: {family.aka.map(displayName).join(", ")}</p>
           )}
 
-          {hasTable && <VariantTable variants={family.variants} />}
+          {hasTable ? (
+            <VariantTable variants={family.variants} product={{ slug: family.slug, brand: family.brand, name: displayName(family.name) }} />
+          ) : (
+            <div>
+              <AddToList item={{ key: family.slug, name: displayName(family.name), brand: family.brand, slug: family.slug }} />
+            </div>
+          )}
           {stated > family.variants.length && (
             <p className={styles.note}>
               This range comes in {stated} sizes. We list the first {family.variants.length} here. Ask at the counter if yours

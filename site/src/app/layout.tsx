@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, Big_Shoulders, IBM_Plex_Mono } from "next/font/google";
+import { ListDrawer } from "@/components/enquiry/ListDrawer";
 import { MobileTabBar } from "@/components/site/MobileTabBar";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <SiteFooter />
         <MobileTabBar />
+        <ListDrawer />
         <WhatsAppButton />
       </body>
     </html>

@@ -171,3 +171,14 @@ a.navLink {
 .mega :focus-visible {
   outline-color: var(--red);
 }
+
+/* On phones the list lives in the tab bar */
+.listBtn {
+  display: none;
+}
+@media (min-width: 900px) {
+  .listBtn {
+    display: inline-flex;
+    flex: none;
+  }
+}
