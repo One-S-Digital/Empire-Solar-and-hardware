@@ -243,7 +243,7 @@
   justify-self: start;
 }
 .chooseLink {
-  display: inline-grid;
+  display: grid;
   place-items: center;
   min-height: 36px;
   padding: 0 12px;
@@ -284,14 +284,4 @@
 .cardAdd form > span:first-child input {
   flex: 1;
   min-width: 0;
-}
-.chooseSize {
-  display: grid;
-  place-items: center;
-  min-height: 36px;
-  border: 1px solid var(--steel-500);
-  border-radius: var(--radius-input);
-  color: var(--ink);
-  font-size: var(--fs-small);
-  font-weight: 600;
 }

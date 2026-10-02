@@ -41,9 +41,9 @@ export function ProductCard({
       ) : null}
       <div className={styles.cardAdd}>
         {count > 1 ? (
-          <span className={styles.chooseSize} aria-hidden="true">
+          <Link href={`/p/${family.slug}`} className={styles.chooseLink}>
             Choose a size
-          </span>
+          </Link>
         ) : (
           <AddToList
             item={{
