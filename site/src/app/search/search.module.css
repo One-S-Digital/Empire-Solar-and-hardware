@@ -1,0 +1,112 @@
+.head {
+  display: grid;
+  gap: 20px;
+  padding-block: 32px 24px;
+}
+.form {
+  display: grid;
+  gap: 6px;
+  max-width: 560px;
+  font-weight: 600;
+}
+.row {
+  display: flex;
+}
+.row input {
+  flex: 1;
+  width: 0; /* intrinsic input width must not set the row's minimum */
+  min-width: 0;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--steel-500);
+  border-right: 0;
+  border-radius: var(--radius-input) 0 0 var(--radius-input);
+  background: var(--paper);
+  font: inherit;
+  font-weight: 400;
+}
+.row input::placeholder {
+  color: var(--steel-500);
+}
+.row button {
+  height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 0 var(--radius-input) var(--radius-input) 0;
+  background: var(--red);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.row button:hover {
+  background: var(--red-deep);
+}
+.count {
+  margin-bottom: 20px;
+  max-width: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 12px;
+}
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 16px;
+  }
+}
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+.none {
+  display: grid;
+  gap: 10px;
+  max-width: 560px;
+  padding: 20px;
+  background: var(--paper);
+  border-radius: var(--radius-card);
+}
+.none h2 {
+  font-size: var(--fs-h3);
+}
+
+.cats {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.cats h2 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.2;
+}
+.cats ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cats a {
+  display: grid;
+  min-height: 48px;
+  padding: 8px 14px;
+  align-content: center;
+  background: var(--paper);
+  border-radius: var(--radius-card);
+  color: var(--ink);
+  text-decoration: none;
+}
+.cats a:hover {
+  color: var(--red);
+}
+.cats span {
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+}

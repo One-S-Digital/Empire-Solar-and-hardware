@@ -1,0 +1,1502 @@
+{
+ "plumbing/pipe-fittings": {
+  "alt": "Grey PVC and black HDPE pipe lengths with elbows, tees and couplings",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__pipe-fittings-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/plumbing__pipe-fittings-800.webp",
+    "height": 603,
+    "kb": 23
+   }
+  }
+ },
+ "plumbing/valves": {
+  "alt": "A brass ball valve with a red lever, a gate valve and a check valve",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__valves-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/plumbing__valves-800.webp",
+    "height": 603,
+    "kb": 28
+   }
+  }
+ },
+ "plumbing/taps-mixers": {
+  "alt": "A chrome basin mixer tap and a pair of chrome pillar taps",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__taps-mixers-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/plumbing__taps-mixers-800.webp",
+    "height": 603,
+    "kb": 29
+   }
+  }
+ },
+ "plumbing/bathroom-toilet": {
+  "alt": "A chrome shower head and handset, a toilet cistern flush button and a chrome waste outlet",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__bathroom-toilet-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/plumbing__bathroom-toilet-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "plumbing/geysers": {
+  "alt": "A white cylindrical electric water heater geyser with copper connections, on its side",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__geysers-400.webp",
+    "height": 301,
+    "kb": 6
+   },
+   "800": {
+    "path": "/images/categories/plumbing__geysers-800.webp",
+    "height": 603,
+    "kb": 15
+   }
+  }
+ },
+ "plumbing/drainage-rainwater": {
+  "alt": "Grey PVC drainage pipes with bends and a black rainwater gutter section with a downpipe",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__drainage-rainwater-400.webp",
+    "height": 301,
+    "kb": 7
+   },
+   "800": {
+    "path": "/images/categories/plumbing__drainage-rainwater-800.webp",
+    "height": 603,
+    "kb": 19
+   }
+  }
+ },
+ "plumbing/tanks-hose": {
+  "alt": "A coil of green garden hose with a brass hose connector and a small float valve",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__tanks-hose-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/plumbing__tanks-hose-800.webp",
+    "height": 603,
+    "kb": 23
+   }
+  }
+ },
+ "plumbing/sheeting-membranes": {
+  "alt": "A roll of black builders plastic sheeting and a roll of shiny foil membrane",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__sheeting-membranes-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/plumbing__sheeting-membranes-800.webp",
+    "height": 603,
+    "kb": 40
+   }
+  }
+ },
+ "plumbing/plumbing-consumables-tools": {
+  "alt": "White PTFE tape, a pipe wrench, a tube of sealant and a hacksaw",
+  "files": {
+   "400": {
+    "path": "/images/categories/plumbing__plumbing-consumables-tools-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/plumbing__plumbing-consumables-tools-800.webp",
+    "height": 603,
+    "kb": 33
+   }
+  }
+ },
+ "electrical/wire-wiring-accessories": {
+  "alt": "Coils of red, black and green electrical wire with cable ties and conduit clips",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__wire-wiring-accessories-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/electrical__wire-wiring-accessories-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "electrical/switches-plugs-sockets": {
+  "alt": "White wall switches, a double socket outlet and a three-pin plug",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__switches-plugs-sockets-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/electrical__switches-plugs-sockets-800.webp",
+    "height": 603,
+    "kb": 28
+   }
+  }
+ },
+ "electrical/circuit-protection-control": {
+  "alt": "Miniature circuit breakers on a DIN rail beside a contactor and a push-button",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__circuit-protection-control-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/electrical__circuit-protection-control-800.webp",
+    "height": 603,
+    "kb": 33
+   }
+  }
+ },
+ "electrical/enclosures-db-boards": {
+  "alt": "An open grey electrical distribution board enclosure with DIN rail and empty breaker slots",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__enclosures-db-boards-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/electrical__enclosures-db-boards-800.webp",
+    "height": 603,
+    "kb": 20
+   }
+  }
+ },
+ "electrical/security": {
+  "alt": "A white dome CCTV camera, a motion sensor and a keypad",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__security-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/electrical__security-800.webp",
+    "height": 603,
+    "kb": 29
+   }
+  }
+ },
+ "electrical/fans-air-movement": {
+  "alt": "A compact white pedestal fan and a round extractor fan",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__fans-air-movement-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/electrical__fans-air-movement-800.webp",
+    "height": 603,
+    "kb": 33
+   }
+  }
+ },
+ "electrical/contracting-items-electrical-tools": {
+  "alt": "A wire stripper, a voltage tester screwdriver, a multimeter and cable glands",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__contracting-items-electrical-tools-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/electrical__contracting-items-electrical-tools-800.webp",
+    "height": 603,
+    "kb": 45
+   }
+  }
+ },
+ "electrical/maintenance-chemicals": {
+  "alt": "Aerosol cans and a small bottle of contact cleaner and lubricant, plain unlabelled",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__maintenance-chemicals-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/electrical__maintenance-chemicals-800.webp",
+    "height": 603,
+    "kb": 22
+   }
+  }
+ },
+ "electrical/sound-equipment-miscellaneous": {
+  "alt": "A small black speaker, an extension cord reel and a microphone",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__sound-equipment-miscellaneous-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/electrical__sound-equipment-miscellaneous-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "electrical/batteries-torches": {
+  "alt": "A rugged black torch, AA batteries and a rechargeable headlamp",
+  "files": {
+   "400": {
+    "path": "/images/categories/electrical__batteries-torches-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/electrical__batteries-torches-800.webp",
+    "height": 603,
+    "kb": 36
+   }
+  }
+ },
+ "lighting/indoor-led-downlights": {
+  "alt": "Round aluminium LED downlights glowing warm white",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__indoor-led-downlights-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/lighting__indoor-led-downlights-800.webp",
+    "height": 603,
+    "kb": 28
+   }
+  }
+ },
+ "lighting/outdoor-security-lighting": {
+  "alt": "A black wall-mounted bulkhead light and a brick light glowing at night",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__outdoor-security-lighting-400.webp",
+    "height": 301,
+    "kb": 7
+   },
+   "800": {
+    "path": "/images/categories/lighting__outdoor-security-lighting-800.webp",
+    "height": 603,
+    "kb": 27
+   }
+  }
+ },
+ "lighting/floodlights": {
+  "alt": "A black LED floodlight casting a wide bright beam",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__floodlights-400.webp",
+    "height": 301,
+    "kb": 6
+   },
+   "800": {
+    "path": "/images/categories/lighting__floodlights-800.webp",
+    "height": 603,
+    "kb": 18
+   }
+  }
+ },
+ "lighting/fluorescent-fittings": {
+  "alt": "A long white batten tube light fitting with fluorescent tubes",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__fluorescent-fittings-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/lighting__fluorescent-fittings-800.webp",
+    "height": 603,
+    "kb": 23
+   }
+  }
+ },
+ "lighting/industrial-lighting": {
+  "alt": "A round industrial LED high bay light with a metal reflector",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__industrial-lighting-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/lighting__industrial-lighting-800.webp",
+    "height": 603,
+    "kb": 47
+   }
+  }
+ },
+ "lighting/lamps-bulbs": {
+  "alt": "A row of glass light bulbs: a filament globe, a spiral CFL and an LED bulb",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__lamps-bulbs-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/lighting__lamps-bulbs-800.webp",
+    "height": 603,
+    "kb": 24
+   }
+  }
+ },
+ "lighting/lamp-holders-spotlights": {
+  "alt": "A brass lamp holder, a white ceramic bayonet fitting and a track spotlight",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__lamp-holders-spotlights-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/lighting__lamp-holders-spotlights-800.webp",
+    "height": 603,
+    "kb": 21
+   }
+  }
+ },
+ "lighting/general-lighting": {
+  "alt": "A simple white ceiling light fitting and a brass pendant with a glowing bulb",
+  "files": {
+   "400": {
+    "path": "/images/categories/lighting__general-lighting-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/lighting__general-lighting-800.webp",
+    "height": 603,
+    "kb": 26
+   }
+  }
+ },
+ "solar-backup-power/inverters": {
+  "alt": "A wall-mounted white hybrid solar inverter with a small glowing green status light",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__inverters-400.webp",
+    "height": 301,
+    "kb": 6
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__inverters-800.webp",
+    "height": 603,
+    "kb": 18
+   }
+  }
+ },
+ "solar-backup-power/batteries-energy-storage": {
+  "alt": "A stack of white lithium battery modules with red accents on a dark floor",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__batteries-energy-storage-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__batteries-energy-storage-800.webp",
+    "height": 603,
+    "kb": 27
+   }
+  }
+ },
+ "solar-backup-power/solar-panels": {
+  "alt": "A monocrystalline solar panel angled towards warm light",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__solar-panels-400.webp",
+    "height": 301,
+    "kb": 7
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__solar-panels-800.webp",
+    "height": 603,
+    "kb": 20
+   }
+  }
+ },
+ "solar-backup-power/kits-backup-power-packages": {
+  "alt": "A compact solar backup kit: inverter, battery and a folded solar panel together",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__kits-backup-power-packages-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__kits-backup-power-packages-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "solar-backup-power/charge-controllers": {
+  "alt": "A small solar charge controller box with a display and terminals",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__charge-controllers-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__charge-controllers-800.webp",
+    "height": 603,
+    "kb": 27
+   }
+  }
+ },
+ "solar-backup-power/protection-isolators-breakers-fuses": {
+  "alt": "A DC isolator switch, a solar fuse holder and a DC circuit breaker",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__protection-isolators-breakers-fuses-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__protection-isolators-breakers-fuses-800.webp",
+    "height": 603,
+    "kb": 26
+   }
+  }
+ },
+ "solar-backup-power/installation-accessories-cables": {
+  "alt": "A coil of red and black solar cable, MC4-style connectors and mounting rails",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__installation-accessories-cables-400.webp",
+    "height": 301,
+    "kb": 15
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__installation-accessories-cables-800.webp",
+    "height": 603,
+    "kb": 42
+   }
+  }
+ },
+ "solar-backup-power/monitoring-meters-cts": {
+  "alt": "A DIN-rail energy meter, a clamp current transformer and a small monitoring dongle",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__monitoring-meters-cts-400.webp",
+    "height": 301,
+    "kb": 7
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__monitoring-meters-cts-800.webp",
+    "height": 603,
+    "kb": 20
+   }
+  }
+ },
+ "solar-backup-power/solar-lights-dc-appliances": {
+  "alt": "A solar garden spike light, a DC LED bulb and a small solar-powered fan",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__solar-lights-dc-appliances-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__solar-lights-dc-appliances-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "solar-backup-power/ev-chargers": {
+  "alt": "A wall-mounted EV charger with a coiled charging cable and plug, plain unbranded",
+  "files": {
+   "400": {
+    "path": "/images/categories/solar-backup-power__ev-chargers-400.webp",
+    "height": 301,
+    "kb": 4
+   },
+   "800": {
+    "path": "/images/categories/solar-backup-power__ev-chargers-800.webp",
+    "height": 603,
+    "kb": 16
+   }
+  }
+ },
+ "power-tools/drills-drivers": {
+  "alt": "A cordless drill and an impact driver with a battery pack",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__drills-drivers-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/power-tools__drills-drivers-800.webp",
+    "height": 603,
+    "kb": 33
+   }
+  }
+ },
+ "power-tools/grinders": {
+  "alt": "A corded angle grinder and a cutting disc with sparks flying",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__grinders-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/power-tools__grinders-800.webp",
+    "height": 603,
+    "kb": 41
+   }
+  }
+ },
+ "power-tools/saws": {
+  "alt": "A circular saw and a jigsaw side by side",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__saws-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/power-tools__saws-800.webp",
+    "height": 603,
+    "kb": 28
+   }
+  }
+ },
+ "power-tools/sanders-polishers": {
+  "alt": "An orbital sander with sanding discs and a car polisher",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__sanders-polishers-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/power-tools__sanders-polishers-800.webp",
+    "height": 603,
+    "kb": 41
+   }
+  }
+ },
+ "power-tools/rotary-hammers": {
+  "alt": "A heavy rotary hammer drill with an SDS bit",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__rotary-hammers-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/power-tools__rotary-hammers-800.webp",
+    "height": 603,
+    "kb": 29
+   }
+  }
+ },
+ "power-tools/planers-routers": {
+  "alt": "A handheld electric planer and a plunge router with a router bit",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__planers-routers-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/power-tools__planers-routers-800.webp",
+    "height": 603,
+    "kb": 33
+   }
+  }
+ },
+ "power-tools/welding": {
+  "alt": "A compact inverter welding machine with a welding cable and electrode holder, and a dark welding helmet",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__welding-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/power-tools__welding-800.webp",
+    "height": 603,
+    "kb": 28
+   }
+  }
+ },
+ "power-tools/water-pumps": {
+  "alt": "A blue electric water pump and a submersible pump with a hose connection",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__water-pumps-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/power-tools__water-pumps-800.webp",
+    "height": 603,
+    "kb": 26
+   }
+  }
+ },
+ "power-tools/generators-petrol-tools": {
+  "alt": "A small portable petrol generator with a metal frame",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__generators-petrol-tools-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/power-tools__generators-petrol-tools-800.webp",
+    "height": 603,
+    "kb": 29
+   }
+  }
+ },
+ "power-tools/batteries-chargers": {
+  "alt": "Cordless tool battery packs and a charger dock with a green light",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__batteries-chargers-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/power-tools__batteries-chargers-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "power-tools/garden-cleaning": {
+  "alt": "A cordless grass trimmer and a pressure washer gun with a hose",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__garden-cleaning-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/power-tools__garden-cleaning-800.webp",
+    "height": 603,
+    "kb": 29
+   }
+  }
+ },
+ "power-tools/other-power-tools": {
+  "alt": "A heat gun, a glue gun and a rotary multi-tool",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__other-power-tools-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/power-tools__other-power-tools-800.webp",
+    "height": 603,
+    "kb": 37
+   }
+  }
+ },
+ "power-tools/drill-bits": {
+  "alt": "A fan of metal drill bits and masonry drill bits in graduated sizes",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__drill-bits-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/power-tools__drill-bits-800.webp",
+    "height": 603,
+    "kb": 40
+   }
+  }
+ },
+ "power-tools/saw-cutting-blades": {
+  "alt": "A circular saw blade, a diamond cutting blade and a few jigsaw blades",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__saw-cutting-blades-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/power-tools__saw-cutting-blades-800.webp",
+    "height": 603,
+    "kb": 38
+   }
+  }
+ },
+ "power-tools/abrasives-sanding": {
+  "alt": "Sanding discs, sandpaper sheets and flap discs in a neat pile",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__abrasives-sanding-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/power-tools__abrasives-sanding-800.webp",
+    "height": 603,
+    "kb": 44
+   }
+  }
+ },
+ "power-tools/power-bits": {
+  "alt": "A magnetic bit holder and a row of screwdriver power bits",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__power-bits-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/power-tools__power-bits-800.webp",
+    "height": 603,
+    "kb": 31
+   }
+  }
+ },
+ "power-tools/other-accessories": {
+  "alt": "A chuck key, a depth stop, a dust extraction nozzle and spare brushes",
+  "files": {
+   "400": {
+    "path": "/images/categories/power-tools__other-accessories-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/power-tools__other-accessories-800.webp",
+    "height": 603,
+    "kb": 38
+   }
+  }
+ },
+ "hand-tools/screwdrivers-sets": {
+  "alt": "A row of flat and Phillips screwdrivers in a set",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__screwdrivers-sets-400.webp",
+    "height": 301,
+    "kb": 7
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__screwdrivers-sets-800.webp",
+    "height": 603,
+    "kb": 22
+   }
+  }
+ },
+ "hand-tools/pliers-gripping": {
+  "alt": "Combination pliers, long-nose pliers and a pair of locking pliers",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__pliers-gripping-400.webp",
+    "height": 301,
+    "kb": 13
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__pliers-gripping-800.webp",
+    "height": 603,
+    "kb": 41
+   }
+  }
+ },
+ "hand-tools/spanners-sockets": {
+  "alt": "Open-ended spanners and a socket set with a ratchet",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__spanners-sockets-400.webp",
+    "height": 301,
+    "kb": 15
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__spanners-sockets-800.webp",
+    "height": 603,
+    "kb": 42
+   }
+  }
+ },
+ "hand-tools/hammers-striking": {
+  "alt": "A claw hammer, a ball-peen hammer and a rubber mallet",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__hammers-striking-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__hammers-striking-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "hand-tools/chisels-punches": {
+  "alt": "Wood chisels, a cold chisel and centre punches",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__chisels-punches-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__chisels-punches-800.webp",
+    "height": 603,
+    "kb": 46
+   }
+  }
+ },
+ "hand-tools/measuring-marking": {
+  "alt": "A tape measure, a spirit level, a set square and a pencil",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__measuring-marking-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__measuring-marking-800.webp",
+    "height": 603,
+    "kb": 39
+   }
+  }
+ },
+ "hand-tools/saws-cutting": {
+  "alt": "A hand saw, a hacksaw and a utility knife",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__saws-cutting-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__saws-cutting-800.webp",
+    "height": 603,
+    "kb": 37
+   }
+  }
+ },
+ "hand-tools/tin-snips": {
+  "alt": "Red-handled tin snips and aviation snips",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__tin-snips-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__tin-snips-800.webp",
+    "height": 603,
+    "kb": 44
+   }
+  }
+ },
+ "hand-tools/clamps-vices": {
+  "alt": "A bench vice and G-clamps",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__clamps-vices-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__clamps-vices-800.webp",
+    "height": 603,
+    "kb": 42
+   }
+  }
+ },
+ "hand-tools/finishing-plastering": {
+  "alt": "A plastering trowel, a float and a paint scraper",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__finishing-plastering-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__finishing-plastering-800.webp",
+    "height": 603,
+    "kb": 28
+   }
+  }
+ },
+ "hand-tools/garden-tools": {
+  "alt": "A spade, a hand trowel and pruning shears",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__garden-tools-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__garden-tools-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "hand-tools/tool-storage": {
+  "alt": "A red metal toolbox and a rolled-up tool pouch with tools",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__tool-storage-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__tool-storage-800.webp",
+    "height": 603,
+    "kb": 36
+   }
+  }
+ },
+ "hand-tools/safety-gear": {
+  "alt": "A hard hat, safety glasses, work gloves and ear defenders",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__safety-gear-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__safety-gear-800.webp",
+    "height": 603,
+    "kb": 34
+   }
+  }
+ },
+ "hand-tools/tool-sets-kits": {
+  "alt": "An open tool case with a mixed set of tools in foam cut-outs",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__tool-sets-kits-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__tool-sets-kits-800.webp",
+    "height": 603,
+    "kb": 44
+   }
+  }
+ },
+ "hand-tools/other-hand-tools": {
+  "alt": "An assortment of hand tools: a crowbar, a file, a hand drill and a wire brush",
+  "files": {
+   "400": {
+    "path": "/images/categories/hand-tools__other-hand-tools-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/hand-tools__other-hand-tools-800.webp",
+    "height": 603,
+    "kb": 40
+   }
+  }
+ },
+ "fixings-adhesives/screws": {
+  "alt": "Assorted wood and self-tapping screws scattered on steel",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__screws-400.webp",
+    "height": 301,
+    "kb": 13
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__screws-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "fixings-adhesives/nails": {
+  "alt": "Common nails, masonry nails and a small hammer-ready pile",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__nails-400.webp",
+    "height": 301,
+    "kb": 13
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__nails-800.webp",
+    "height": 603,
+    "kb": 41
+   }
+  }
+ },
+ "fixings-adhesives/anchors-wall-plugs": {
+  "alt": "Red and grey plastic wall plugs and steel expansion anchors",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__anchors-wall-plugs-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__anchors-wall-plugs-800.webp",
+    "height": 603,
+    "kb": 41
+   }
+  }
+ },
+ "fixings-adhesives/nuts-bolts-washers": {
+  "alt": "Hex bolts, nuts and flat washers in a neat pile",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__nuts-bolts-washers-400.webp",
+    "height": 301,
+    "kb": 17
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__nuts-bolts-washers-800.webp",
+    "height": 603,
+    "kb": 52
+   }
+  }
+ },
+ "fixings-adhesives/rivets": {
+  "alt": "Pop rivets and a hand riveter",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__rivets-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__rivets-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "fixings-adhesives/threaded-rod": {
+  "alt": "Lengths of threaded rod with nuts and washers",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__threaded-rod-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__threaded-rod-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "fixings-adhesives/fastener-kits-pre-packs": {
+  "alt": "Clear plastic compartment boxes and small packs of assorted fasteners",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__fastener-kits-pre-packs-400.webp",
+    "height": 301,
+    "kb": 16
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__fastener-kits-pre-packs-800.webp",
+    "height": 603,
+    "kb": 48
+   }
+  }
+ },
+ "fixings-adhesives/ironmongery-door-hardware": {
+  "alt": "A brass door handle, hinges, a padlock and a bolt latch",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__ironmongery-door-hardware-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__ironmongery-door-hardware-800.webp",
+    "height": 603,
+    "kb": 31
+   }
+  }
+ },
+ "fixings-adhesives/tapes": {
+  "alt": "Rolls of masking tape, duct tape and insulation tape",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__tapes-400.webp",
+    "height": 301,
+    "kb": 7
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__tapes-800.webp",
+    "height": 603,
+    "kb": 22
+   }
+  }
+ },
+ "fixings-adhesives/mounting-hanging": {
+  "alt": "Picture hooks, hanging brackets and a bracket shelf support",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__mounting-hanging-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__mounting-hanging-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "fixings-adhesives/weather-sealing": {
+  "alt": "A sealant cartridge in a caulking gun, a door seal strip and a bead of silicone",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__weather-sealing-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__weather-sealing-800.webp",
+    "height": 603,
+    "kb": 26
+   }
+  }
+ },
+ "fixings-adhesives/bath-household": {
+  "alt": "A tube of bathroom sealant, a toilet seat hinge and a plug chain",
+  "files": {
+   "400": {
+    "path": "/images/categories/fixings-adhesives__bath-household-400.webp",
+    "height": 301,
+    "kb": 6
+   },
+   "800": {
+    "path": "/images/categories/fixings-adhesives__bath-household-800.webp",
+    "height": 603,
+    "kb": 19
+   }
+  }
+ },
+ "air-tools-compressors/compressors": {
+  "alt": "A compact air compressor with a tank and pressure gauge",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__compressors-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__compressors-800.webp",
+    "height": 603,
+    "kb": 41
+   }
+  }
+ },
+ "air-tools-compressors/air-tools": {
+  "alt": "A pneumatic nail gun and an air impact wrench with a coiled hose",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__air-tools-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__air-tools-800.webp",
+    "height": 603,
+    "kb": 37
+   }
+  }
+ },
+ "air-tools-compressors/spray-guns-airbrushes": {
+  "alt": "A paint spray gun and a small airbrush",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__spray-guns-airbrushes-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__spray-guns-airbrushes-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "air-tools-compressors/air-treatment": {
+  "alt": "An air filter regulator unit with a water trap and a gauge",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__air-treatment-400.webp",
+    "height": 301,
+    "kb": 7
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__air-treatment-800.webp",
+    "height": 603,
+    "kb": 21
+   }
+  }
+ },
+ "air-tools-compressors/hoses-hose-reels": {
+  "alt": "A coiled blue air hose and a wall-mounted hose reel",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__hoses-hose-reels-400.webp",
+    "height": 301,
+    "kb": 12
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__hoses-hose-reels-800.webp",
+    "height": 603,
+    "kb": 32
+   }
+  }
+ },
+ "air-tools-compressors/tubing": {
+  "alt": "Coils of blue and black polyurethane tubing",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__tubing-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__tubing-800.webp",
+    "height": 603,
+    "kb": 29
+   }
+  }
+ },
+ "air-tools-compressors/hose-fittings": {
+  "alt": "Brass hose barbs, hose clamps and quick couplers",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__hose-fittings-400.webp",
+    "height": 301,
+    "kb": 14
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__hose-fittings-800.webp",
+    "height": 603,
+    "kb": 41
+   }
+  }
+ },
+ "air-tools-compressors/push-in-fittings": {
+  "alt": "Blue push-in pneumatic fittings: elbows, tees and straight connectors",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__push-in-fittings-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__push-in-fittings-800.webp",
+    "height": 603,
+    "kb": 27
+   }
+  }
+ },
+ "air-tools-compressors/gauges": {
+  "alt": "A round pressure gauge and a tyre pressure gauge",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__gauges-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__gauges-800.webp",
+    "height": 603,
+    "kb": 34
+   }
+  }
+ },
+ "air-tools-compressors/vacuum-pumps": {
+  "alt": "A small vacuum pump with gauges and hose connections",
+  "files": {
+   "400": {
+    "path": "/images/categories/air-tools-compressors__vacuum-pumps-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/air-tools-compressors__vacuum-pumps-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "paint-waterproofing/interior-paint": {
+  "alt": "An open tin of cream paint with a wall roller and a brush",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__interior-paint-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__interior-paint-800.webp",
+    "height": 603,
+    "kb": 34
+   }
+  }
+ },
+ "paint-waterproofing/exterior-paint": {
+  "alt": "A large paint tin with a wide brush and a splash of weatherproof paint",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__exterior-paint-400.webp",
+    "height": 301,
+    "kb": 11
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__exterior-paint-800.webp",
+    "height": 603,
+    "kb": 34
+   }
+  }
+ },
+ "paint-waterproofing/roof-paint": {
+  "alt": "A tin of red roof paint with a long-handled roller",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__roof-paint-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__roof-paint-800.webp",
+    "height": 603,
+    "kb": 23
+   }
+  }
+ },
+ "paint-waterproofing/enamel-metal-paint": {
+  "alt": "A small tin of glossy black enamel with a brush beside a metal gate hinge",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__enamel-metal-paint-400.webp",
+    "height": 301,
+    "kb": 10
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__enamel-metal-paint-800.webp",
+    "height": 603,
+    "kb": 37
+   }
+  }
+ },
+ "paint-waterproofing/wood-care": {
+  "alt": "A tin of wood stain, a varnish brush and a short length of wooden plank",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__wood-care-400.webp",
+    "height": 301,
+    "kb": 9
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__wood-care-800.webp",
+    "height": 603,
+    "kb": 26
+   }
+  }
+ },
+ "paint-waterproofing/primers-undercoats-prep": {
+  "alt": "A tin of white primer, a sanding block and a masking-tape roll",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__primers-undercoats-prep-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__primers-undercoats-prep-800.webp",
+    "height": 603,
+    "kb": 24
+   }
+  }
+ },
+ "paint-waterproofing/cleaners-strippers": {
+  "alt": "A spray bottle and a tin of paint stripper with a scraper",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__cleaners-strippers-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__cleaners-strippers-800.webp",
+    "height": 603,
+    "kb": 26
+   }
+  }
+ },
+ "paint-waterproofing/waterproofing": {
+  "alt": "A tin of black bitumen waterproofing and a roll of waterproofing membrane",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__waterproofing-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__waterproofing-800.webp",
+    "height": 603,
+    "kb": 30
+   }
+  }
+ },
+ "paint-waterproofing/floor-automotive-industrial": {
+  "alt": "A tin of grey floor paint, a spray can and a short roller",
+  "files": {
+   "400": {
+    "path": "/images/categories/paint-waterproofing__floor-automotive-industrial-400.webp",
+    "height": 301,
+    "kb": 8
+   },
+   "800": {
+    "path": "/images/categories/paint-waterproofing__floor-automotive-industrial-800.webp",
+    "height": 603,
+    "kb": 25
+   }
+  }
+ }
+}

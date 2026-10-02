@@ -1,0 +1,36 @@
+.fab {
+  position: fixed;
+  right: max(20px, calc(env(safe-area-inset-right) + 16px));
+  /* clear the mobile tab bar */
+  bottom: calc(var(--bottom-bar-h) + 16px + env(safe-area-inset-bottom));
+  z-index: 70;
+  box-sizing: border-box;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #1f9d55; /* white icon 3.5:1+ as a large graphic */
+  color: #fff;
+  box-shadow: var(--shadow-float);
+  transition: transform 0.2s var(--ease);
+}
+.fab:hover {
+  transform: scale(1.08);
+}
+.fab:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+@media (min-width: 900px) {
+  .fab {
+    bottom: max(32px, calc(env(safe-area-inset-bottom) + 24px));
+    right: max(32px, calc(env(safe-area-inset-right) + 24px));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fab {
+    transition: none;
+  }
+}

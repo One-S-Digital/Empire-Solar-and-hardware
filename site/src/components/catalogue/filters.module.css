@@ -1,0 +1,157 @@
+.wrap {
+  margin-bottom: 8px;
+}
+
+.openBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--steel-500);
+  border-radius: var(--radius-input);
+  background: var(--paper);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Phone: a bottom sheet over a dimmed page (section 9: 40% ink) */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background: rgb(22 21 20 / 0.4);
+}
+.panel {
+  display: none;
+}
+.panel.open {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: grid;
+  gap: 12px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 16px var(--gutter) calc(16px + env(safe-area-inset-bottom));
+  background: var(--paper);
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  box-shadow: var(--shadow-float);
+  animation: sheet 280ms var(--ease) both;
+}
+@keyframes sheet {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head h2 {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.2;
+}
+.closeBtn {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.group {
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+}
+.group legend {
+  padding: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.option {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  cursor: pointer;
+}
+.option input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--red);
+}
+.count {
+  color: var(--steel-700);
+  font-size: 0.8125rem;
+}
+.off {
+  color: var(--steel-500);
+  cursor: not-allowed;
+}
+
+.clear {
+  justify-self: start;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.show,
+.apply {
+  min-height: 48px;
+  border: 0;
+  border-radius: var(--radius-input);
+  background: var(--red);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.show:hover,
+.apply:hover {
+  background: var(--red-deep);
+}
+
+/* Laptop: always in the rail, applies as you tick, no sheet chrome */
+@media (min-width: 900px) {
+  .wrap {
+    margin: 0 0 24px;
+    padding-bottom: 8px;
+    border-bottom: var(--border);
+  }
+  .openBtn,
+  .closeBtn,
+  .show,
+  .backdrop {
+    display: none;
+  }
+  .panel,
+  .panel.open {
+    position: static;
+    display: block;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    animation: none;
+  }
+  .head {
+    margin-bottom: 8px;
+  }
+  .head h2 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,41 @@
+.wrap {
+  display: grid;
+  gap: 12px;
+  justify-items: start;
+}
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.heading {
+  position: relative;
+  padding-bottom: 20px;
+}
+/* The red bar from the logo, as an underline device */
+.heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  height: 4px;
+  background: var(--red-logo);
+}
+.display {
+  font-size: var(--fs-display);
+  line-height: 0.9;
+}
+.line {
+  color: var(--steel-700);
+  max-width: 52ch;
+}
+.dark .eyebrow {
+  color: var(--red-on-ink);
+}
+.dark .line {
+  color: var(--on-ink-muted);
+}

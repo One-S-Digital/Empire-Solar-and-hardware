@@ -1,0 +1,356 @@
+{
+  "cover-air-tools-compressors": {
+    "alt": "Compact air compressor with a coiled blue hose, quick couplers and a spray gun",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-air-tools-compressors-640.webp",
+        "height": 478,
+        "kb": 33,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-air-tools-compressors-1280.webp",
+        "height": 956,
+        "kb": 105,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-air-tools-compressors-1920.webp",
+        "height": 1433,
+        "kb": 199,
+        "q": 82
+      }
+    },
+    "prompt": "A compact air compressor with a coiled blue air hose, quick couplers and push-in fittings, and a spray gun. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-electrical": {
+    "alt": "Miniature circuit breakers on a DIN rail, red and black cable coils, a switch and socket",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-electrical-640.webp",
+        "height": 478,
+        "kb": 29,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-electrical-1280.webp",
+        "height": 956,
+        "kb": 98,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-electrical-1920.webp",
+        "height": 1433,
+        "kb": 191,
+        "q": 82
+      }
+    },
+    "prompt": "A neat row of white miniature circuit breakers on a DIN rail, coils of red and black electrical cable, a wall socket and switch. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-fixings-adhesives": {
+    "alt": "Screws, bolts, nuts, washers and wall anchors with a roll of tape and a sealant tube",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-fixings-adhesives-640.webp",
+        "height": 478,
+        "kb": 40,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-fixings-adhesives-1280.webp",
+        "height": 956,
+        "kb": 119,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-fixings-adhesives-1920.webp",
+        "height": 1433,
+        "kb": 212,
+        "q": 82
+      }
+    },
+    "prompt": "Macro shot of assorted screws, bolts, nuts, washers and wall anchors scattered on steel, with a roll of tape and a sealant tube. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-hand-tools": {
+    "alt": "Spanners, pliers, screwdrivers, a claw hammer and a tape measure on dark steel",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-hand-tools-640.webp",
+        "height": 478,
+        "kb": 31,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-hand-tools-1280.webp",
+        "height": 956,
+        "kb": 102,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-hand-tools-1920.webp",
+        "height": 1433,
+        "kb": 200,
+        "q": 82
+      }
+    },
+    "prompt": "An ordered arrangement of spanners, pliers, screwdrivers, a claw hammer and a tape measure on dark steel. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-lighting": {
+    "alt": "LED downlights, a filament globe and an LED floodlight glowing on a dark surface",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-lighting-640.webp",
+        "height": 478,
+        "kb": 23,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-lighting-1280.webp",
+        "height": 956,
+        "kb": 77,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-lighting-1920.webp",
+        "height": 1433,
+        "kb": 154,
+        "q": 82
+      }
+    },
+    "prompt": "Modern LED downlights and a filament globe glowing warm, an LED floodlight, soft light falloff across the dark surface. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-paint-waterproofing": {
+    "alt": "Open paint tins with drips, a roller, a brush and a roll of waterproofing membrane",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-paint-waterproofing-640.webp",
+        "height": 478,
+        "kb": 44,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-paint-waterproofing-1280.webp",
+        "height": 956,
+        "kb": 128,
+        "q": 76
+      },
+      "1920": {
+        "path": "/images/cover-paint-waterproofing-1920.webp",
+        "height": 1433,
+        "kb": 321,
+        "q": 82
+      }
+    },
+    "prompt": "Paint tins with lids off, a roller and brush, thick drips in charcoal and red, and a roll of waterproofing membrane. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-plumbing": {
+    "alt": "Copper pipes, brass ball valves, fittings and a chrome mixer tap on dark steel",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-plumbing-640.webp",
+        "height": 478,
+        "kb": 27,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-plumbing-1280.webp",
+        "height": 956,
+        "kb": 80,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-plumbing-1920.webp",
+        "height": 1433,
+        "kb": 148,
+        "q": 82
+      }
+    },
+    "prompt": "Polished copper pipes, brass ball valves with red lever handles, compression fittings and a chrome mixer tap arranged on dark steel. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-power-tools": {
+    "alt": "Cordless drill, angle grinder and circular saw with sparks in the background",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-power-tools-640.webp",
+        "height": 478,
+        "kb": 31,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-power-tools-1280.webp",
+        "height": 956,
+        "kb": 100,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-power-tools-1920.webp",
+        "height": 1433,
+        "kb": 184,
+        "q": 82
+      }
+    },
+    "prompt": "A cordless drill, an angle grinder and a circular saw, rugged and modern, unbranded, red accents, a few sparks in the background. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "cover-solar-backup-power": {
+    "alt": "Solar panel facing a low sun beside a wall-mounted inverter and battery stack",
+    "aspect": "2336:1744",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "640": {
+        "path": "/images/cover-solar-backup-power-640.webp",
+        "height": 478,
+        "kb": 30,
+        "q": 82
+      },
+      "1280": {
+        "path": "/images/cover-solar-backup-power-1280.webp",
+        "height": 956,
+        "kb": 107,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/cover-solar-backup-power-1920.webp",
+        "height": 1433,
+        "kb": 205,
+        "q": 82
+      }
+    },
+    "prompt": "A monocrystalline solar panel angled towards a warm low sun glow, beside a sleek wall-mounted hybrid inverter and lithium battery stack in plain unbranded casing. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "feature-paint": {
+    "alt": "Open paint tin with a swirl of glossy red paint and a brush on the rim",
+    "aspect": "1744:2180",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "480": {
+        "path": "/images/feature-paint-480.webp",
+        "height": 600,
+        "kb": 32,
+        "q": 82
+      },
+      "960": {
+        "path": "/images/feature-paint-960.webp",
+        "height": 1200,
+        "kb": 104,
+        "q": 82
+      }
+    },
+    "prompt": "Close-up of an open paint tin with a thick glossy swirl of deep red paint, a brush resting across the rim, a few drips running down the tin, dark charcoal background. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "feature-power-tools": {
+    "alt": "Cordless angle grinder cutting a steel bar with a fan of sparks",
+    "aspect": "1744:2180",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "480": {
+        "path": "/images/feature-power-tools-480.webp",
+        "height": 600,
+        "kb": 31,
+        "q": 82
+      },
+      "960": {
+        "path": "/images/feature-power-tools-960.webp",
+        "height": 1200,
+        "kb": 96,
+        "q": 82
+      }
+    },
+    "prompt": "Close-up of a cordless angle grinder cutting a steel bar, a fan of bright orange sparks, dark workshop, rugged unbranded tool with red accents. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "feature-solar": {
+    "alt": "Wall-mounted hybrid solar inverter above a stacked lithium battery",
+    "aspect": "1744:2180",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "480": {
+        "path": "/images/feature-solar-480.webp",
+        "height": 600,
+        "kb": 12,
+        "q": 82
+      },
+      "960": {
+        "path": "/images/feature-solar-960.webp",
+        "height": 1200,
+        "kb": 36,
+        "q": 82
+      }
+    },
+    "prompt": "Close-up of a sleek wall-mounted hybrid solar inverter with a small glowing green status light and a lithium battery stack below, plain unbranded matte white casing, mounted on a dark charcoal wall, warm side light. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "feature-taps": {
+    "alt": "Chrome kitchen mixer tap with a single drop of water falling",
+    "aspect": "1744:2180",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "480": {
+        "path": "/images/feature-taps-480.webp",
+        "height": 600,
+        "kb": 18,
+        "q": 82
+      },
+      "960": {
+        "path": "/images/feature-taps-960.webp",
+        "height": 1200,
+        "kb": 47,
+        "q": 82
+      }
+    },
+    "prompt": "Close-up of a polished chrome kitchen mixer tap with a single drop of water falling from the spout, dark charcoal background, soft studio light with long highlights on the chrome. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  },
+  "hero-banner": {
+    "alt": "Solar inverter, battery, solar panel, power tools, copper pipes and brass valves on a dark workbench",
+    "aspect": "2688:1152",
+    "model": "marketing-studio/image",
+    "quality": "medium",
+    "files": {
+      "1280": {
+        "path": "/images/hero-banner-1280.webp",
+        "height": 549,
+        "kb": 46,
+        "q": 82
+      },
+      "1920": {
+        "path": "/images/hero-banner-1920.webp",
+        "height": 823,
+        "kb": 88,
+        "q": 82
+      },
+      "2560": {
+        "path": "/images/hero-banner-2560.webp",
+        "height": 1097,
+        "kb": 134,
+        "q": 82
+      }
+    },
+    "prompt": "Wide cinematic hero banner for a hardware and solar store. On the right two-thirds, a dramatic still life on a dark brushed-steel workbench: a sleek wall-mounted hybrid solar inverter and lithium battery in plain unbranded matte white casing, a cordless angle grinder, polished copper pipes and brass ball valves with red lever handles, a coil of red and black electrical cable, an open paint tin, a spirit level and a few spanners, with the edge of a monocrystalline solar panel catching warm light. The left third falls away into deep charcoal shadow, empty, leaving clean space for headline text. Fine dust drifting in the light beam. Photorealistic commercial product photography, cinematic low-key lighting, deep charcoal-black background, warm amber key light, a subtle crimson red rim light, brushed steel and raw concrete textures, shallow depth of field, crisp detail, premium editorial hardware campaign aesthetic, consistent colour grade. No text, no letters, no numbers, no logos, no brand names, no people, no hands, no watermark."
+  }
+}

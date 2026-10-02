@@ -1,0 +1,232 @@
+/* ---------- Product tile (image or designed fallback) ---------- */
+.tile {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  padding: 12px;
+  background-color: var(--paper); /* colour only, so the pegboard dots on a fallback tile still show */
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+/* mix-blend-mode removes the white backgrounds so mixed supplier photos read as one set */
+.photo {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  mix-blend-mode: multiply;
+}
+.fallback {
+  gap: 6px;
+  align-content: center;
+  color: var(--steel-700);
+  background-color: var(--paper);
+}
+.fallbackBrand {
+  font-weight: 700;
+  font-size: var(--fs-small);
+  color: var(--steel-700);
+  text-align: center;
+}
+
+/* ---------- Stretched link: the whole card or tile is clickable ---------- */
+.stretch {
+  color: inherit;
+  text-decoration: none;
+}
+.stretch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* ---------- Product card ---------- */
+.card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  transition: transform 150ms var(--ease);
+}
+.card:hover {
+  transform: translateY(-2px);
+}
+.card:focus-within {
+  outline: 2px solid var(--red);
+  outline-offset: 4px;
+}
+.card .tile {
+  margin-bottom: 8px;
+}
+.brand {
+  color: var(--steel-500);
+  font-size: var(--fs-small);
+}
+.cardName {
+  font-size: 1rem;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.cardName .stretch:focus-visible {
+  outline: none;
+}
+.meta {
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+}
+
+/* ---------- Breadcrumb ---------- */
+.crumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-small);
+  color: var(--steel-700);
+}
+.crumbs li + li::before {
+  content: "\203A";
+  margin-right: 8px;
+  color: var(--steel-500);
+}
+.crumbs a {
+  color: var(--steel-700);
+}
+.crumbs a:hover {
+  color: var(--red);
+}
+
+/* ---------- Stock notice ---------- */
+.notice {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+}
+.noticeHead {
+  font-size: var(--fs-h3);
+}
+
+/* ---------- Category tile (department page) ---------- */
+.catTile {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  padding: 0 0 14px;
+  overflow: hidden;
+  background: var(--paper);
+  border-radius: var(--radius-card);
+}
+.catTile > :not(.catPhoto) {
+  margin-inline: 12px;
+}
+.catTile:focus-within {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+/* Cover art fills the top of the tile; the icon stays as the fallback when a category has none */
+.catPhoto {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 6px;
+  overflow: hidden;
+  background: var(--ink-800);
+  color: var(--on-ink-muted);
+}
+.catPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms var(--ease);
+}
+.catTile:hover .catPhoto img {
+  transform: scale(1.04);
+}
+.catName {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  text-transform: none;
+  line-height: 1.2;
+}
+.catName .stretch:focus-visible {
+  outline: none;
+}
+.catSubs {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-small);
+}
+.catSubs a {
+  display: inline-block;
+  padding: 3px 0;
+}
+
+/* ---------- List view row ---------- */
+.row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px 14px;
+  padding: 8px 10px;
+  background: var(--paper);
+  border-radius: var(--radius-card);
+}
+.row:hover {
+  background: #fff;
+}
+.row:focus-within {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+.rowThumb {
+  grid-row: span 3;
+}
+.rowThumb .tile {
+  padding: 4px;
+}
+.rowThumb .fallbackBrand,
+.rowThumb svg {
+  display: none;
+}
+.rowMain {
+  min-width: 0;
+}
+.rowName {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.rowName .stretch:focus-visible {
+  outline: none;
+}
+.rowCodes,
+.rowCount {
+  margin: 0;
+  max-width: none;
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+  overflow-wrap: anywhere;
+}
+.rowCount:empty {
+  display: none;
+}
+@media (min-width: 768px) {
+  .row {
+    grid-template-columns: 56px minmax(0, 2fr) minmax(0, 1.4fr) 130px;
+  }
+  .rowThumb {
+    grid-row: auto;
+  }
+}

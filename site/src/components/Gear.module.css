@@ -1,0 +1,14 @@
+.gear {
+  flex: none;
+  transition: transform 250ms var(--ease);
+}
+
+.spin {
+  animation: spin 900ms linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

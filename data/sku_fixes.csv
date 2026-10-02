@@ -1,0 +1,11 @@
+action,supplier,row,expected_name,old_code,new_code,into_row,reason
+new-sku,AirCraft (Vermont Sales),5328,Ptfe Tape 19mmx0.075mmx10m Roll Bulk,PTFE19,PTFE19-10M,,"Two different products share PTFE19: Geo's 40 m roll and AirCraft's 10 m roll. AirCraft's codes follow PTFE<width>[-<spec>] (PTFE12, PTFE12-5, PTFE19-1), so the new code adds the roll length. The supplier's own code is kept as supplierCode for re-ordering"
+fix-typo,Geo Plumbing,1870,Flexi Braided Connectors – FxF 15mm x 450mm,FBC45OFF,FBC450FF,,Letter O typed for zero. Its pre-packed twin is FBC450FF_PP and its neighbours are FBC350FF and FBC600FF
+fix-typo,Geo Plumbing,1877,Flexi Braided Connectors – MxF 15mm x 15mm x 450mm,FBC 15/15/450MF_PP,FBC15/15/450MF_PP,,Stray space. Its bulk twin is FBC15/15/450MF. A space would also stop a search for the code from matching
+fix-typo,Deye,4409,Deye 20Kw Three Phase Hybrid Inverter 48v (Low Voltage),SUN-20K-SG05LP3 -EU-SM2,SUN-20K-SG05LP3-EU-SM2,,Stray space before -EU. Every other Deye code in the workbook has none
+merge,Ruwag,204,Brace Flat,,,205,Same product listed twice on Ruwag's site. Row 205 is the full 3-size page and already contains this code
+merge,Ruwag,238,Nut Setter,,,298,"Same two codes under two names (Nut Setter in Ruwag's pre-packs, Magnetic Socket in Power Bits). Kept in Power Bits, also listed under Ironmongery"
+merge,Ruwag,244,Pozi Bit,,,302,"Overlapping variants of one product (shares RF-PB1025-2). Kept as Pozi Bits in Power Bits, also listed under Ironmongery"
+merge,Ruwag,165,Stainless Steel Flat Washer,,,355,"Same three codes under two names (a pre-pack page and the Washers page). Kept under Washers, also listed under Fastener Kits & Pre-packs"
+merge,Ruwag,168,Stainless Steel Self Tapper Pan Head,,,338,"Same three codes under two names (a pre-pack page and the Screws page). Kept under Screws, also listed under Fastener Kits & Pre-packs"
+merge,Deye,4412,DEYE SUN-8K 8KVA/8KW GRID TIED HYBRID INVERTER,,,4411,Solar Shop lists the same SUN-8K-SG05LP1-EU-SM2 inverter twice. The workbook already notes 'Same SKU as another Solar Shop listing'

@@ -1,0 +1,67 @@
+.head {
+  display: grid;
+  gap: 24px;
+  padding-block: 32px 28px;
+}
+@media (min-width: 900px) {
+  .head {
+    grid-template-columns: auto minmax(320px, 560px);
+    align-items: end;
+    justify-content: space-between;
+  }
+}
+
+.departments {
+  margin-top: 40px;
+  padding: 24px 16px;
+  border-radius: var(--radius-card);
+}
+.deptGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (min-width: 768px) {
+  .deptGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+.brands {
+  display: grid;
+  gap: 12px;
+  margin-top: 56px;
+}
+.brands h2 {
+  margin: 0;
+}
+.brands ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.brands a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 48px;
+  padding: 10px 14px;
+  background: var(--paper);
+  border-radius: var(--radius-card);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 150ms var(--ease);
+}
+.brands a:hover {
+  transform: translateY(-2px);
+  color: var(--ink);
+}
+.brands a .mono {
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+}

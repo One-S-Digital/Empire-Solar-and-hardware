@@ -1,0 +1,67 @@
+.footer {
+  margin-top: var(--section-pad);
+  padding-block: 64px 112px; /* room for the floating WhatsApp button */
+  background: var(--ink-950);
+  border-top: 4px solid var(--red-logo);
+  color: var(--concrete);
+  font-size: var(--fs-small);
+}
+.grid {
+  display: grid;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1.3fr 1fr 1fr;
+  }
+}
+.footer a {
+  color: var(--concrete);
+  text-underline-offset: 0.18em;
+}
+.footer a:hover {
+  color: #fff;
+}
+.logo {
+  height: 64px;
+  width: auto;
+}
+.about {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  justify-items: start;
+}
+.tagline {
+  color: var(--on-ink-muted);
+}
+.address {
+  display: flex;
+  gap: 8px;
+  font-style: normal;
+  line-height: 1.6;
+}
+.heading {
+  margin-bottom: 12px;
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  color: var(--red-on-ink);
+}
+.footer ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer li a {
+  display: inline-block;
+  padding: 4px 0;
+}
+.brands {
+  grid-template-columns: 1fr 1fr;
+}

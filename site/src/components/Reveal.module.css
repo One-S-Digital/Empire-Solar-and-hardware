@@ -1,0 +1,12 @@
+/* Hidden only once the script has run, so with no JavaScript the content is simply visible */
+.armed {
+  opacity: 0;
+  transform: translateY(16px);
+}
+.in {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 350ms var(--ease),
+    transform 350ms var(--ease);
+}

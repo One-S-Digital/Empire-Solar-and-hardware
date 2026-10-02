@@ -1,0 +1,68 @@
+.btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 22px;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Primary: red plate with the chamfered top-right corner. The shape is painted on
+   ::before so the focus outline on the button itself is never clipped. */
+.primary {
+  color: #fff;
+}
+.primary:hover {
+  color: #fff;
+}
+.primary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--red);
+  clip-path: polygon(0 0, calc(100% - var(--chamfer)) 0, 100% var(--chamfer), 100% 100%, 0 100%);
+  transition: background-color 150ms var(--ease);
+}
+.primary:hover::before {
+  background: var(--red-deep);
+}
+
+.secondary {
+  color: var(--ink);
+  background: var(--paper);
+  border: var(--border);
+  border-color: var(--steel-500);
+  border-radius: var(--radius-input);
+  transition: background-color 150ms var(--ease);
+}
+.secondary:hover {
+  color: var(--ink);
+  background: var(--concrete);
+}
+
+.link {
+  min-height: 44px;
+  padding: 0 4px;
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.link:hover {
+  color: var(--red-deep);
+}

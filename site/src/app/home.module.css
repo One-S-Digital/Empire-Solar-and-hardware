@@ -1,0 +1,228 @@
+/* ---------- Hero (the banner itself is HeroBanner) ---------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.chips a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--on-ink-muted);
+  border-radius: var(--radius-input);
+  background: rgb(14 13 12 / 0.55);
+  color: var(--concrete);
+  font-size: var(--fs-small);
+  text-decoration: none;
+}
+.chips a:hover {
+  color: #fff;
+  border-color: var(--red-on-ink);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+}
+
+/* Feature row: sits on the same ink as the hero, so the banner fades straight into it */
+.featureBand {
+  padding-block: 8px 56px;
+  background: var(--ink-950);
+}
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 900px) {
+  .featureBand {
+    padding-block: 0 72px;
+  }
+  .featureGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+/* ---------- Sections ---------- */
+.section {
+  display: grid;
+  gap: 14px;
+  padding-block: 40px 8px;
+}
+.sub {
+  color: var(--steel-700);
+}
+
+/* Department grid: two large covers, three medium, four small. Nine covers, no empty cells. */
+.deptGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.deptGrid > div {
+  min-width: 0;
+}
+.deptLarge {
+  grid-column: span 2;
+}
+.deptSmall:last-child {
+  grid-column: span 2;
+}
+@media (min-width: 900px) {
+  .deptWrap {
+    padding: 24px;
+  }
+  .deptGrid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 16px;
+  }
+  .deptLarge {
+    grid-column: span 6;
+  }
+  .deptMedium {
+    grid-column: span 4;
+  }
+  .deptSmall,
+  .deptSmall:last-child {
+    grid-column: span 3;
+  }
+}
+
+/* ---------- Order-in band (red): the docket and "how ordering works", said once ---------- */
+.order {
+  margin-top: var(--section-pad);
+  padding-block: 56px;
+  background: var(--red);
+  color: #fff;
+}
+.orderInner {
+  display: grid;
+  gap: 32px;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .orderInner {
+    grid-template-columns: minmax(0, 420px) 1fr;
+    gap: 64px;
+  }
+}
+.docket {
+  width: 100%;
+  color: var(--ink);
+}
+.docketLines {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.docketLines li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 12px;
+}
+.docketLines li span:first-child {
+  grid-column: 1 / -1;
+  font-weight: 600;
+}
+.docketLines .mono {
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+}
+.orderText {
+  display: grid;
+  gap: 20px;
+  justify-items: start;
+}
+.orderText h2 {
+  font-size: clamp(2.25rem, 1.4rem + 3vw, 4rem);
+  line-height: 0.95;
+}
+.steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.steps li {
+  counter-increment: step;
+}
+.steps li::before {
+  content: counter(step) ". ";
+  font-family: var(--font-mono);
+}
+
+/* ---------- Solar band: full-bleed cover art, text on the dark side ---------- */
+.solar {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  align-items: center;
+  min-height: 420px;
+  padding-block: 72px;
+  background: var(--ink-950);
+  color: var(--concrete);
+}
+.solarMedia {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.solarMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+.solarMedia::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(14 13 12 / 0.94) 0%, rgb(14 13 12 / 0.7) 55%, rgb(14 13 12 / 0.2) 100%);
+}
+.solarInner {
+  display: grid;
+  gap: 24px;
+  justify-items: start;
+}
+.solarInner > div:first-child {
+  max-width: 620px;
+}
+.solar h2 {
+  font-size: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+  line-height: 0.95;
+}
+
+/* ---------- Visit us ---------- */
+.visit {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+  padding: 24px;
+  background: var(--paper);
+  border-radius: var(--radius-card);
+}
+.visitAddress {
+  display: grid;
+  font-style: normal;
+  font-size: 1.125rem;
+}
+
+.visitSection {
+  padding-block: var(--section-pad) 0;
+}

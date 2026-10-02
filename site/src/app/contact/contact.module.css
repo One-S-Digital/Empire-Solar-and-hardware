@@ -1,0 +1,62 @@
+.head {
+  padding-block: 32px;
+}
+.grid {
+  display: grid;
+  gap: 16px;
+  padding-bottom: var(--section-pad);
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+.card {
+  display: grid;
+  gap: 16px;
+  align-content: start;
+  justify-items: start;
+  padding: 24px;
+  background: var(--paper);
+  border: var(--border);
+  border-radius: var(--radius-card);
+}
+.h {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--fs-h3);
+}
+.address {
+  display: grid;
+  font-style: normal;
+}
+.phone {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  line-height: 1;
+}
+.phone a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.note {
+  font-size: var(--fs-small);
+  color: var(--steel-500);
+}
+.hours {
+  width: 100%;
+  border-collapse: collapse;
+}
+.hours th,
+.hours td {
+  padding: 8px 0;
+  text-align: left;
+  border-bottom: var(--border);
+  font-weight: 400;
+}
+.hours td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,346 @@
+supplier,supplier_category,supplier_subcategory,department,category,subcategory,products
+Africa Paints,Economy,Master Coat Range,Paint & Waterproofing,Interior Paint,,1
+Africa Paints,Economy,Super 2000,Paint & Waterproofing,"Floor, Automotive & Industrial",,1
+Africa Paints,Economy,Super 2000,Paint & Waterproofing,Interior Paint,,1
+Africa Paints,Economy,Super 2000,Paint & Waterproofing,Wood Care,,1
+Africa Paints,Economy,Super PVA,Paint & Waterproofing,Interior Paint,,1
+Africa Paints,Economy,Supreme Coat (Buildkote),Paint & Waterproofing,Interior Paint,,1
+Africa Paints,Economy,Twilight Range,Paint & Waterproofing,Enamel & Metal Paint,,1
+Africa Paints,Industrial,Industrial Range,Paint & Waterproofing,Enamel & Metal Paint,,2
+Africa Paints,Industrial,Industrial Range,Paint & Waterproofing,"Floor, Automotive & Industrial",,1
+Africa Paints,Industrial,Industrial Range,Paint & Waterproofing,"Primers, Undercoats & Prep",,4
+Africa Paints,Industrial,Rhino Shield,Paint & Waterproofing,Roof Paint,,1
+Africa Paints,Industrial,Rhino Shield,Paint & Waterproofing,Waterproofing,,4
+Africa Paints,Luxury,Home Range,Paint & Waterproofing,Enamel & Metal Paint,,1
+Africa Paints,Luxury,Home Range,Paint & Waterproofing,Exterior Paint,,1
+Africa Paints,Luxury,Home Range,Paint & Waterproofing,Interior Paint,,1
+Africa Paints,Luxury,Home Range,Paint & Waterproofing,Interior Paint,Ceilings,1
+Africa Paints,Luxury,Home Range,Paint & Waterproofing,Roof Paint,,1
+Africa Paints,Luxury,Platinum Series,Paint & Waterproofing,Enamel & Metal Paint,,1
+Africa Paints,Luxury,Platinum Series,Paint & Waterproofing,Exterior Paint,,1
+Africa Paints,Luxury,Platinum Series,Paint & Waterproofing,Interior Paint,,3
+AirCraft (Vermont Sales),Air Tools,Nail Guns & Staplers,Air Tools & Compressors,Air Tools,Nail Guns & Staplers,13
+AirCraft (Vermont Sales),Air Tools,Other air tools (listed on the parent page only),Air Tools & Compressors,Air Tools,Nail Guns & Staplers,7
+AirCraft (Vermont Sales),Air Tools,Other air tools (listed on the parent page only),Air Tools & Compressors,Air Tools,Other Air Tools,34
+AirCraft (Vermont Sales),Air Tools,Other air tools (listed on the parent page only),Air Tools & Compressors,Hoses & Hose Reels,,1
+AirCraft (Vermont Sales),Air Tools,Other air tools (listed on the parent page only),Air Tools & Compressors,Spray Guns & Airbrushes,,1
+AirCraft (Vermont Sales),Air Tools,Sanders,Air Tools & Compressors,Air Tools,Sanders,8
+AirCraft (Vermont Sales),Air Tools,Tyre Inflators,Air Tools & Compressors,Air Tools,Tyre Inflators,8
+AirCraft (Vermont Sales),Air Treatment,,Air Tools & Compressors,Air Treatment,,23
+AirCraft (Vermont Sales),Compressors,,Air Tools & Compressors,Compressors,,36
+AirCraft (Vermont Sales),Hose Fittings,,Air Tools & Compressors,Hose Fittings,,248
+AirCraft (Vermont Sales),Hose Reels,,Air Tools & Compressors,Hoses & Hose Reels,,5
+AirCraft (Vermont Sales),Hoses,,Air Tools & Compressors,Hoses & Hose Reels,,10
+AirCraft (Vermont Sales),Pneumatic Gauges,,Air Tools & Compressors,Gauges,,7
+AirCraft (Vermont Sales),Push-in Fittings for Tubing,,Air Tools & Compressors,Push-in Fittings,,509
+AirCraft (Vermont Sales),Spray Finishing,Airbrushes,Air Tools & Compressors,Spray Guns & Airbrushes,,126
+AirCraft (Vermont Sales),Tubing,,Air Tools & Compressors,Tubing,,17
+AirCraft (Vermont Sales),Vacuum Pumps,,Air Tools & Compressors,Vacuum Pumps,,3
+Deye,Backup Power Kits,,Solar & Backup Power,Kits & Backup Power Packages,,1
+Deye,Batteries,,Solar & Backup Power,Batteries & Energy Storage,,1
+Deye,Hybrid Inverters,,Solar & Backup Power,Inverters,,7
+Deye,Solar PV Kits,,Solar & Backup Power,Kits & Backup Power Packages,,1
+Duram,Exterior Paints,Fascias and gutters,Paint & Waterproofing,Exterior Paint,Fascias & Gutters,2
+Duram,Exterior Paints,Roofs,Paint & Waterproofing,Roof Paint,,1
+Duram,Exterior Paints,Walls,Paint & Waterproofing,Exterior Paint,Walls,2
+Duram,Interior Paints,Bathroom and Kitchen,Paint & Waterproofing,Interior Paint,Kitchen & Bathroom,1
+Duram,Interior Paints,Ceilings,Paint & Waterproofing,Interior Paint,Ceilings,7
+Duram,Interior Paints,"Doors, Trims and Windows",Paint & Waterproofing,Enamel & Metal Paint,,5
+Duram,Interior Paints,"Doors, Trims and Windows",Paint & Waterproofing,Wood Care,,2
+Duram,Interior Paints,Walls,Paint & Waterproofing,Interior Paint,Walls,2
+Duram,Preparation Products,Cleaners,Paint & Waterproofing,Cleaners & Strippers,,4
+Duram,Preparation Products,Metal,Paint & Waterproofing,"Primers, Undercoats & Prep",,1
+Duram,Preparation Products,Paint Strippers,Paint & Waterproofing,Cleaners & Strippers,,2
+Duram,Preparation Products,Primers,Paint & Waterproofing,"Primers, Undercoats & Prep",,14
+Duram,Preparation Products,Undercoats,Paint & Waterproofing,"Primers, Undercoats & Prep",,1
+Duram,Preparation Products,Waterproofing,Paint & Waterproofing,Waterproofing,,1
+Duram,Specialist Paints,Automotive coatings,Paint & Waterproofing,"Floor, Automotive & Industrial",,2
+Duram,Specialist Paints,Floor paints,Paint & Waterproofing,"Floor, Automotive & Industrial",,2
+Duram,Specialist Paints,Metal coatings,Paint & Waterproofing,Enamel & Metal Paint,,4
+Duram,Specialist Paints,Waterproofing,Paint & Waterproofing,Waterproofing,,15
+Five-star Solar (Fivestar LED),DC Home Appliances,,Solar & Backup Power,Solar Lights & DC Appliances,,7
+Five-star Solar (Fivestar LED),Fans & Air Coolers,,Electrical,Fans & Air Movement,,19
+Five-star Solar (Fivestar LED),LED Lights,Downlights,Lighting,Indoor LED & Downlights,LED Indoor,1
+Five-star Solar (Fivestar LED),LED Lights,LED Bulbs,Lighting,Lamps & Bulbs,,1
+Five-star Solar (Fivestar LED),Light Fittings,,Lighting,General Lighting,,1
+Five-star Solar (Fivestar LED),Solar Systems,"Isolators, Circuit Breakers & Fuses",Solar & Backup Power,"Protection: Isolators, Breakers & Fuses",,6
+Five-star Solar (Fivestar LED),Solar Systems,Solar Batteries,Solar & Backup Power,Batteries & Energy Storage,,2
+Five-star Solar (Fivestar LED),Solar Systems,Solar Controllers,Solar & Backup Power,Charge Controllers,,4
+Five-star Solar (Fivestar LED),Solar Systems,Solar Installation Accessories,Solar & Backup Power,Installation Accessories & Cables,,27
+Five-star Solar (Fivestar LED),Solar Systems,Solar Inverters,Solar & Backup Power,Inverters,,2
+Five-star Solar (Fivestar LED),Solar Systems,Solar Kits,Solar & Backup Power,Kits & Backup Power Packages,,1
+Five-star Solar (Fivestar LED),Solar Systems,Solar Lights,Solar & Backup Power,Solar Lights & DC Appliances,,5
+Five-star Solar (Fivestar LED),Solar Systems,Solar Panels,Solar & Backup Power,Solar Panels,,5
+Five-star Solar (Fivestar LED),Special Offers,,Lighting,Lamps & Bulbs,,3
+Flash Harry,Acrylic Waterproofing Systems,,Paint & Waterproofing,Waterproofing,Acrylic,8
+Flash Harry,Bitumen Waterproofing Systems,,Paint & Waterproofing,Waterproofing,Bitumen,4
+Flash Harry,Cementitious Slurries and Additives,,Paint & Waterproofing,Waterproofing,Cementitious,5
+Flash Harry,Damp Proofing Products,,Paint & Waterproofing,Waterproofing,Damp Proofing,4
+Flash Harry,Roof Coating Systems,,Paint & Waterproofing,Cleaners & Strippers,,1
+Flash Harry,Roof Coating Systems,,Paint & Waterproofing,"Primers, Undercoats & Prep",,1
+Flash Harry,Roof Coating Systems,,Paint & Waterproofing,Roof Paint,,1
+Flash Harry,Self Adhesive Systems,,Paint & Waterproofing,Waterproofing,Self-adhesive,4
+Flash Harry,Speciality Products,,Paint & Waterproofing,Waterproofing,,5
+Flash Harry,Torch-on Systems,,Paint & Waterproofing,Waterproofing,Torch-on,4
+Geo Plumbing,Batts & Couplings,,Plumbing,Pipe & Fittings,Batts & Couplings,22
+Geo Plumbing,Brass Capillary Fittings BDP,,Plumbing,Pipe & Fittings,Capillary Fittings,37
+Geo Plumbing,Builders Sheeting,Builders Sheeting DIY,Plumbing,Sheeting & Membranes,Builders Sheeting,16
+Geo Plumbing,Builders Sheeting,Builders Sheeting Non-SABS,Plumbing,Sheeting & Membranes,Builders Sheeting,20
+Geo Plumbing,Builders Sheeting,Builders Sheeting SABS,Plumbing,Sheeting & Membranes,Builders Sheeting,16
+Geo Plumbing,Compression Fittings BDP,,Plumbing,Pipe & Fittings,Compression Fittings,66
+Geo Plumbing,Compression Fittings SABS DZR,,Plumbing,Pipe & Fittings,Compression Fittings,39
+Geo Plumbing,"Consumables, Tools & Sundry",,Plumbing,Plumbing Consumables & Tools,,43
+Geo Plumbing,Copper Capillary Fittings BDP,,Plumbing,Pipe & Fittings,Capillary Fittings,46
+Geo Plumbing,Drainage System,,Plumbing,Drainage & Rainwater,Drainage System,10
+Geo Plumbing,Econo Rainwater System,,Plumbing,Drainage & Rainwater,Econo Rainwater,23
+Geo Plumbing,Eternity Premium Range,Eclipse Range – Matt Black,Plumbing,Taps & Mixers,Eternity Premium Range,15
+Geo Plumbing,Eternity Premium Range,Lunar Range – Brushed Grey,Plumbing,Taps & Mixers,Eternity Premium Range,15
+Geo Plumbing,Eternity Premium Range,Solar Range – Chrome,Plumbing,Taps & Mixers,Eternity Premium Range,15
+Geo Plumbing,Galvanised Fittings & Stand Pipe,,Plumbing,Pipe & Fittings,Galvanised Fittings & Stand Pipe,245
+Geo Plumbing,Geyser,,Plumbing,Geysers,,49
+Geo Plumbing,HDPE Fittings,,Plumbing,Pipe & Fittings,HDPE Fittings,283
+Geo Plumbing,Hose,,Plumbing,Tanks & Hose,Hose,19
+Geo Plumbing,PVC Rainwater System,,Plumbing,Drainage & Rainwater,PVC Rainwater,50
+Geo Plumbing,Packed Taps & Tap Spares,,Plumbing,Taps & Mixers,Packed Taps,107
+Geo Plumbing,Pipe,,Plumbing,Pipe & Fittings,Pipe,35
+Geo Plumbing,"Shadecloth, Foil & Membrane",,Plumbing,Sheeting & Membranes,"Shadecloth, Foil & Membrane",21
+Geo Plumbing,Shower & Bath,BDP ABS Shower Roses,Plumbing,Bathroom & Toilet,Shower & Bath,16
+Geo Plumbing,Shower & Bath,BDP SS Shower Roses,Plumbing,Bathroom & Toilet,Shower & Bath,8
+Geo Plumbing,Shower & Bath,BDP Shower Arms,Plumbing,Bathroom & Toilet,Shower & Bath,6
+Geo Plumbing,Shower & Bath,Combinations,Plumbing,Bathroom & Toilet,Shower & Bath,12
+Geo Plumbing,Shower & Bath,Hand Showers,Plumbing,Bathroom & Toilet,Shower & Bath,13
+Geo Plumbing,Shower & Bath,NFR ABS Shower Roses,Plumbing,Bathroom & Toilet,Shower & Bath,33
+Geo Plumbing,Shower & Bath,NFR SS Shower Roses,Plumbing,Bathroom & Toilet,Shower & Bath,12
+Geo Plumbing,Shower & Bath,NFR Shower Arms,Plumbing,Bathroom & Toilet,Shower & Bath,14
+Geo Plumbing,Shower & Bath,Shower Hose,Plumbing,Bathroom & Toilet,Shower & Bath,6
+Geo Plumbing,Shower & Bath,Shower Traps,Plumbing,Bathroom & Toilet,Shower & Bath,2
+Geo Plumbing,Shower & Bath,Spares,Plumbing,Bathroom & Toilet,Shower & Bath,3
+Geo Plumbing,Shower & Bath,Spouts,Plumbing,Bathroom & Toilet,Shower & Bath,4
+Geo Plumbing,Soil & Vent Fittings 110mm,,Plumbing,Pipe & Fittings,Soil & Vent Fittings,26
+Geo Plumbing,Soil & Vent Fittings 40mm/50mm,,Plumbing,Pipe & Fittings,Soil & Vent Fittings,28
+Geo Plumbing,Tank Fittings & Accessories,,Plumbing,Tanks & Hose,Tank Fittings & Accessories,40
+Geo Plumbing,Taps & Mixer Ranges,Arctic,Plumbing,Taps & Mixers,Mixer Ranges,8
+Geo Plumbing,Taps & Mixer Ranges,Cosmos,Plumbing,Taps & Mixers,Mixer Ranges,10
+Geo Plumbing,Taps & Mixer Ranges,Jabulani,Plumbing,Taps & Mixers,Mixer Ranges,6
+Geo Plumbing,Taps & Mixer Ranges,Lindi,Plumbing,Taps & Mixers,Mixer Ranges,7
+Geo Plumbing,Taps & Mixer Ranges,Nova,Plumbing,Taps & Mixers,Mixer Ranges,10
+Geo Plumbing,Taps & Mixer Ranges,Shadow,Plumbing,Taps & Mixers,Mixer Ranges,10
+Geo Plumbing,Taps & Mixer Ranges,Thulani,Plumbing,Taps & Mixers,Mixer Ranges,6
+Geo Plumbing,Taps & Mixer Ranges,Trinity,Plumbing,Taps & Mixers,Mixer Ranges,8
+Geo Plumbing,Taps & Tap Spares,,Plumbing,Taps & Mixers,Taps & Tap Spares,33
+Geo Plumbing,Toilet & Cistern,,Plumbing,Bathroom & Toilet,Toilet & Cistern,81
+Geo Plumbing,Traps,,Plumbing,Bathroom & Toilet,Traps,30
+Geo Plumbing,Underground Fittings 110mm,,Plumbing,Pipe & Fittings,Underground Fittings 110mm,27
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Angle Valves,12
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Ball Valves,34
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Check Valves,26
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Float Valves,6
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Gate Valves,20
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Other Valves,6
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Stopcocks,8
+Geo Plumbing,Valves,Brass Valves,Plumbing,Valves,Washing Machine Valves,6
+Geo Plumbing,Valves,NFR Valves,Plumbing,Valves,Angle Valves,4
+Geo Plumbing,Valves,NFR Valves,Plumbing,Valves,Ball Valves,6
+Geo Plumbing,Valves,Other Valves,Plumbing,Valves,Ball Valves,4
+Geo Plumbing,Valves,Other Valves,Plumbing,Valves,Other Valves,3
+Geo Plumbing,Wastes & Waste Spares,,Plumbing,Bathroom & Toilet,Wastes & Waste Spares,64
+Hanchu ESS,Commercial & Industrial (C&I) Energy Storage,,Solar & Backup Power,Batteries & Energy Storage,Commercial & Industrial,5
+Hanchu ESS,EV Charger,,Solar & Backup Power,EV Chargers,,1
+Hanchu ESS,Residential Energy Storage,Single Phase,Solar & Backup Power,Batteries & Energy Storage,Residential Single Phase,10
+Hanchu ESS,Residential Energy Storage,Three Phase,Solar & Backup Power,Batteries & Energy Storage,Residential Three Phase,4
+Ingco,Accessories,,Fixings & Adhesives,Nails,,6
+Ingco,Accessories,,Hand Tools,Screwdrivers & Sets,,1
+Ingco,Accessories,,Hand Tools,Spanners & Sockets,,12
+Ingco,Accessories,,Power Tools & Accessories,Abrasives & Sanding,,1
+Ingco,Accessories,,Power Tools & Accessories,Other Accessories,,1
+Ingco,Accessories,,Power Tools & Accessories,Power Bits,,14
+Ingco,Air Tools,,Air Tools & Compressors,Compressors,,2
+Ingco,Batteries & Chargers,,Power Tools & Accessories,Batteries & Chargers,,12
+Ingco,Cordless,,Air Tools & Compressors,Compressors,,3
+Ingco,Cordless,,Hand Tools,Measuring & Marking,,1
+Ingco,Cordless,,Hand Tools,Tool Sets & Kits,,1
+Ingco,Cordless,,Power Tools & Accessories,Batteries & Chargers,,1
+Ingco,Cordless,,Power Tools & Accessories,Drills & Drivers,,29
+Ingco,Cordless,,Power Tools & Accessories,Garden & Cleaning,,31
+Ingco,Cordless,,Power Tools & Accessories,Grinders,,9
+Ingco,Cordless,,Power Tools & Accessories,Other Power Tools,,38
+Ingco,Cordless,,Power Tools & Accessories,Planers & Routers,,1
+Ingco,Cordless,,Power Tools & Accessories,Rotary Hammers,,5
+Ingco,Cordless,,Power Tools & Accessories,Sanders & Polishers,,7
+Ingco,Cordless,,Power Tools & Accessories,Saws,,7
+Ingco,Cordless,,Power Tools & Accessories,Water Pumps,,2
+Ingco,Gasoline,,Power Tools & Accessories,Garden & Cleaning,,5
+Ingco,Gasoline,,Power Tools & Accessories,Generators & Petrol Tools,,11
+Ingco,Gasoline,,Power Tools & Accessories,Water Pumps,,4
+Ingco,Hand Tools,,Fixings & Adhesives,Nails,,1
+Ingco,Hand Tools,,Hand Tools,Chisels & Punches,,6
+Ingco,Hand Tools,,Hand Tools,Clamps & Vices,,12
+Ingco,Hand Tools,,Hand Tools,Finishing & Plastering,,4
+Ingco,Hand Tools,,Hand Tools,Garden Tools,,1
+Ingco,Hand Tools,,Hand Tools,Hammers & Striking,,16
+Ingco,Hand Tools,,Hand Tools,Other Hand Tools,,16
+Ingco,Hand Tools,,Hand Tools,Pliers & Gripping,,81
+Ingco,Hand Tools,,Hand Tools,Saws & Cutting,,22
+Ingco,Hand Tools,,Hand Tools,Screwdrivers & Sets,,46
+Ingco,Hand Tools,,Hand Tools,Spanners & Sockets,,21
+Ingco,Hand Tools,,Hand Tools,Tool Sets & Kits,,10
+Ingco,Power Tools,,Power Tools & Accessories,Drills & Drivers,,4
+Ingco,Power Tools,,Power Tools & Accessories,Garden & Cleaning,,5
+Ingco,Power Tools,,Power Tools & Accessories,Grinders,,7
+Ingco,Power Tools,,Power Tools & Accessories,Other Power Tools,,9
+Ingco,Power Tools,,Power Tools & Accessories,Planers & Routers,,3
+Ingco,Power Tools,,Power Tools & Accessories,Rotary Hammers,,13
+Ingco,Power Tools,,Power Tools & Accessories,Sanders & Polishers,,5
+Ingco,Power Tools,,Power Tools & Accessories,Saws,,6
+Ingco,Water Pumps,,Power Tools & Accessories,Water Pumps,,9
+Ingco,Welding,,Power Tools & Accessories,Welding,,9
+Luxpower,All-in-One Systems,,Solar & Backup Power,Inverters,,1
+Luxpower,Backup Power Kits,,Solar & Backup Power,Kits & Backup Power Packages,,1
+Luxpower,Hybrid Inverters,,Solar & Backup Power,Inverters,,3
+Luxpower,Solar PV Kits,,Solar & Backup Power,Kits & Backup Power Packages,,1
+Promac,ECoat,Exterior Range,Paint & Waterproofing,Exterior Paint,,1
+Promac,ECoat,Interior Range,Paint & Waterproofing,Interior Paint,,3
+Promac,ECoat,Prep | Prime,Paint & Waterproofing,"Primers, Undercoats & Prep",,1
+Promac,ECoat,Special Purpose,Paint & Waterproofing,Enamel & Metal Paint,,1
+Promac,ECoat,Special Purpose,Paint & Waterproofing,Roof Paint,,1
+Promac,ECoat,Special Purpose,Paint & Waterproofing,Waterproofing,,1
+Promac,Easycoat,Enamel Range,Paint & Waterproofing,Enamel & Metal Paint,,3
+Promac,Easycoat,Interior Range,Paint & Waterproofing,Interior Paint,,5
+Promac,Easycoat,Prep | Prime,Paint & Waterproofing,"Primers, Undercoats & Prep",,3
+Promac,Industrial,,Paint & Waterproofing,"Floor, Automotive & Industrial",,1
+Promac,Promac Core,Clean | Prep | Prime,Paint & Waterproofing,Cleaners & Strippers,,9
+Promac,Promac Core,Clean | Prep | Prime,Paint & Waterproofing,"Primers, Undercoats & Prep",,13
+Promac,Promac Core,Enamel Range,Paint & Waterproofing,Enamel & Metal Paint,,5
+Promac,Promac Core,Exterior Range,Paint & Waterproofing,Exterior Paint,,5
+Promac,Promac Core,Interior Range,Paint & Waterproofing,Interior Paint,,14
+Promac,Promac Core,Metal Range,Paint & Waterproofing,Enamel & Metal Paint,,9
+Promac,Rubber Duck (Waterproofing),Exterior only,Paint & Waterproofing,Waterproofing,,3
+Promac,Rubber Duck (Waterproofing),Industrial,Paint & Waterproofing,Waterproofing,,1
+Promac,Rubber Duck (Waterproofing),Interior & Exterior,Paint & Waterproofing,Waterproofing,,8
+Promac,Yes! Wood,Exterior Range,Paint & Waterproofing,Wood Care,,4
+Promac,Yes! Wood,Interior Range,Paint & Waterproofing,Wood Care,,5
+Ruwag,Cut,,Power Tools & Accessories,Other Accessories,,1
+Ruwag,Cut,Circular Saw Blades,Power Tools & Accessories,Saw & Cutting Blades,Circular Saw Blades,7
+Ruwag,Cut,Diamond Blades,Power Tools & Accessories,Saw & Cutting Blades,Diamond Blades,10
+Ruwag,Cut,Hacksaw Blades,Power Tools & Accessories,Saw & Cutting Blades,Hacksaw Blades,3
+Ruwag,Cut,Hole Saws,Power Tools & Accessories,Saw & Cutting Blades,Hole Saws,8
+Ruwag,Cut,Jigsaw Blades,Power Tools & Accessories,Saw & Cutting Blades,Jigsaw Blades,21
+Ruwag,Drill,Ceramic Drill Bits,Power Tools & Accessories,Drill Bits,Ceramic Drill Bits,3
+Ruwag,Drill,Drill Bit Sets,Power Tools & Accessories,Drill Bits,Drill Bit Sets,34
+Ruwag,Drill,Drill Chucks,Power Tools & Accessories,Drill Bits,Drill Chucks,6
+Ruwag,Drill,Masonry Drill Bits,Power Tools & Accessories,Drill Bits,Masonry Drill Bits,25
+Ruwag,Drill,Metal Drill Bits,Power Tools & Accessories,Drill Bits,Metal Drill Bits,17
+Ruwag,Drill,Wood Drill Bits,Power Tools & Accessories,Drill Bits,Wood Drill Bits,7
+Ruwag,Fix,Anchors,Fixings & Adhesives,Anchors & Wall Plugs,,11
+Ruwag,Fix,Fastener Kits,Fixings & Adhesives,Fastener Kits & Pre-packs,,5
+Ruwag,Fix,Fix It Pre Pack,Fixings & Adhesives,Fastener Kits & Pre-packs,,12
+Ruwag,Fix,Fix It Trade Pack,Fixings & Adhesives,Fastener Kits & Pre-packs,,3
+Ruwag,Fix,Fixings,Hand Tools,Other Hand Tools,,1
+Ruwag,Fix,Hardware,Fixings & Adhesives,Ironmongery & Door Hardware,,26
+Ruwag,Fix,Ironmongery Hardware Pre Pack,Fixings & Adhesives,Ironmongery & Door Hardware,,61
+Ruwag,Fix,Nails,Fixings & Adhesives,Nails,,16
+Ruwag,Fix,Nuts & Bolts,Fixings & Adhesives,"Nuts, Bolts & Washers",,13
+Ruwag,Fix,Power Bits,Power Tools & Accessories,Power Bits,,18
+Ruwag,Fix,Rivets,Fixings & Adhesives,Rivets,,3
+Ruwag,Fix,Rods,Fixings & Adhesives,Threaded Rod,,1
+Ruwag,Fix,Screws,Fixings & Adhesives,Screws,,31
+Ruwag,Fix,Washers,Fixings & Adhesives,"Nuts, Bolts & Washers",,11
+Ruwag,Harden (brand),,Hand Tools,Pliers & Gripping,,1
+Ruwag,Harden (brand),Accessories,Fixings & Adhesives,Nails,,4
+Ruwag,Harden (brand),Accessories,Hand Tools,Other Hand Tools,,13
+Ruwag,Harden (brand),Accessories,Hand Tools,Safety Gear,,1
+Ruwag,Harden (brand),Bolts & Cable,Hand Tools,Saws & Cutting,,9
+Ruwag,Harden (brand),Chisels & Punches,Hand Tools,Chisels & Punches,,24
+Ruwag,Harden (brand),Clamps,Hand Tools,Clamps & Vices,,23
+Ruwag,Harden (brand),Cutting,Hand Tools,Saws & Cutting,,30
+Ruwag,Harden (brand),Finishing Tools,Hand Tools,Finishing & Plastering,,31
+Ruwag,Harden (brand),Garden Tools,Hand Tools,Garden Tools,,13
+Ruwag,Harden (brand),Gardening,Hand Tools,Garden Tools,,3
+Ruwag,Harden (brand),Gripping Tools,Hand Tools,Pliers & Gripping,,49
+Ruwag,Harden (brand),Hammers,Hand Tools,Hammers & Striking,,32
+Ruwag,Harden (brand),Measuring Tapes,Hand Tools,Measuring & Marking,,13
+Ruwag,Harden (brand),Measuring Tools,Hand Tools,Measuring & Marking,,16
+Ruwag,Harden (brand),Saws,Hand Tools,Saws & Cutting,,13
+Ruwag,Harden (brand),Screwdrivers & Screwdriver Sets,Hand Tools,Screwdrivers & Sets,,166
+Ruwag,Harden (brand),Tin Snips,Hand Tools,Tin Snips,,4
+Ruwag,Sand,Bonded Abrasives,Power Tools & Accessories,Abrasives & Sanding,,13
+Ruwag,Sand,Sanding Accessories,Power Tools & Accessories,Abrasives & Sanding,,13
+Ruwag,tesa® (brand),Bath & Household Accessories,Fixings & Adhesives,Bath & Household,,12
+Ruwag,tesa® (brand),Masking,Fixings & Adhesives,Tapes,Masking,5
+Ruwag,tesa® (brand),Mounting and Hanging,Fixings & Adhesives,Mounting & Hanging,,10
+Ruwag,tesa® (brand),Packaging,Fixings & Adhesives,Tapes,Packaging,5
+Ruwag,tesa® (brand),Removable Fixation,Fixings & Adhesives,Mounting & Hanging,,9
+Ruwag,tesa® (brand),Repairing,Fixings & Adhesives,Tapes,Repair,13
+Ruwag,tesa® (brand),Safety & Electrical Insulation,Fixings & Adhesives,Tapes,Insulation,11
+Ruwag,tesa® (brand),Weather Sealing,Fixings & Adhesives,Weather Sealing,,13
+Sunsynk,Accessories,,Solar & Backup Power,Installation Accessories & Cables,,1
+Sunsynk,Accessories,AC Components,Solar & Backup Power,Installation Accessories & Cables,,1
+Sunsynk,Accessories,Cabinets,Solar & Backup Power,Installation Accessories & Cables,,1
+Sunsynk,Accessories,Control & Monitoring,Solar & Backup Power,"Monitoring, Meters & CTs",,2
+Sunsynk,Accessories,Control Cables,Solar & Backup Power,Installation Accessories & Cables,,1
+Sunsynk,Accessories,Meters & CTs,Solar & Backup Power,"Monitoring, Meters & CTs",,1
+Sunsynk,All-in-One Systems,,Solar & Backup Power,Inverters,,3
+Sunsynk,Backup Power Kits,,Solar & Backup Power,Kits & Backup Power Packages,,6
+Sunsynk,Batteries,,Solar & Backup Power,Batteries & Energy Storage,,10
+Sunsynk,Hybrid Inverters,,Solar & Backup Power,Inverters,,14
+Sunsynk,Solar PV Kits,,Solar & Backup Power,Kits & Backup Power Packages,,3
+WACO,General Products,Air Movement,Electrical,Fans & Air Movement,,25
+WACO,General Products,Contracting Items,Electrical,Contracting Items & Electrical Tools,,163
+WACO,General Products,Enclosures,Electrical,Enclosures & DB Boards,,127
+WACO,General Products,General Lighting,Lighting,General Lighting,,104
+WACO,General Products,Meters,Electrical,Circuit Protection & Control,Meters,2
+WACO,General Products,Miscellaneous,Electrical,Sound Equipment & Miscellaneous,,12
+WACO,General Products,Plugs And Multiplugs,Electrical,"Switches, Plugs & Sockets",Plugs & Multiplugs,29
+WACO,General Products,Security,Electrical,Batteries & Torches,,49
+WACO,General Products,Security,Electrical,Security,,7
+WACO,General Products,Security,Electrical,"Switches, Plugs & Sockets",Switches,12
+WACO,General Products,Sound Equipment,Electrical,Sound Equipment & Miscellaneous,,8
+WACO,General Products,Tools,Electrical,Contracting Items & Electrical Tools,,103
+WACO,General Products,Wire and Wiring Accessories,Electrical,Wire & Wiring Accessories,,291
+WACO,Lighting Products,Aluminium Downlights,Lighting,Indoor LED & Downlights,Aluminium Downlights,13
+WACO,Lighting Products,Die-Cast Aluminium Brick Lights,Lighting,Outdoor & Security Lighting,Brick Lights,23
+WACO,Lighting Products,Die-cast Aluminium Bulkheads,Lighting,Outdoor & Security Lighting,Bulkheads,27
+WACO,Lighting Products,Flood Lights,Lighting,Floodlights,,3
+WACO,Lighting Products,GU10 Lamp Holders,Lighting,Lamp Holders & Spotlights,,2
+WACO,Lighting Products,Indoor Fluorescents,Lighting,Fluorescent Fittings,Indoor,14
+WACO,Lighting Products,Indoor Glass Fittings,Lighting,Indoor LED & Downlights,Glass Fittings,13
+WACO,Lighting Products,Industrial Lighting,Lighting,Industrial Lighting,,45
+WACO,Lighting Products,LED Floodlights,Lighting,Floodlights,,2
+WACO,Lighting Products,LED Indoor,Lighting,Indoor LED & Downlights,LED Indoor,40
+WACO,Lighting Products,LED Outdoor,Lighting,Outdoor & Security Lighting,LED Outdoor,6
+WACO,Lighting Products,Lamps,Lighting,Lamps & Bulbs,,29
+WACO,Lighting Products,Outdoor Fluorescents,Lighting,Fluorescent Fittings,Outdoor,8
+WACO,Lighting Products,Plastic Garden Spikes,Lighting,Outdoor & Security Lighting,Garden Spikes,1
+WACO,Lighting Products,Saturn Spotlights,Lighting,Lamp Holders & Spotlights,,2
+WACO,Lighting Products,Steel Downlights,Lighting,Indoor LED & Downlights,Steel Downlights,17
+WACO,Power Products,Automation Devices,Electrical,Circuit Protection & Control,Automation & Pilot Devices,16
+WACO,Power Products,Compact Pilot Devices,Electrical,Circuit Protection & Control,Automation & Pilot Devices,19
+WACO,Power Products,Contactors And Contactor Relays,Electrical,Circuit Protection & Control,Contactors & Relays,22
+WACO,Power Products,Electronic Sounders,Electrical,Circuit Protection & Control,Sounders,2
+WACO,Power Products,Enclosed Isolators,Electrical,Circuit Protection & Control,Isolators,14
+WACO,Power Products,Enclosures,Electrical,Enclosures & DB Boards,,66
+WACO,Power Products,Industrial Plugs and Sockets,Electrical,"Switches, Plugs & Sockets",Industrial Plugs & Sockets,15
+WACO,Power Products,Industrial Relays,Electrical,Circuit Protection & Control,Contactors & Relays,13
+WACO,Power Products,Maintenance Chemicals,Electrical,Maintenance Chemicals,,32
+WACO,Power Products,Miniature Circuit Breakers,Electrical,Circuit Protection & Control,Circuit Breakers (MCBs),70
+WACO,Power Products,Switches,Electrical,"Switches, Plugs & Sockets",Switches,56
+Wadfow,Hand tools,,Electrical,Contracting Items & Electrical Tools,,4
+Wadfow,Hand tools,,Fixings & Adhesives,Fastener Kits & Pre-packs,,6
+Wadfow,Hand tools,,Hand Tools,Chisels & Punches,,3
+Wadfow,Hand tools,,Hand Tools,Clamps & Vices,,8
+Wadfow,Hand tools,,Hand Tools,Finishing & Plastering,,3
+Wadfow,Hand tools,,Hand Tools,Garden Tools,,2
+Wadfow,Hand tools,,Hand Tools,Hammers & Striking,,5
+Wadfow,Hand tools,,Hand Tools,Measuring & Marking,,4
+Wadfow,Hand tools,,Hand Tools,Other Hand Tools,,8
+Wadfow,Hand tools,,Hand Tools,Pliers & Gripping,,16
+Wadfow,Hand tools,,Hand Tools,Safety Gear,,1
+Wadfow,Hand tools,,Hand Tools,Saws & Cutting,,11
+Wadfow,Hand tools,,Hand Tools,Screwdrivers & Sets,,4
+Wadfow,Hand tools,,Hand Tools,Spanners & Sockets,,18
+Wadfow,Hand tools,,Hand Tools,Tin Snips,,1
+Wadfow,Hand tools,,Hand Tools,Tool Storage,,3
+Wadfow,Power tools accessories,,Power Tools & Accessories,Abrasives & Sanding,,1
+Wadfow,Power tools accessories,,Power Tools & Accessories,Other Accessories,,1
+Wadfow,Power tools accessories,,Power Tools & Accessories,Power Bits,,4
+Wadfow,Power tools accessories,,Power Tools & Accessories,Saw & Cutting Blades,Diamond Blades,2

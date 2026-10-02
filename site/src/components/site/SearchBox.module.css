@@ -1,0 +1,193 @@
+.wrap {
+  position: relative;
+  display: block;
+}
+.wrap form {
+  display: grid;
+  gap: 6px;
+}
+.label {
+  font-weight: 600;
+}
+.row {
+  position: relative;
+  display: flex;
+}
+.icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--steel-700);
+  pointer-events: none;
+}
+.row input {
+  flex: 1;
+  width: 0; /* the input's own width must not set the row's minimum */
+  min-width: 0;
+  height: 44px;
+  padding: 0 40px;
+  border: 1px solid var(--steel-500);
+  border-radius: var(--radius-input);
+  background: var(--paper);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink);
+}
+.row input::placeholder {
+  color: var(--steel-500);
+}
+.row kbd {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  min-width: 24px;
+  padding: 2px 6px;
+  border: var(--border);
+  border-radius: var(--radius-input);
+  background: var(--concrete);
+  color: var(--steel-700);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  text-align: center;
+  pointer-events: none;
+}
+.row input:focus ~ kbd {
+  display: none;
+}
+
+/* Hero and page boxes: taller, with a red Search button joined to the field */
+.hero .row input,
+.page .row input {
+  padding: 0 14px 0 44px;
+  border-right: 0;
+  border-radius: var(--radius-input) 0 0 var(--radius-input);
+}
+.hero .row input {
+  height: 56px;
+  font-size: 1.0625rem;
+}
+.page .row input {
+  height: 48px;
+}
+.hero .icon,
+.page .icon {
+  left: 14px;
+}
+.row button {
+  padding: 0 24px;
+  border: 0;
+  border-radius: 0 var(--radius-input) var(--radius-input) 0;
+  background: var(--red);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hero .row button {
+  height: 56px;
+}
+.page .row button {
+  height: 48px;
+  padding: 0 20px;
+}
+.row button:hover {
+  background: var(--red-deep);
+}
+
+/* Results panel: floats, so it gets the one allowed shadow */
+.panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 80;
+  max-height: min(70vh, 520px);
+  overflow-y: auto;
+  background: var(--paper);
+  border: var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-float);
+}
+.header .panel {
+  min-width: min(520px, 90vw);
+}
+.panel ul {
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+}
+.panel li a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: var(--radius-input);
+  color: var(--ink);
+  text-decoration: none;
+}
+.panel li a:hover,
+.panel li a.active {
+  background: var(--concrete);
+}
+.catRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.catRow span {
+  color: var(--steel-700);
+  font-size: var(--fs-small);
+}
+.prodRow {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+}
+.thumb {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: var(--concrete);
+  border-radius: var(--radius-input);
+  color: var(--steel-500);
+}
+.thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+.prodText {
+  display: grid;
+  min-width: 0;
+}
+.prodBrand {
+  color: var(--steel-500);
+  font-size: 0.8125rem;
+}
+.prodName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.prodCode {
+  color: var(--steel-700);
+  font-size: 0.8125rem;
+}
+.seeAll {
+  color: var(--red);
+  font-weight: 600;
+}
+.none {
+  display: grid;
+  gap: 4px;
+  padding: 14px;
+}
+.none span {
+  color: var(--steel-700);
+}

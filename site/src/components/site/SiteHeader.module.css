@@ -1,0 +1,173 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--ink-950);
+  border-bottom: 1px solid var(--steel-900);
+  color: var(--concrete);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: var(--header-h-small);
+  transition: height 180ms var(--ease);
+}
+
+.logo {
+  display: block;
+  flex: none;
+  line-height: 0;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+  transition: height 180ms var(--ease);
+}
+
+.nav {
+  display: none;
+}
+
+.search {
+  display: none;
+}
+
+.searchLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  color: var(--concrete);
+}
+
+@media (min-width: 900px) {
+  .bar {
+    height: var(--header-h);
+    gap: 24px;
+  }
+  .small .bar {
+    height: var(--header-h-small);
+  }
+  .logo img {
+    height: 60px;
+  }
+  .small .logo img {
+    height: 44px;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .search {
+    position: relative;
+    display: block;
+    flex: 1;
+    max-width: 520px;
+    margin-left: auto;
+  }
+  .searchLink {
+    display: none;
+  }
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  padding: 0 8px;
+  border: 0;
+  background: none;
+  color: var(--concrete);
+  font-weight: 600;
+  cursor: pointer;
+}
+a.navLink {
+  text-decoration: none;
+}
+.navLink[aria-current="page"] {
+  color: var(--red-on-ink);
+}
+.navLink:hover {
+  color: var(--red-on-ink);
+}
+.flip {
+  transform: rotate(180deg);
+}
+
+.menuWrap {
+  position: static;
+}
+
+/* Mega menu: drops 8px and fades in (section 9, 200ms) */
+.mega {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  background: var(--paper);
+  border-bottom: var(--border);
+  box-shadow: var(--shadow-float);
+  animation: drop 200ms var(--ease) both;
+}
+.mega[hidden] {
+  display: none;
+}
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.megaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 32px;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 24px var(--gutter) 28px;
+  list-style: none;
+}
+
+.megaItem {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+}
+.megaSign {
+  justify-self: start;
+  text-decoration: none;
+}
+
+.megaCats {
+  display: grid;
+  gap: 2px;
+  padding: 0;
+  list-style: none;
+  font-size: var(--fs-small);
+}
+.megaCats a {
+  display: inline-block;
+  padding: 3px 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+.megaCats a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+.megaAll {
+  font-weight: 600;
+  color: var(--red) !important;
+}
+
+/* The mega menu is a light panel inside the dark header: keep the red focus ring there */
+.mega :focus-visible {
+  outline-color: var(--red);
+}

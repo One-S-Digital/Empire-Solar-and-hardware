@@ -1,0 +1,32 @@
+.strip {
+  background: var(--ink);
+  color: var(--concrete);
+  font-size: var(--fs-small);
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 36px;
+}
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.link {
+  color: var(--concrete);
+  text-underline-offset: 0.18em;
+}
+.link:hover {
+  color: #fff;
+}
+@media (max-width: 639px) {
+  .inner {
+    justify-content: center;
+  }
+  .link {
+    display: none;
+  }
+}
