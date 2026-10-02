@@ -191,3 +191,29 @@
 .none span {
   color: var(--steel-700);
 }
+
+/* Header dropdown: dark, to match the header. Thumbnails stay light so supplier photos read. */
+.header .panel {
+  background: var(--ink-800);
+  border-color: var(--steel-900);
+  color: var(--concrete);
+}
+.header .panel li a {
+  color: var(--concrete);
+}
+.header .panel li a:hover,
+.header .panel li a.active {
+  background: var(--steel-900);
+}
+.header .catRow span,
+.header .prodBrand,
+.header .prodCode,
+.header .none span {
+  color: var(--on-ink-muted);
+}
+.header .thumb {
+  background: var(--paper);
+}
+.header .seeAll {
+  color: var(--red-on-ink);
+}

@@ -23,10 +23,22 @@
   display: grid;
   gap: 14px;
   min-width: 0;
+  padding: 20px;
+  background: #fff;
+  border-top: 4px solid var(--red);
+  border-radius: var(--radius-card);
+}
+@media (min-width: 900px) {
+  .info {
+    padding: 32px;
+  }
 }
 .brand {
-  color: var(--steel-500);
-  font-weight: 600;
+  color: var(--steel-700);
+  font-weight: 700;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .title {
   font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem);
