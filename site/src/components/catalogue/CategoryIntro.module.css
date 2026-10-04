@@ -1,0 +1,6 @@
+.intro {
+  max-width: 68ch;
+  margin: 0 0 24px;
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}

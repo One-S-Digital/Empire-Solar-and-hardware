@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ListingHeader } from "@/components/catalogue/ListingHeader";
 import { Listing } from "@/components/catalogue/Listing";
+import { CategoryIntro } from "@/components/catalogue/CategoryIntro";
+import { activeFilterCount } from "@/lib/filters";
 import { getCategory, getDepartments } from "@/lib/catalogue";
 import { listMetadata, loadList } from "@/lib/list-page";
 import { categorySeo } from "@/lib/seo";
@@ -60,6 +62,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         lead={categorySeo(`/catalogue/${dept.slug}/${cat.slug}`)?.description}
       />
       <div className="container">
+        <CategoryIntro path={`/catalogue/${dept.slug}/${cat.slug}`} plain={state.page === 1 && state.sort === "az" && activeFilterCount(state.filters) === 0} />
         <Listing
           all={all}
           families={families}

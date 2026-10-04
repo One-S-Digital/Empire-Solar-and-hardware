@@ -1,4 +1,5 @@
 import categoryCopy from "../data/category-seo.json";
+import categoryIntros from "../data/category-intros.json";
 
 /**
  * Department titles are the title tags from SEO plan section 4.2. The intro lines follow its H1 rule:
@@ -52,4 +53,9 @@ type CategoryCopy = { title: string; description: string; question: string | nul
  */
 export function categorySeo(path: string): CategoryCopy | undefined {
   return (categoryCopy as Record<string, CategoryCopy>)[path];
+}
+
+/** The hand-edited intro paragraph for a category page (SEO plan 4.3), when one has been written. */
+export function categoryIntro(path: string): string | undefined {
+  return (categoryIntros as Record<string, string>)[path];
 }
