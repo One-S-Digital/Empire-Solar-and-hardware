@@ -5,6 +5,7 @@ import { DepartmentCover } from "@/components/catalogue/DepartmentCover";
 import { StockNotice } from "@/components/catalogue/StockNotice";
 import { SearchBox } from "@/components/site/SearchBox";
 import { getBrands, getDepartments, getTotals } from "@/lib/catalogue";
+import { brandDisplayName, brandPath } from "@/lib/brands";
 import { formatCount } from "@/lib/catalogue-display";
 import { imageSet } from "@/lib/images";
 import styles from "./catalogue.module.css";
@@ -73,8 +74,8 @@ export default async function CataloguePage() {
           <ul>
             {brands.map((b) => (
               <li key={b.slug}>
-                <Link href={`/search?q=${encodeURIComponent(b.name)}`}>
-                  <strong>{b.name}</strong>
+                <Link href={brandPath(b.slug)}>
+                  <strong>{brandDisplayName(b.slug, b.name)}</strong>
                   <span className="mono">{formatCount(b.rows)}</span>
                 </Link>
               </li>

@@ -96,3 +96,11 @@ export function productSchema(f: Family, categoryName: string) {
   }
   return { ...base, "@type": "Product", ...(coded[0] ? { sku: coded[0].code } : {}), ...(coded[0]?.size ? { size: coded[0].size } : {}) };
 }
+
+export function faqSchema(items: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((i) => ({ "@type": "Question", name: i.q, acceptedAnswer: { "@type": "Answer", text: i.a } })),
+  };
+}

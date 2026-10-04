@@ -1,9 +1,10 @@
 import "server-only";
-import { getDepartments, getFamilies } from "./catalogue";
+import { getBrands, getDepartments, getFamilies } from "./catalogue";
+import { brandPath } from "./brands";
 import { absolute, siteUrl } from "./site-url";
 
 // Split by type (SEO plan 3.7): pages, categories, products-1..n. No lastmod: the catalogue does not record when a
-// page really changed, and the plan says to leave it out rather than guess. Brand pages join when they exist.
+// page really changed, and the plan says to leave it out rather than guess. 
 export const PRODUCTS_PER_FILE = 2000;
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -28,7 +29,7 @@ async function indexableProducts() {
 }
 
 export async function sitemapIndex() {
-  const files = ["pages.xml", "categories.xml"];
+  const files = ["pages.xml", "categories.xml", "brands.xml"];
   const pages = Math.max(1, Math.ceil((await indexableProducts()).length / PRODUCTS_PER_FILE));
   for (let i = 1; i <= pages; i++) files.push(`products-${i}.xml`);
   return `${XML}<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${files
@@ -49,6 +50,7 @@ export async function sitemapFile(name: string): Promise<string | null> {
     }
     return urlset(entries);
   }
+  if (name === "brands.xml") return urlset((await getBrands()).map((b) => ({ path: brandPath(b.slug) })));
   const m = /^products-(\d+)\.xml$/.exec(name);
   if (m) {
     const n = Number(m[1]);

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { getBrands, getDepartments } from "@/lib/catalogue";
+import { brandDisplayName, brandPath } from "@/lib/brands";
 import { store } from "@/lib/store";
 import styles from "./SiteFooter.module.css";
 
@@ -48,7 +49,7 @@ export async function SiteFooter() {
           <ul className={styles.brands}>
             {brands.map((b) => (
               <li key={b.slug}>
-                <Link href={`/search?q=${encodeURIComponent(b.name)}`}>{b.name}</Link>
+                <Link href={brandPath(b.slug)}>{brandDisplayName(b.slug, b.name)}</Link>
               </li>
             ))}
           </ul>

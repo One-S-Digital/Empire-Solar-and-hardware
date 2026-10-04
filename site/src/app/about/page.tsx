@@ -11,6 +11,7 @@ import {
   getFamilies,
 } from "@/lib/catalogue";
 import { formatCount } from "@/lib/catalogue-display";
+import { brandDisplayName, brandPath } from "@/lib/brands";
 import { imageSet } from "@/lib/images";
 import { store } from "@/lib/store";
 import styles from "./about.module.css";
@@ -172,8 +173,8 @@ export default async function AboutPage() {
           <ul className={styles.brands}>
             {brands.map((b) => (
               <li key={b.slug}>
-                <Link href={`/search?q=${encodeURIComponent(b.name)}`}>
-                  <strong>{b.name}</strong>
+                <Link href={brandPath(b.slug)}>
+                  <strong>{brandDisplayName(b.slug, b.name)}</strong>
                   <span>{b.main}</span>
                   <span className="mono">{formatCount(b.rows)} products</span>
                 </Link>
