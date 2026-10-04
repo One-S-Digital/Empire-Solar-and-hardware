@@ -38,7 +38,7 @@ export async function sitemapIndex() {
 }
 
 export async function sitemapFile(name: string): Promise<string | null> {
-  if (name === "pages.xml") return urlset(["/", "/catalogue", "/about", "/contact"].map((path) => ({ path })));
+  if (name === "pages.xml") return urlset(["/", "/catalogue", "/about", "/contact", "/faq"].map((path) => ({ path })));
   if (name === "categories.xml") {
     const entries: Entry[] = [];
     for (const d of await getDepartments()) {

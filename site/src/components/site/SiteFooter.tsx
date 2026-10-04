@@ -30,6 +30,7 @@ export async function SiteFooter() {
           </a>
           <Link href="/about">About us</Link>
           <Link href="/contact">Contact and opening hours</Link>
+          <Link href="/faq">Store FAQ</Link>
           <Link href="/privacy">Privacy policy</Link>
         </div>
 
