@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { breadcrumbSchema, JsonLd } from "@/lib/jsonld";
 import styles from "./catalogue.module.css";
 
 export type Crumb = { label: string; href?: string };
@@ -6,6 +7,7 @@ export type Crumb = { label: string; href?: string };
 export function Breadcrumb({ items }: { items: Crumb[] }) {
   return (
     <nav aria-label="Breadcrumb" className={styles.crumbs}>
+      <JsonLd data={breadcrumbSchema(items)} />
       <ol>
         {items.map((c, i) => (
           <li key={c.label}>

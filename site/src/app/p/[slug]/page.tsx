@@ -4,6 +4,7 @@ import { Breadcrumb } from "@/components/catalogue/Breadcrumb";
 import { ProductCard } from "@/components/catalogue/ProductCard";
 import { ProductTile } from "@/components/catalogue/ProductTile";
 import { getCategory, getFamily, relatedFamilies } from "@/lib/catalogue";
+import { JsonLd, productSchema } from "@/lib/jsonld";
 import { displayName } from "@/lib/catalogue-display";
 import styles from "./product.module.css";
 import { AddToList } from "@/components/enquiry/AddToList";
@@ -51,6 +52,7 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <div className="container">
+      <JsonLd data={productSchema(family, `${dept.name} > ${cat.name}`)} />
       <div className={styles.crumbs}>
         <Breadcrumb
           items={[

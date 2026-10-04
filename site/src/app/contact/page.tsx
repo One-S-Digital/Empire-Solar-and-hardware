@@ -40,47 +40,8 @@ const dayOfWeek = [
 
 export default function ContactPage() {
   const hours = store.hours;
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HardwareStore",
-    name: store.name,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Kremetart Centre, Van Velden St",
-      addressLocality: "Brits",
-      postalCode: "0250",
-      addressCountry: "ZA",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: -25.6322143,
-      longitude: 27.781813,
-    },
-    telephone: store.phone,
-    hasMap: store.mapsUrl,
-    openingHoursSpecification: hours
-      ? days.flatMap(([k, name]) => {
-          const h = hours[k];
-          return h
-            ? [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: name,
-                  opens: h.open,
-                  closes: h.close,
-                },
-              ]
-            : [];
-        })
-      : undefined,
-  };
-
   return (
     <div className="container">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
       <header className={styles.head}>
         <SectionHeading
           as="h1"

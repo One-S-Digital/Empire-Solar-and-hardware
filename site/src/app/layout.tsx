@@ -6,7 +6,9 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { WhatsAppButton } from "@/components/site/WhatsAppButton";
 import { UtilityStrip } from "@/components/site/UtilityStrip";
-import { getDepartments } from "@/lib/catalogue";
+import { getBrands, getDepartments } from "@/lib/catalogue";
+import { JsonLd, storeSchema } from "@/lib/jsonld";
+import { siteUrl } from "@/lib/site-url";
 import "../styles/globals.css";
 
 // Three families, each with a job (Website Plan, 2.2): subset to Latin, swap, display font preloaded.
@@ -35,6 +37,7 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Empire Solar & Hardware, Brits",
     template: "%s | Empire Solar & Hardware, Brits",
@@ -58,9 +61,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     top: d.categories.slice(0, 4).map((c) => ({ slug: c.slug, name: c.name })),
   }));
 
+  const brandNames = (await getBrands()).map((b) => b.name);
+
   return (
     <html lang="en-ZA" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <body>
+        <JsonLd data={storeSchema(brandNames)} />
         <a href="#main" className="skip-link">
           Skip to content
         </a>

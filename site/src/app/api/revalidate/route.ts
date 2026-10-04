@@ -10,5 +10,7 @@ export async function POST(request: Request) {
   clearCatalogueCache();
   revalidatePath("/", "layout");
   revalidatePath("/search-index.json");
+  revalidatePath("/sitemap.xml");
+  revalidatePath("/sitemaps/[file]", "page");
   return Response.json({ ok: true });
 }

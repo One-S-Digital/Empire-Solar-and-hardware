@@ -9,6 +9,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { SearchBox } from "@/components/site/SearchBox";
 import { Docket } from "@/components/Docket";
 import { getDepartments, getFamily, getTotals } from "@/lib/catalogue";
+import { JsonLd, websiteSchema } from "@/lib/jsonld";
 import { displayName, formatCount } from "@/lib/catalogue-display";
 import { imageSet } from "@/lib/images";
 import { store } from "@/lib/store";
@@ -55,6 +56,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <JsonLd data={websiteSchema()} />
       <HeroBanner
         eyebrow="Kremetart Centre, Brits"
         title="Solar, tools and plumbing. One counter in Brits."
