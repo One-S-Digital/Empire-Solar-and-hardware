@@ -40,3 +40,17 @@ Search is MiniSearch: the results page runs it on the server, and the instant dr
 
 Always check the production build as well as dev (`pnpm build && pnpm start`): a page that works in dev can fail when pre-rendered. Product pages (`/p/[slug]`) are pre-rendered, so they must never read `searchParams` or cookies on the server.
 
+
+## Local WordPress / WooCommerce
+
+The products live in a local WooCommerce (Docker) and the site reads them from there.
+
+```bash
+cd wordpress && docker compose up -d && ./setup.sh   # once: WordPress + WooCommerce on http://localhost:8088 (admin / admin)
+./import.sh                                          # src/data/catalogue.json -> WooCommerce (re-runnable; LIMIT=50 for a trial)
+cp ../site/.env.example ../site/.env.local           # WP_URL points the site at WordPress
+```
+
+- With `WP_URL` set the site reads `/wp-json/empire/v1/catalogue` (`wordpress/empire-core.php`), keeps it in memory for 5 minutes, and falls back to `src/data/catalogue.json` only in `pnpm dev`. Production never falls back silently.
+- WordPress calls `/api/revalidate` (header `x-revalidate-secret`, set `REVALIDATE_SECRET` in the site's env) after every product save, so edits show on the next page load with no rebuild. Pages are also rebuilt at least hourly.
+- `data/build_catalogue.py` makes `src/data/catalogue.json` from the workbook. It is the source for the import and is never overwritten by the site, so the order is simply: rebuild, import.

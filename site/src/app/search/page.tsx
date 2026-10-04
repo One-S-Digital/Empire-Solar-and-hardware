@@ -12,8 +12,8 @@ export const metadata: Metadata = {
 
 export default async function SearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
   const q = ((await searchParams).q ?? "").trim().slice(0, 100);
-  const { total, results } = searchFamilies(q);
-  const categories = searchCategories(q);
+  const { total, results } = await searchFamilies(q);
+  const categories = await searchCategories(q);
   return (
     <div className="container">
       <header className={styles.head}>

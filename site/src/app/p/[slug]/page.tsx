@@ -21,7 +21,7 @@ const fullName = (brand: string, name: string) => {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const family = getFamily((await params).slug);
+  const family = await getFamily((await params).slug);
   if (!family) return {};
   // SEO plan 4.4: {Brand} {Product} ({Main code}) | Empire, Brits. Drop the suffix before the spec if it runs long.
   const name = fullName(family.brand, family.name);
@@ -39,13 +39,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ProductPage({ params }: Props) {
-  const family = getFamily((await params).slug);
+  const family = await getFamily((await params).slug);
   if (!family) notFound();
-  const found = getCategory(family.dept, family.cat);
+  const found = await getCategory(family.dept, family.cat);
   if (!found) notFound();
   const { dept, cat } = found;
   const sub = cat.subs?.find((s) => s.slug === family.sub);
-  const related = relatedFamilies(family, 8);
+  const related = await relatedFamilies(family, 8);
   const hasTable = family.variants.some((v) => v.code || v.label);
   const stated = Math.max(0, ...family.variants.map((v) => v.statedVariants ?? 0));
 

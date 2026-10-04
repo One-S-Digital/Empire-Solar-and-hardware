@@ -11,11 +11,11 @@ import styles from "./department.module.css";
 
 type Props = { params: Promise<{ department: string }> };
 
-export const generateStaticParams = () =>
-  getDepartments().map((d) => ({ department: d.slug }));
+export const generateStaticParams = async () =>
+  (await getDepartments()).map((d) => ({ department: d.slug }));
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const dept = getDepartment((await params).department);
+  const dept = await getDepartment((await params).department);
   if (!dept) return {};
   const seo = DEPARTMENT_SEO[dept.slug];
   return {
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function DepartmentPage({ params }: Props) {
-  const dept = getDepartment((await params).department);
+  const dept = await getDepartment((await params).department);
   if (!dept) notFound();
   const seo = DEPARTMENT_SEO[dept.slug];
   const img = imageSet(`cover-${dept.slug}`);

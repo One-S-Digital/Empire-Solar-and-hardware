@@ -1,6 +1,6 @@
 # Catalogue build report
 
-Generated 2026-10-01 by `data/build_catalogue.py`. Source: `supplier-catalogue.xlsx`.
+Generated 2026-10-02 by `data/build_catalogue.py`. Source: `supplier-catalogue.xlsx`.
 
 ## Checks (Website Plan, phase 2 'done when')
 
@@ -48,9 +48,9 @@ Empty categories (defined in the plan but no products yet): 0
 
 ## Indexing tiers (SEO plan 3.3, applied to product families)
 
-- Tier B (has a photo or real specs, indexed): **2,286**
-- Tier C (no photo and no specs, `noindex, follow` until enriched): **524**
-- Families with no photo at all: **716** (full list in `families-without-photo.csv`)
+- Tier B (has a photo or real specs, indexed): **2,742**
+- Tier C (no photo and no specs, `noindex, follow` until enriched): **68**
+- Families with no photo at all: **92** (full list in `families-without-photo.csv`)
 - Brand names shared by more than one family with the same product name (need a spec added to the name before they can be indexed): **29**
 
 ## Changes to the plan's category list

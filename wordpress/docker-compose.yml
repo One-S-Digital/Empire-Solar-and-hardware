@@ -1,0 +1,59 @@
+# Local WordPress + WooCommerce for the Empire catalogue import (phase 1/2 stand-in).
+# Run from this folder: docker compose up -d, then ./setup.sh, then ./import.sh
+name: empire-wp
+services:
+  db:
+    image: mariadb:11
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wp
+      MARIADB_PASSWORD: wp
+      MARIADB_ROOT_PASSWORD: root
+    volumes:
+      - db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      retries: 20
+  wordpress:
+    image: wordpress:php8.3-apache
+    depends_on:
+      db: { condition: service_healthy }
+    ports:
+      - "8088:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wp
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_MEMORY_LIMIT', '512M');
+        define('WP_HOME', 'http://localhost:8088');
+        define('WP_SITEURL', 'http://localhost:8088');
+    volumes:
+      - wp:/var/www/html
+      - ../site/public:/import/public:ro
+      - ../site/src/data:/import/data:ro
+      - ./import-products.php:/import/import-products.php:ro
+      - ./backfill-labels.php:/import/backfill-labels.php:ro
+      - ./empire-core.php:/var/www/html/wp-content/mu-plugins/empire-core.php:ro
+  wpcli:
+    image: wordpress:cli-php8.3
+    profiles: ["tools"]
+    user: "33:33"
+    depends_on: [wordpress]
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wp
+    volumes:
+      - wp:/var/www/html
+      - ../site/public:/import/public:ro
+      - ../site/src/data:/import/data:ro
+      - ./import-products.php:/import/import-products.php:ro
+      - ./backfill-labels.php:/import/backfill-labels.php:ro
+      - ./empire-core.php:/var/www/html/wp-content/mu-plugins/empire-core.php:ro
+volumes:
+  db:
+  wp:

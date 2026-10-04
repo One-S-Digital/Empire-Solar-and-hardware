@@ -4,9 +4,9 @@ import { getBrands, getDepartments } from "@/lib/catalogue";
 import { store } from "@/lib/store";
 import styles from "./SiteFooter.module.css";
 
-export function SiteFooter() {
-  const departments = getDepartments();
-  const brands = getBrands();
+export async function SiteFooter() {
+  const departments = await getDepartments();
+  const brands = await getBrands();
   return (
     <footer className={`${styles.footer} on-ink`}>
       <div className={`container ${styles.grid}`}>

@@ -97,6 +97,10 @@ def main():
     source = list(wb["Products"].iter_rows(min_row=2, values_only=True))
     source_counts = Counter(r[0] for r in source)
 
+    manifest_path = ROOT / "data/out/remote-images.json"
+    remote_images = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+    REMOTE_SIZES.update({"r/" + v[0]: [v[1], v[2]] for v in remote_images.values()})
+
     # ---- classify every row
     rows = []
     unmapped = []
@@ -126,11 +130,13 @@ def main():
         codes = [c.strip() for c in clean(sku).split(",") if c.strip()] if sku else []
         img = clean(image)
         local_img = Path(img).name if img and not img.startswith("http") else ""
+        if img.startswith("http") and img in remote_images:  # downloaded by data/source/download_images.py
+            local_img = "r/" + remote_images[img][0]
         rows.append(dict(
             n=n, supplier=supplier, brand=mp["brand"], dept=dept, cat=cat, sub=sub, range=mp["range"], power=power,
             name=name, base=base_name, label=label, group=bool(label) or grouping in ("sizes", "name"),
             grouping=grouping, codes=codes,
-            details=clean(details), image_local=local_img, image_url=img if img.startswith("http") else "",
+            details=clean(details), image_local=local_img, image_url=img if img.startswith("http") and not local_img else "",
             also=clean(also), src_path=(scat, ssub), supplier_codes={},
         ))
     if unmapped:
@@ -330,7 +336,7 @@ def main():
     # ---- photos
     SITE_PRODUCTS.mkdir(parents=True, exist_ok=True)
     copied = 0
-    for name in {r["image_local"] for r in rows if r["image_local"]}:
+    for name in {r["image_local"] for r in rows if r["image_local"] and not r["image_local"].startswith("r/")}:
         src = ROOT / "geo-images" / name
         dst = SITE_PRODUCTS / name
         if not dst.exists() or dst.stat().st_size != src.stat().st_size:
@@ -343,10 +349,13 @@ def main():
 
 
 _SIZES: dict = {}
+REMOTE_SIZES: dict = {}
 
 
 def image_size(name: str):
     """Natural pixel size, so the front end can reserve space and never enlarge a small photo."""
+    if name.startswith("r/"):
+        return REMOTE_SIZES[name]
     if name not in _SIZES:
         with Image.open(ROOT / "geo-images" / name) as im:
             _SIZES[name] = list(im.size)

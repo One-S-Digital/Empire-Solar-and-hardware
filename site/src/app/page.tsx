@@ -45,13 +45,11 @@ const DOCKET_SAMPLE: { slug: string; qty: number }[] = [
 ];
 const EXAMPLES = ["Sunsynk inverter", "15mm ball valve", "angle grinder"];
 
-export default function HomePage() {
-  const totals = getTotals();
-  const departments = getDepartments();
-  const sample = DOCKET_SAMPLE.flatMap(({ slug, qty }) => {
-    const f = getFamily(slug);
-    return f ? [{ family: f, qty }] : [];
-  });
+export default async function HomePage() {
+  const totals = await getTotals();
+  const departments = await getDepartments();
+  const looked = await Promise.all(DOCKET_SAMPLE.map(async ({ slug, qty }) => ({ family: await getFamily(slug), qty })));
+  const sample = looked.flatMap(({ family, qty }) => (family ? [{ family, qty }] : []));
   const solar = departments.find((d) => d.slug === "solar-backup-power");
   const solarImg = imageSet("cover-solar-backup-power");
 

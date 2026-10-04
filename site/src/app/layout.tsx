@@ -47,9 +47,12 @@ export const viewport: Viewport = {
   themeColor: "#f4f2ee",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+// Backstop: pages are rebuilt at least hourly even if a WordPress save never reaches /api/revalidate
+export const revalidate = 3600;
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   // The mega menu shows each department's first four categories, in the plan's order (Website Plan 6.3)
-  const menu = getDepartments().map((d) => ({
+  const menu = (await getDepartments()).map((d) => ({
     slug: d.slug,
     name: d.name,
     top: d.categories.slice(0, 4).map((c) => ({ slug: c.slug, name: c.name })),

@@ -10,7 +10,7 @@ type RawParams = Record<string, string | string[] | undefined>;
 export async function loadList(dept: string, cat: string, sub: string | undefined, searchParams: Promise<RawParams>) {
   const cookieView = (await cookies()).get("empire_view")?.value;
   const state = parseListState(await searchParams, cookieView);
-  const all = familiesIn(dept, cat, sub);
+  const all = await familiesIn(dept, cat, sub);
   const families = sortFamilies(applyFilters(all, state.filters), state.sort);
   const facets = buildFacets(all, state.filters);
   return { state, all, families, facets };

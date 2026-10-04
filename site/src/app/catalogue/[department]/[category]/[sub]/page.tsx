@@ -10,8 +10,8 @@ type Props = {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
-export const generateStaticParams = () =>
-  getDepartments().flatMap((d) =>
+export const generateStaticParams = async () =>
+  (await getDepartments()).flatMap((d) =>
     d.categories.flatMap((c) =>
       (c.subs ?? []).map((s) => ({
         department: d.slug,
@@ -26,7 +26,7 @@ export async function generateMetadata({
   searchParams,
 }: Props): Promise<Metadata> {
   const { department, category, sub } = await params;
-  const found = getSub(department, category, sub);
+  const found = await getSub(department, category, sub);
   if (!found) return {};
   const { state } = await loadList(department, category, sub, searchParams);
   return listMetadata(`/catalogue/${department}/${category}/${sub}`, state, {
@@ -37,7 +37,7 @@ export async function generateMetadata({
 
 export default async function SubCategoryPage({ params, searchParams }: Props) {
   const { department, category, sub } = await params;
-  const found = getSub(department, category, sub);
+  const found = await getSub(department, category, sub);
   if (!found) notFound();
   const { dept, cat, sub: subcat } = found;
   const { state, all, families, facets } = await loadList(

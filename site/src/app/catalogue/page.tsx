@@ -15,10 +15,10 @@ export const metadata: Metadata = {
     "Search over 6,000 products from 15 suppliers: solar, tools, plumbing, electrical, lighting, paint and more. Not on the shelf? We'll order it in.",
 };
 
-export default function CataloguePage() {
-  const departments = getDepartments();
-  const totals = getTotals();
-  const brands = getBrands();
+export default async function CataloguePage() {
+  const departments = await getDepartments();
+  const totals = await getTotals();
+  const brands = await getBrands();
   const hero = imageSet("hero-banner");
   return (
     <>

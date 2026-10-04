@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   description: `Empire Solar & Hardware is a trade counter at ${store.address.oneLine}: solar, electrical, plumbing, tools and paint. Not on the shelf? We'll order it in.`,
 };
 
-export default function AboutPage() {
-  const departments = getDepartments();
-  const totals = getTotals();
+export default async function AboutPage() {
+  const departments = await getDepartments();
+  const totals = await getTotals();
   const hero = imageSet("hero-banner");
   const cover = imageSet("cover-solar-backup-power");
 
@@ -30,12 +30,12 @@ export default function AboutPage() {
   // second when it holds at least 30% as much, so a brand split across two departments is not mislabelled
   const deptName = new Map(departments.map((d) => [d.slug, d.name]));
   const tally = new Map<string, Map<string, number>>();
-  for (const f of getFamilies()) {
+  for (const f of await getFamilies()) {
     const m = tally.get(f.brandSlug) ?? new Map<string, number>();
     m.set(f.dept, (m.get(f.dept) ?? 0) + 1);
     tally.set(f.brandSlug, m);
   }
-  const brands = getBrands().map((b) => {
+  const brands = (await getBrands()).map((b) => {
     const ranked = [...(tally.get(b.slug) ?? [])].sort((a, z) => z[1] - a[1]);
     const main = ranked
       .filter(([, n], i) => i === 0 || (i === 1 && n >= ranked[0][1] * 0.3))

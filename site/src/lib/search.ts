@@ -19,11 +19,11 @@ function docFor(f: Family, i: number, pathName: string): SearchDoc {
   };
 }
 
-function build() {
-  if (!built) {
-    const families = getFamilies();
+async function build() {
+  const families = await getFamilies();
+  if (!built || built.families !== families) {
     const names = new Map<string, string>();
-    for (const d of getDepartments()) {
+    for (const d of await getDepartments()) {
       for (const c of d.categories) {
         names.set(`${d.slug}/${c.slug}`, `${d.name} ${c.name}`);
         for (const s of c.subs ?? []) names.set(`${d.slug}/${c.slug}/${s.slug}`, `${d.name} ${c.name} ${s.name}`);
@@ -41,15 +41,15 @@ function build() {
 const homeOf = (f: Family): [string, string] => [`/catalogue/${f.dept}/${f.cat}`, f.sub ? `/catalogue/${f.dept}/${f.cat}/${f.sub}` : ""];
 
 /** Search the catalogue: names, brands, codes, sizes and categories, tolerant of typos and local words. */
-export function searchFamilies(query: string, limit = 120): { total: number; results: Family[] } {
-  const { mini, families } = build();
-  const ranked = runSearch(mini, query, (id) => homeOf(families[id]), categoryEntries());
+export async function searchFamilies(query: string, limit = 120): Promise<{ total: number; results: Family[] }> {
+  const { mini, families } = await build();
+  const ranked = runSearch(mini, query, (id) => homeOf(families[id]), await categoryEntries());
   return { total: ranked.length, results: ranked.slice(0, limit).map((r) => families[r.id]) };
 }
 
-function categoryEntries(): CategoryEntry[] {
+async function categoryEntries(): Promise<CategoryEntry[]> {
   const out: CategoryEntry[] = [];
-  for (const d of getDepartments()) {
+  for (const d of await getDepartments()) {
     out.push([d.name, `/catalogue/${d.slug}`, "Department"]);
     for (const c of d.categories) {
       out.push([c.name, `/catalogue/${d.slug}/${c.slug}`, d.name]);
@@ -60,13 +60,13 @@ function categoryEntries(): CategoryEntry[] {
 }
 
 /** Category matches for the top of the results page. */
-export function searchCategories(query: string): CategoryEntry[] {
-  return matchCategories(expandQuery(query), categoryEntries());
+export async function searchCategories(query: string): Promise<CategoryEntry[]> {
+  return matchCategories(expandQuery(query), await categoryEntries());
 }
 
 /** Everything the browser needs for instant results, as one cached file. */
-export function searchPayload(): string {
-  const { mini, families } = build();
+export async function searchPayload(): Promise<string> {
+  const { mini, families } = await build();
   const docs = families.map((f) => [f.slug, f.name, f.brand, f.image ?? "", f.variants.find((v) => v.code)?.code ?? "", `${f.dept}/${f.cat}/${f.sub ?? ""}`]);
-  return JSON.stringify({ index: mini.toJSON(), docs, categories: categoryEntries() });
+  return JSON.stringify({ index: mini.toJSON(), docs, categories: await categoryEntries() });
 }
