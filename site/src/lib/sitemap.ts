@@ -64,3 +64,14 @@ export async function sitemapFile(name: string): Promise<string | null> {
   return null;
 }
 
+
+/** Every indexable page: the same set the sitemaps list. Used for a first full IndexNow submission. */
+export async function indexablePaths(): Promise<string[]> {
+  const out: string[] = [];
+  for (const name of ["pages.xml", "categories.xml", "brands.xml"]) {
+    const xml = (await sitemapFile(name)) ?? "";
+    out.push(...[...xml.matchAll(/<loc>([^<]*)<\/loc>/g)].map((m) => new URL(m[1].replace(/&amp;/g, "&")).pathname));
+  }
+  for (const f of await indexableProducts()) out.push(`/p/${f.slug}`);
+  return out;
+}
