@@ -4,6 +4,7 @@ import { ListingHeader } from "@/components/catalogue/ListingHeader";
 import { Listing } from "@/components/catalogue/Listing";
 import { getCategory, getDepartments } from "@/lib/catalogue";
 import { listMetadata, loadList } from "@/lib/list-page";
+import { categorySeo } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ department: string; category: string }>;
@@ -28,9 +29,10 @@ export async function generateMetadata({
     undefined,
     searchParams,
   );
+  const copy = categorySeo(`/catalogue/${department}/${category}`);
   return listMetadata(`/catalogue/${department}/${category}`, state, {
-    title: `${found.cat.name} in Brits`,
-    description: `${found.cat.name} from ${found.dept.name}. Not on the shelf? We'll order it in. Kremetart Centre, Brits.`,
+    title: copy ? { absolute: copy.title } : `${found.cat.name} in Brits`,
+    description: copy?.description ?? `${found.cat.name} from ${found.dept.name}. Not on the shelf? We'll order it in. Kremetart Centre, Brits.`,
   });
 }
 
@@ -55,6 +57,7 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           { label: cat.name },
         ]}
         title={cat.name}
+        lead={categorySeo(`/catalogue/${dept.slug}/${cat.slug}`)?.description}
       />
       <div className="container">
         <Listing

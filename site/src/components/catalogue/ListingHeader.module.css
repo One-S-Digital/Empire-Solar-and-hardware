@@ -47,3 +47,9 @@
     padding-block: 28px 40px;
   }
 }
+.lead {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--on-ink-muted);
+  font-size: var(--fs-body);
+}

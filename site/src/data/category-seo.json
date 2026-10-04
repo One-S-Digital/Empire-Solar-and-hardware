@@ -1,0 +1,602 @@
+{
+ "/catalogue/plumbing/pipe-fittings": {
+  "title": "Plumbing Pipe & Fittings in Brits | Empire Solar & Hardware",
+  "description": "HDPE, compression, copper, brass and galvanised fittings in 15mm to 110mm. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Where can I buy compression fittings near Brits?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/pipe-fittings/hdpe-fittings": {
+  "title": "HDPE Fittings in Brits | Empire Solar & Hardware",
+  "description": "260 Geo HDPE compression fittings for poly pipe, 20mm to 110mm. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What fittings do I need to connect HDPE pipe to a borehole pump?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/pipe-fittings/compression-fittings": {
+  "title": "Compression Fittings in Brits | Empire Solar & Hardware",
+  "description": "Geo BDP and SABS DZR compression fittings for 15mm and 22mm copper. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What is the difference between DZR and brass compression fittings?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/pipe-fittings/capillary-fittings": {
+  "title": "Copper Capillary Fittings in Brits | Empire Solar & Hardware",
+  "description": "Geo copper and brass capillary fittings for soldered copper pipe. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Compression or capillary fittings: which should I use?",
+  "priority": "P2"
+ },
+ "/catalogue/plumbing/pipe-fittings/galvanised-fittings-stand-pipe": {
+  "title": "Galvanised Fittings in Brits | Empire Solar & Hardware",
+  "description": "224 Geo galvanised fittings and stand pipes. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Where can I buy galvanised pipe fittings in Brits?",
+  "priority": "P2"
+ },
+ "/catalogue/plumbing/pipe-fittings/underground-fittings-110mm": {
+  "title": "110mm Sewer Pipe Fittings in Brits | Empire Solar & Hardware",
+  "description": "Geo 110mm underground sewer fittings. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What fittings do I need for a 110mm sewer line?",
+  "priority": "P2"
+ },
+ "/catalogue/plumbing/pipe-fittings/soil-vent-fittings": {
+  "title": "Soil & Vent Fittings in Brits | Empire Solar & Hardware",
+  "description": "Geo soil and vent fittings in 40mm, 50mm and 110mm. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/plumbing/valves": {
+  "title": "Valves in Brits | Empire Solar & Hardware",
+  "description": "157 Geo valves: ball, gate, float and angle valves, 15mm to 50mm. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Ball valve or gate valve: which is better for a mains supply?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/valves/ball-valves": {
+  "title": "Brass Ball Valves in Brits | Empire Solar & Hardware",
+  "description": "Geo full bore and lever brass ball valves, 15mm to 50mm. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Where can I buy a 22mm brass ball valve in Brits?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/valves/float-valves": {
+  "title": "Float Valves in Brits | Empire Solar & Hardware",
+  "description": "Geo brass float valves in 15mm, 22mm and 25mm. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Which float valve do I need for a JoJo tank?",
+  "priority": "P2"
+ },
+ "/catalogue/plumbing/taps-mixers": {
+  "title": "Taps & Mixers in Brits | Empire Solar & Hardware",
+  "description": "Geo taps, mixers and tap spares, including the Eternity premium range. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Where can I buy a kitchen sink mixer in Brits?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/bathroom-toilet": {
+  "title": "Toilet Cistern Parts & Bathroom in Brits | Empire",
+  "description": "Geo cistern kits, inlet valves, shower and bath parts, wastes and traps. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Why does my toilet keep running and what part do I need?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/geysers": {
+  "title": "Geyser Parts & Elements in Brits | Empire Solar & Hardware",
+  "description": "Geo geyser elements (hard and soft water), 400/600kPa valves, drip trays and blankets. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Should I buy a hard water or soft water geyser element?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/drainage-rainwater": {
+  "title": "PVC Gutters & Downpipes in Brits | Empire Solar & Hardware",
+  "description": "Geo PVC and Econo gutters, downpipes and fittings. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What size gutters and downpipes do I need for my house?",
+  "priority": "P2"
+ },
+ "/catalogue/plumbing/tanks-hose": {
+  "title": "Tank Fittings & Braided Hose in Brits | Empire",
+  "description": "Geo tank connectors, cam fittings and braided hose connectors. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What fittings do I need to connect a JoJo tank?",
+  "priority": "P1"
+ },
+ "/catalogue/plumbing/sheeting-membranes": {
+  "title": "Builders Plastic & Shade Cloth in Brits | Empire",
+  "description": "Geo builders sheeting, DPC, shade cloth, foil and membranes. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/plumbing/plumbing-consumables-tools": {
+  "title": "Plumbing Tools & Consumables in Brits | Empire",
+  "description": "PTFE tape, pipe cutters and plumbing sundries from Geo. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/electrical/wire-wiring-accessories": {
+  "title": "Electrical Cable & Wiring in Brits | Empire Solar & Hardware",
+  "description": "WACO wire and wiring accessories, 3M cable joints and lugs. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/electrical/switches-plugs-sockets": {
+  "title": "Plugs, Switches & Sockets in Brits | Empire Solar & Hardware",
+  "description": "Switches, plug points, multiplugs and industrial plugs and sockets. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/electrical/circuit-protection-control": {
+  "title": "Circuit Breakers & Earth Leakage in Brits | Empire",
+  "description": "ABB circuit breakers, earth leakage, surge protection, isolators and contactors. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Why does my earth leakage keep tripping?",
+  "priority": "P1"
+ },
+ "/catalogue/electrical/circuit-protection-control/contactors-relays": {
+  "title": "Contactors & Relays in Brits | Empire Solar & Hardware",
+  "description": "ABB AF contactors, overloads and industrial relays. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/electrical/enclosures-db-boards": {
+  "title": "DB Boards & Enclosures in Brits | Empire Solar & Hardware",
+  "description": "WACO DB boards and mild steel and plastic enclosures. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/electrical/security": {
+  "title": "Electric Fence Energizers & Security in Brits | Empire",
+  "description": "Electric fence energizers, CCTV kits and alarm sounders. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Which fence energizer do I need for a farm fence?",
+  "priority": "P1"
+ },
+ "/catalogue/electrical/fans-air-movement": {
+  "title": "Fans & Air Coolers in Brits | Empire Solar & Hardware",
+  "description": "Pedestal, wall, ceiling and industrial fans and air coolers. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What is the best fan for a hot workshop?",
+  "priority": "P2"
+ },
+ "/catalogue/electrical/contracting-items-electrical-tools": {
+  "title": "Electrician Tools in Brits | Empire Solar & Hardware",
+  "description": "WACO electrician tools, crimpers, strippers and ladders. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/electrical/maintenance-chemicals": {
+  "title": "CRC Sprays & Maintenance Chemicals in Brits | Empire",
+  "description": "CRC lubricants, contact cleaners and maintenance sprays. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/electrical/sound-equipment-miscellaneous": {
+  "title": "Sirens, Bells & Barrier Tape in Brits | Empire",
+  "description": "Sirens, school and fire bells, barrier and danger tape. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/lighting/indoor-led-downlights": {
+  "title": "LED Downlights in Brits | Empire Solar & Hardware",
+  "description": "Aluminium and steel downlights, LED indoor and glass fittings. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/lighting/outdoor-security-lighting": {
+  "title": "Outdoor & Sensor Lights in Brits | Empire Solar & Hardware",
+  "description": "Bulkheads, brick lights, garden spikes and LED sensor lights. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What outdoor lights are best for home security?",
+  "priority": "P2"
+ },
+ "/catalogue/lighting/floodlights": {
+  "title": "LED Floodlights in Brits | Empire Solar & Hardware",
+  "description": "LED floodlights from 10W to 500W, with and without sensors. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P1"
+ },
+ "/catalogue/lighting/fluorescent-fittings": {
+  "title": "LED Tube & Vapour Proof Fittings in Brits | Empire",
+  "description": "Indoor and vapour proof fittings for T8 LED and fluorescent tubes. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/lighting/industrial-lighting": {
+  "title": "Industrial LED Lighting in Brits | Empire Solar & Hardware",
+  "description": "LED high bays and louvre fittings for workshops and warehouses. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/lighting/lamps-bulbs": {
+  "title": "LED Globes & Bulbs in Brits | Empire Solar & Hardware",
+  "description": "LED globes, energy savers, torches and lanterns. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/lighting/lamp-holders-spotlights": {
+  "title": "Lamp Holders & Spotlights in Brits | Empire Solar & Hardware",
+  "description": "GU10 lamp holders and Saturn spotlights. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/solar-backup-power/inverters": {
+  "title": "Hybrid Inverters in Brits | Empire Solar & Hardware",
+  "description": "Sunsynk, Deye, Luxpower and Fivestar hybrid inverters, 5kW to 50kW. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What size inverter do I need for my house?",
+  "priority": "P1"
+ },
+ "/catalogue/solar-backup-power/batteries-energy-storage": {
+  "title": "Lithium Solar Batteries in Brits | Empire Solar & Hardware",
+  "description": "Sunsynk, Deye, Hanchu lithium batteries and gel batteries. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "How many kWh of battery do I need for overnight backup?",
+  "priority": "P1"
+ },
+ "/catalogue/solar-backup-power/solar-panels": {
+  "title": "Solar Panels in Brits | Empire Solar & Hardware",
+  "description": "Fivestar mono solar panels from 295W to 450W. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "How many solar panels do I need for a 5kW inverter?",
+  "priority": "P1"
+ },
+ "/catalogue/solar-backup-power/kits-backup-power-packages": {
+  "title": "Solar Kits & Backup Packages in Brits | Empire",
+  "description": "Inverter and battery packages and full solar PV kits. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What is the cheapest backup power kit for a small house?",
+  "priority": "P1"
+ },
+ "/catalogue/solar-backup-power/charge-controllers": {
+  "title": "MPPT Charge Controllers in Brits | Empire Solar & Hardware",
+  "description": "Fivestar MPPT and PWM solar charge controllers. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/solar-backup-power/protection-isolators-breakers-fuses": {
+  "title": "DC Breakers & Surge Protection in Brits | Empire",
+  "description": "DC breakers, isolators, fuses and surge protectors for solar. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/solar-backup-power/installation-accessories-cables": {
+  "title": "Solar Cable & Accessories in Brits | Empire Solar & Hardware",
+  "description": "Solar cable, connectors, battery links, lugs and crimping tools. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/solar-backup-power/monitoring-meters-cts": {
+  "title": "Inverter Monitoring & CT Coils in Brits | Empire",
+  "description": "Wi-Fi loggers, CT coils and BMS converters. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/solar-backup-power/solar-lights-dc-appliances": {
+  "title": "Solar Lights & 12V Appliances in Brits | Empire",
+  "description": "Solar lights and 12V DC appliances from Fivestar. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/solar-backup-power/ev-chargers": {
+  "title": "EV Chargers in Brits | Empire Solar & Hardware",
+  "description": "Hanchu AC EV chargers, 7kW to 22kW. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/power-tools/drills-drivers": {
+  "title": "Cordless Drills & Drivers in Brits | Empire Solar & Hardware",
+  "description": "Ingco corded and 20V cordless drills, impact drills and drivers. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P1"
+ },
+ "/catalogue/power-tools/grinders": {
+  "title": "Angle Grinders in Brits | Empire Solar & Hardware",
+  "description": "Ingco corded and cordless angle grinders, 115mm to 230mm. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Should I buy a 115mm or 230mm angle grinder?",
+  "priority": "P1"
+ },
+ "/catalogue/power-tools/saws": {
+  "title": "Power Saws in Brits | Empire Solar & Hardware",
+  "description": "Circular saws, jigsaws and chainsaws. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/power-tools/sanders-polishers": {
+  "title": "Sanders & Polishers in Brits | Empire Solar & Hardware",
+  "description": "Orbital, belt and detail sanders and polishers. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/power-tools/rotary-hammers": {
+  "title": "Rotary Hammers & Breakers in Brits | Empire Solar & Hardware",
+  "description": "SDS rotary hammers and demolition breakers. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/power-tools/planers-routers": {
+  "title": "Planers & Routers in Brits | Empire Solar & Hardware",
+  "description": "Electric planers, routers and router bits. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/power-tools/welding": {
+  "title": "Welding Machines in Brits | Empire Solar & Hardware",
+  "description": "Ingco inverter MMA and MIG welders, plasma cutters and rods. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Which welding machine is best for a beginner on a farm?",
+  "priority": "P1"
+ },
+ "/catalogue/power-tools/water-pumps": {
+  "title": "Water Pumps & Jet Pumps in Brits | Empire Solar & Hardware",
+  "description": "Ingco water pumps, jet pumps and automatic pump controls. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Which pump do I need to boost water pressure from a JoJo tank?",
+  "priority": "P1"
+ },
+ "/catalogue/power-tools/generators-petrol-tools": {
+  "title": "Petrol Generators & Petrol Tools in Brits | Empire",
+  "description": "Ingco petrol generators, mowers, brush cutters, pumps and compactors. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Generator or inverter for backup power?",
+  "priority": "P1"
+ },
+ "/catalogue/power-tools/batteries-chargers": {
+  "title": "Power Tool Batteries & Chargers in Brits | Empire",
+  "description": "Ingco 16V, 20V and 40V batteries and chargers. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/power-tools/drill-bits": {
+  "title": "Drill Bits in Brits | Empire Solar & Hardware",
+  "description": "Ruwag masonry, SDS, metal, wood and tile drill bits and sets. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Masonry, SDS or HSS: which drill bit do I need?",
+  "priority": "P2"
+ },
+ "/catalogue/power-tools/saw-cutting-blades": {
+  "title": "Saw Blades & Diamond Blades in Brits | Empire",
+  "description": "Ruwag circular saw, diamond, jigsaw and hacksaw blades and hole saws. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "Which circular saw blade do I need for ripping pine?",
+  "priority": "P2"
+ },
+ "/catalogue/power-tools/abrasives-sanding": {
+  "title": "Cutting Discs & Flap Discs in Brits | Empire",
+  "description": "Ruwag and Wadfow cutting discs, flap discs and sanding products. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/power-tools/power-bits": {
+  "title": "Screwdriver Bits & Power Bits in Brits | Empire",
+  "description": "Ruwag and Ingco power bits and bit sets. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/screwdrivers-sets": {
+  "title": "Screwdrivers & Screwdriver Sets in Brits | Empire",
+  "description": "Screwdrivers & Sets from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/pliers-gripping": {
+  "title": "Pliers & Vice Grips in Brits | Empire Solar & Hardware",
+  "description": "Pliers & Gripping from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/spanners-sockets": {
+  "title": "Spanners & Socket Sets in Brits | Empire Solar & Hardware",
+  "description": "Spanners & Sockets from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/hand-tools/hammers-striking": {
+  "title": "Hammers in Brits | Empire Solar & Hardware",
+  "description": "Hammers & Striking from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/chisels-punches": {
+  "title": "Chisels & Punches in Brits | Empire Solar & Hardware",
+  "description": "Chisels & Punches from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/measuring-marking": {
+  "title": "Tape Measures & Spirit Levels in Brits | Empire",
+  "description": "Measuring & Marking from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/hand-tools/saws-cutting": {
+  "title": "Hand Saws & Knives in Brits | Empire Solar & Hardware",
+  "description": "Saws & Cutting from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/clamps-vices": {
+  "title": "Clamps & Vices in Brits | Empire Solar & Hardware",
+  "description": "Clamps & Vices from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/finishing-plastering": {
+  "title": "Paint Brushes & Plastering Tools in Brits | Empire",
+  "description": "Finishing & Plastering from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/hand-tools/garden-tools": {
+  "title": "Garden Tools in Brits | Empire Solar & Hardware",
+  "description": "Garden Tools from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/hand-tools/tool-storage": {
+  "title": "Tool Boxes & Tool Sets in Brits | Empire Solar & Hardware",
+  "description": "Tool Storage from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/hand-tools/safety-gear": {
+  "title": "Safety Gear & PPE in Brits | Empire Solar & Hardware",
+  "description": "Safety Gear from Harden, Ingco and Wadfow. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/fixings-adhesives/screws": {
+  "title": "Screws in Brits | Empire Solar & Hardware",
+  "description": "Screws from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/fixings-adhesives/nails": {
+  "title": "Nails in Brits | Empire Solar & Hardware",
+  "description": "Nails from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/fixings-adhesives/anchors-wall-plugs": {
+  "title": "Anchors & Rawl Plugs in Brits | Empire Solar & Hardware",
+  "description": "Anchors & Wall Plugs from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/fixings-adhesives/nuts-bolts-washers": {
+  "title": "Nuts, Bolts & Washers in Brits | Empire Solar & Hardware",
+  "description": "Nuts, Bolts & Washers from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/fixings-adhesives/rivets": {
+  "title": "Pop Rivets in Brits | Empire Solar & Hardware",
+  "description": "Rivets from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/fixings-adhesives/threaded-rod": {
+  "title": "Threaded Rod in Brits | Empire Solar & Hardware",
+  "description": "Threaded Rod from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/fixings-adhesives/fastener-kits-pre-packs": {
+  "title": "Fastener Kits in Brits | Empire Solar & Hardware",
+  "description": "Fastener Kits & Pre-packs from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/fixings-adhesives/ironmongery-door-hardware": {
+  "title": "Hinges, Bolts & Door Hardware in Brits | Empire",
+  "description": "Ironmongery & Door Hardware from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/fixings-adhesives/tapes": {
+  "title": "Masking, Duct & Insulation Tape in Brits | Empire",
+  "description": "Tapes from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/fixings-adhesives/mounting-hanging": {
+  "title": "Mounting Tape & Adhesive Hooks in Brits | Empire",
+  "description": "Mounting & Hanging from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/fixings-adhesives/weather-sealing": {
+  "title": "Draught Stoppers & Weather Seals in Brits | Empire",
+  "description": "Weather Sealing from Ruwag and tesa. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/air-tools-compressors/compressors": {
+  "title": "Air Compressors in Brits | Empire Solar & Hardware",
+  "description": "Compressors from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P1"
+ },
+ "/catalogue/air-tools-compressors/air-tools": {
+  "title": "Air Tools & Nail Guns in Brits | Empire Solar & Hardware",
+  "description": "Air Tools from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/air-tools-compressors/spray-guns-airbrushes": {
+  "title": "Spray Guns & Paint Pots in Brits | Empire Solar & Hardware",
+  "description": "Spray Guns & Airbrushes from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/air-tools-compressors/air-treatment": {
+  "title": "Air Filters & Regulators in Brits | Empire Solar & Hardware",
+  "description": "Air Treatment from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/air-tools-compressors/hoses-hose-reels": {
+  "title": "Air Hose & Hose Reels in Brits | Empire Solar & Hardware",
+  "description": "Hoses & Hose Reels from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/air-tools-compressors/tubing": {
+  "title": "Nylon & PU Air Tubing in Brits | Empire Solar & Hardware",
+  "description": "Tubing from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/air-tools-compressors/hose-fittings": {
+  "title": "Air Hose Fittings & Couplers in Brits | Empire",
+  "description": "Hose Fittings from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/air-tools-compressors/push-in-fittings": {
+  "title": "Push-in Pneumatic Fittings in Brits | Empire",
+  "description": "Push-in Fittings from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/air-tools-compressors/gauges": {
+  "title": "Pressure Gauges in Brits | Empire Solar & Hardware",
+  "description": "Gauges from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/air-tools-compressors/vacuum-pumps": {
+  "title": "Vacuum Pumps in Brits | Empire Solar & Hardware",
+  "description": "Vacuum Pumps from AirCraft and Ingco. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/paint-waterproofing/interior-paint": {
+  "title": "Interior Paint & PVA in Brits | Empire Solar & Hardware",
+  "description": "Interior PVA, acrylic, ceiling and kitchen and bathroom paint. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "PVA or acrylic: which paint for inside walls?",
+  "priority": "P2"
+ },
+ "/catalogue/paint-waterproofing/exterior-paint": {
+  "title": "Exterior Wall Paint in Brits | Empire Solar & Hardware",
+  "description": "Exterior acrylics, textured coatings and fascia and gutter paints. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/paint-waterproofing/roof-paint": {
+  "title": "Roof Paint in Brits | Empire Solar & Hardware",
+  "description": "Duram Roofkote, Promac Proroof and Flash Harry Frogskin roof paints. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What roof paint should I use on an old galvanised roof?",
+  "priority": "P1"
+ },
+ "/catalogue/paint-waterproofing/enamel-metal-paint": {
+  "title": "Enamel & Metal Paint in Brits | Empire Solar & Hardware",
+  "description": "Gloss, eggshell and floor enamels and metal and high heat paints. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/paint-waterproofing/wood-care": {
+  "title": "Varnish & Wood Care in Brits | Empire Solar & Hardware",
+  "description": "Promac Yes! Wood varnishes, deck dressings and waxes. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/paint-waterproofing/primers-undercoats-prep": {
+  "title": "Primers & Undercoats in Brits | Empire Solar & Hardware",
+  "description": "Plaster primers, undercoats, bonding liquids and fillers. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P2"
+ },
+ "/catalogue/paint-waterproofing/cleaners-strippers": {
+  "title": "Paint Strippers & Cleaners in Brits | Empire",
+  "description": "Paint strippers, brush cleaners, degreasers and rust treatments. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ },
+ "/catalogue/paint-waterproofing/waterproofing": {
+  "title": "Roof Waterproofing & Damp Proofing in Brits | Empire",
+  "description": "Flash Harry, Duram and Promac Rubber Duck acrylic, bitumen, torch-on and damp systems. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": "What is the best way to waterproof a flat roof?",
+  "priority": "P1"
+ },
+ "/catalogue/paint-waterproofing/floor-automotive-industrial": {
+  "title": "Floor, Automotive & Industrial Paint in Brits | Empire",
+  "description": "Floor and stoep paints, bakkie liners and industrial coatings. Not on the shelf? We'll order it in. Kremetart Centre, Brits.",
+  "question": null,
+  "priority": "P3"
+ }
+}

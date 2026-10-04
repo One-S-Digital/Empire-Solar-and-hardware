@@ -7,10 +7,13 @@ export function ListingHeader({
   deptSlug,
   crumbs,
   title,
+  lead,
 }: {
   deptSlug: string;
   crumbs: Crumb[];
   title: string;
+  /** One line under the title, from the keyword map */
+  lead?: string;
 }) {
   const img = imageSet(`cover-${deptSlug}`);
   return (
@@ -28,6 +31,7 @@ export function ListingHeader({
       <div className={`container ${styles.body}`}>
         <Breadcrumb items={crumbs} />
         <h1>{title}</h1>
+        {lead && <p className={styles.lead}>{lead}</p>}
       </div>
     </header>
   );

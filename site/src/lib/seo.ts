@@ -1,3 +1,5 @@
+import categoryCopy from "../data/category-seo.json";
+
 /**
  * Department titles are the title tags from SEO plan section 4.2. The intro lines follow its H1 rule:
  * the H1 is the plain department name, followed by one human line that includes the location.
@@ -41,3 +43,13 @@ export const DEPARTMENT_SEO: Record<string, { title: string; intro: string }> = 
     intro: "Roof paint, waterproofing, primers and enamels from Promac, Duram, Africa Paints and Flash Harry, at our counter in Brits.",
   },
 };
+
+type CategoryCopy = { title: string; description: string; question: string | null; priority: string };
+
+/**
+ * Title tag and meta description for a category or sub-category page, from the keyword map
+ * (data/build_seo_copy.py writes data/category-seo.json). Undefined for pages the map does not cover.
+ */
+export function categorySeo(path: string): CategoryCopy | undefined {
+  return (categoryCopy as Record<string, CategoryCopy>)[path];
+}
