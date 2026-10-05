@@ -54,3 +54,7 @@ cp ../site/.env.example ../site/.env.local           # WP_URL points the site at
 - With `WP_URL` set the site reads `/wp-json/empire/v1/catalogue` (`wordpress/empire-core.php`), keeps it in memory for 5 minutes, and falls back to `src/data/catalogue.json` only in `pnpm dev`. Production never falls back silently.
 - WordPress calls `/api/revalidate` (header `x-revalidate-secret`, set `REVALIDATE_SECRET` in the site's env) after every product save, so edits show on the next page load with no rebuild. Pages are also rebuilt at least hourly.
 - `data/build_catalogue.py` makes `src/data/catalogue.json` from the workbook. It is the source for the import and is never overwritten by the site, so the order is simply: rebuild, import.
+
+## Going live (front end)
+
+`render.yaml` is a Render blueprint: New > Blueprint, pick this repo. It builds `site/` with pnpm and runs `pnpm start` on a paid Frankfurt instance. Set `SITE_URL` to the real domain (no trailing slash). Leave `WP_URL` empty to serve the bundled `site/src/data/catalogue.json`; set it once WordPress is hosted (see the WordPress section). Add `INDEXNOW_KEY` once the domain is live. Then put Cloudflare in front (Website Plan 12.4.1). Verified: production build passes and `/`, `/catalogue`, a product page, `/brands/geo`, `/faq`, `/robots.txt` and `/sitemap.xml` return 200 from `pnpm start`.
