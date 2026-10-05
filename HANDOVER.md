@@ -232,3 +232,7 @@ Sections: hero ("Built in Brits."), nine departments with live counts, how we wo
 - **`StandardPage`** (`components/StandardPage.tsx`): the Website Plan 7.9 layout (breadcrumb, aisle-sign title, optional intro and photo, 720 px body, help band, visit card). Privacy uses it. When WordPress is connected its editor content renders into the body; the custom blocks (product grid, notice, enquiry prompt) are not built.
 - **Checked on a production build:** all new pages 200; both forms return 503 without an endpoint and 400 for bad input; JS 183 to 187 KB gzip; no sideways scroll at 320 px for Contact (including the solar and photo topics), Privacy and About. Not checked: real phone camera upload.
  API notes:** [Higgsfield API Docs](https://docs.higgsfield.ai/docs), [Higgsfield API FAQ](https://docs.higgsfield.ai/docs/help/faq), [higgsfield-js SDK](https://github.com/higgsfield-ai/higgsfield-js), [higgsfield-client Python SDK](https://github.com/higgsfield-ai/higgsfield-client)
+
+### Titles and descriptions for pages outside the keyword map
+
+The keyword map covers 100 category pages. The other 83 use drafted copy from `data/build_unmapped_seo.py`, written to `site/src/data/category-seo-extra.json` and merged in `categorySeo()` in `site/src/lib/seo.ts` (the map always wins). Counts come from the catalogue. They are drafts: the SEO lead should review them and move any they approve into the keyword map.

@@ -1,4 +1,5 @@
 import categoryCopy from "../data/category-seo.json";
+import categoryExtra from "../data/category-seo-extra.json";
 import categoryIntros from "../data/category-intros.json";
 
 /**
@@ -49,10 +50,14 @@ type CategoryCopy = { title: string; description: string; question: string | nul
 
 /**
  * Title tag and meta description for a category or sub-category page, from the keyword map
- * (data/build_seo_copy.py writes data/category-seo.json). Undefined for pages the map does not cover.
+ * (data/build_seo_copy.py writes data/category-seo.json). Pages the map does not cover use the drafted copy in
+ * category-seo-extra.json (data/build_unmapped_seo.py); the map always wins.
  */
 export function categorySeo(path: string): CategoryCopy | undefined {
-  return (categoryCopy as Record<string, CategoryCopy>)[path];
+  const mapped = (categoryCopy as Record<string, CategoryCopy>)[path];
+  if (mapped) return mapped;
+  const extra = (categoryExtra as Record<string, { title: string; description: string }>)[path];
+  return extra && { ...extra, question: null, priority: "" };
 }
 
 /** The hand-edited intro paragraph for a category page (SEO plan 4.3), when one has been written. */
