@@ -57,4 +57,15 @@ cp ../site/.env.example ../site/.env.local           # WP_URL points the site at
 
 ## Going live (front end)
 
-`render.yaml` is a Render blueprint: New > Blueprint, pick this repo. It builds `site/` with pnpm and runs `pnpm start` on a paid Frankfurt instance. Set `SITE_URL` to the real domain (no trailing slash). Leave `WP_URL` empty to serve the bundled `site/src/data/catalogue.json`; set it once WordPress is hosted (see the WordPress section). Add `INDEXNOW_KEY` once the domain is live. Then put Cloudflare in front (Website Plan 12.4.1). Verified: production build passes and `/`, `/catalogue`, a product page, `/brands/geo`, `/faq`, `/robots.txt` and `/sitemap.xml` return 200 from `pnpm start`.
+Manual setup on Render: New > Web Service, connect this repo, then:
+
+| Setting | Value |
+|---|---|
+| Root Directory | `site` |
+| Runtime | Node (set `NODE_VERSION` to `24`) |
+| Build Command | `corepack enable && pnpm install --frozen-lockfile && pnpm build` |
+| Start Command | `pnpm start` |
+| Region / Instance | Frankfurt, a paid instance (free ones sleep) |
+| Health Check Path | `/` |
+
+Environment variables: `SITE_URL` (the real domain, no trailing slash) and `REVALIDATE_SECRET` (any long random string). Leave `WP_URL` empty to serve the bundled `site/src/data/catalogue.json`; set it once WordPress is hosted. Add `INDEXNOW_KEY` once the domain is live. Then put Cloudflare in front (Website Plan 12.4.1). Verified: the production build passes and `/`, `/catalogue`, a product page, `/brands/geo`, `/faq`, `/robots.txt` and `/sitemap.xml` return 200 from `pnpm start`.
