@@ -65,3 +65,16 @@
 .brands {
   grid-template-columns: 1fr 1fr;
 }
+
+.credit {
+  margin-top: 48px;
+  text-align: center;
+  color: var(--on-ink-muted);
+}
+.footer .credit a {
+  color: var(--red-logo); /* the brighter red: --red is too dark to read on the footer */
+  font-weight: 600;
+}
+.footer .credit a:hover {
+  color: #fff;
+}

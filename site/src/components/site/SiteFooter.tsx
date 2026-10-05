@@ -56,6 +56,12 @@ export async function SiteFooter() {
           </ul>
         </nav>
       </div>
+      <p className={`container ${styles.credit}`}>
+        Powered by:{" "}
+        <a href="https://onesdigital.online" target="_blank" rel="noopener noreferrer">
+          One S Digital
+        </a>
+      </p>
     </footer>
   );
 }
