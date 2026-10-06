@@ -68,6 +68,8 @@
 
 .credit {
   margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid rgb(255 255 255 / 0.14);
   text-align: center;
   color: var(--on-ink-muted);
 }
