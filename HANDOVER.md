@@ -236,3 +236,7 @@ Sections: hero ("Built in Brits."), nine departments with live counts, how we wo
 ### Titles and descriptions for pages outside the keyword map
 
 The keyword map covers 100 category pages. The other 83 use drafted copy from `data/build_unmapped_seo.py`, written to `site/src/data/category-seo-extra.json` and merged in `categorySeo()` in `site/src/lib/seo.ts` (the map always wins). Counts come from the catalogue. They are drafts: the SEO lead should review them and move any they approve into the keyword map.
+
+### Store details update, 7 Oct 2026
+
+Client supplied hours (Mon to Fri 08:30 to 17:30, Sat 08:30 to 15:30, Sun and public holidays "Closed / 8:30-13:30"), WhatsApp 067 383 2527 (already in), and delivery (6km radius for orders above R1,000, or depending on the item; confirm with the store). In `lib/store.ts`: Sunday is shown 08:30 to 13:30 with `hoursNote` saying it may be closed. Sunday is left out of the JSON-LD opening hours until the client says which it is. `delivery` text is on the contact page and in a new FAQ question. Still open: whether Sundays and public holidays are open or closed.

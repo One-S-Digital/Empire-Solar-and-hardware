@@ -113,9 +113,9 @@ export default function ContactPage() {
                 </tbody>
               </table>
               <p className={styles.note}>
-                Hours as shown on our Google Business profile. Public holidays
-                may differ.
+                {store.hoursNote}
               </p>
+              <p className={styles.note}>{store.delivery}</p>
             </section>
           )}
         </aside>

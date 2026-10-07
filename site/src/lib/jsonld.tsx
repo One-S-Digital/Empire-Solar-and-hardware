@@ -37,7 +37,7 @@ export function storeSchema(brandNames: string[]) {
     email: store.email ?? undefined,
     openingHoursSpecification: store.hours
       ? (Object.keys(DAYS) as (keyof typeof DAYS)[]).flatMap((k) => {
-          const h = store.hours?.[k];
+          const h = k === "sun" ? null : store.hours?.[k]; // Sunday may be closed: left out until the client confirms
           return h ? [{ "@type": "OpeningHoursSpecification", dayOfWeek: DAYS[k], opens: h.open, closes: h.close }] : [];
         })
       : undefined,

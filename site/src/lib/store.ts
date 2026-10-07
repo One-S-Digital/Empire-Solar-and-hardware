@@ -12,7 +12,7 @@ export const store = {
     lines: ["Kremetart Centre", "Van Velden St", "Brits", "0250"],
     oneLine: "Kremetart Centre, Van Velden St, Brits, 0250",
   },
-  // From the Google Business profile (2 Oct 2026). WhatsApp and email are still unknown.
+  // From the Google Business profile (2 Oct 2026) and the client (7 Oct 2026). Email is still unknown.
   phone: "+27 67 383 2527" as string | null,
   phoneDisplay: "067 383 2527",
   whatsapp: "27673832527" as string | null, // wa.me format: digits only, country code first
@@ -23,9 +23,13 @@ export const store = {
     wed: { open: "08:30", close: "17:30" },
     thu: { open: "08:30", close: "17:30" },
     fri: { open: "08:30", close: "17:30" },
-    sat: { open: "08:30", close: "15:00" },
-    sun: { open: "09:00", close: "13:00" },
+    sat: { open: "08:30", close: "15:30" },
+    sun: { open: "08:30", close: "13:30" },
   } as OpeningHours | null,
+  // From the client (7 Oct 2026). Sundays and public holidays were given as "Closed / 8:30-13:30".
+  hoursNote: "Sundays and public holidays: we may be closed, or open 08:30 to 13:30. Please confirm with the store.",
+  delivery:
+    "We deliver within a 6km radius for orders above R1,000, or depending on the item. Please confirm with the store.",
   plusCode: "9Q9J+4P Brits",
   mapsUrl:
     "https://www.google.com/maps/place/Empire+Solar+%26+Hardware/@-25.6322143,27.781813,17z/data=!4m6!3m5!1s0x1ebe31662c8d10cb:0x20fc1548dafe757c!8m2!3d-25.6322143!4d27.781813!16s%2Fg%2F11kpl6j7hv",

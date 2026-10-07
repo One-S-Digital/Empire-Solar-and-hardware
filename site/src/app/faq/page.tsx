@@ -23,7 +23,7 @@ const DAY_NAMES: [keyof OpeningHours, string][] = [
   ["sun", "Sunday"],
 ];
 
-/** "Monday to Friday 08:30 to 17:30, Saturday 08:30 to 15:00, Sunday 09:00 to 13:00", worked out from the store hours. */
+/** "Monday to Friday 08:30 to 17:30, Saturday 08:30 to 15:30, Sunday 08:30 to 13:30", worked out from the store hours. */
 function hoursSentence(hours: OpeningHours) {
   const groups: { from: string; to: string; time: string }[] = [];
   for (const [key, name] of DAY_NAMES) {
@@ -63,10 +63,10 @@ export default async function FaqPage() {
       ? [
           {
             q: "What are your opening hours?",
-            text: `We are open ${hours}.`,
+            text: `We are open ${hours}. ${store.hoursNote}`,
             body: (
               <p>
-                We are open {hours}. The full week is on the <Link href="/contact">contact page</Link>.
+                We are open {hours}. {store.hoursNote} The full week is on the <Link href="/contact">contact page</Link>.
               </p>
             ),
           },
@@ -108,6 +108,11 @@ export default async function FaqPage() {
           If a product is in our catalogue but not on the shelf, we order it in. Send us your list and we will tell you what is in stock and how long the rest will take.
         </p>
       ),
+    },
+    {
+      q: "Do you deliver?",
+      text: store.delivery,
+      body: <p>{store.delivery}</p>,
     },
     {
       q: "How do I ask for a product or a price?",
